@@ -1,5 +1,5 @@
-import Utils        from '../../services/Utils.js'
-import OperatorProvider from "./../../services/OperatorProvider.js";
+import Utils        from '../../../services/Utils.js'
+import OperatorProvider from "./../../../services/OperatorProvider.js";
 
 export default class OperatorDetail {
     async render () {

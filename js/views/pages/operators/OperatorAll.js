@@ -1,4 +1,4 @@
-import OperatorProvider from "../../services/OperatorProvider.js";
+import OperatorProvider from "../../../services/OperatorProvider.js";
 
 export default class OperatorAll {
 
