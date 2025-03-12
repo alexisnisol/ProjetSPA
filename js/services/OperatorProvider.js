@@ -1,8 +1,8 @@
 import { ENDPOINT } from '../config.js'
 
-export default class ArticleProvider {
+export default class OperatorProvider {
 
-    static fetchArticles = async (limit = 10) => {
+    static fetchOperator = async (limit = 10) => {
         const options = {
            method: 'GET',
            headers: {
@@ -18,7 +18,7 @@ export default class ArticleProvider {
        }
     }
 
-    static getArticle = async (id) => {
+    static getOperator = async (id) => {
         const options = {
            method: 'GET',
            headers: {

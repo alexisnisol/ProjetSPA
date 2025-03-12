@@ -1,22 +1,22 @@
 // Instantiate API
-import ArticleProvider from "./../../services/ArticleProvider.js";
+import OperatorProvider from "../../services/OperatorProvider.js";
 
 export default class Home {
 
     async render() {
-        let articles = await ArticleProvider.fetchArticles(3)
-        let html = articles.map(article =>
+        let operators = await OperatorProvider.fetchOperator(3)
+        let html = operators.map(operator =>
             /*html*/`
             <div class="col">
             <div class="card shadow-sm">
-                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">${article.title}</text></svg>
+                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">${operator.title}</text></svg>
                 <div class="card-body">
-                    <p class="card-text">${article.text ? article.text.slice(0, 100) : ''}</p>
+                    <p class="card-text">${operator.text ? operator.text.slice(0, 100) : ''}</p>
                     <div class="d-flex justify-content-between align-items-center">
                         <div class="btn-group">
-                        <a href="#/articles/${article.id}" class="btn btn-sm btn-outline-secondary">+ détail sur ${article.title}</a>
+                        <a href="#/articles/${operator.id}" class="btn btn-sm btn-outline-secondary">+ détail sur ${operator.title}</a>
                         </div>
-                        <small class="text-body-secondary">${article.id}</small>
+                        <small class="text-body-secondary">${operator.id}</small>
                     </div>
                 </div>
             </div>

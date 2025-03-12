@@ -1,10 +1,10 @@
 import Utils        from '../../services/Utils.js'
-import ArticleProvider from "./../../services/ArticleProvider.js";
+import OperatorProvider from "./../../services/OperatorProvider.js";
 
-export default class ArticleShow {
+export default class OperatorDetail {
     async render () {
         let request = Utils.parseRequestURL()
-        let post = await ArticleProvider.getArticle(request.id)
+        let post = await OperatorProvider.getOperator(request.id)
         
         return /*html*/`
             <section class="section">
