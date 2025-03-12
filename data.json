@@ -1,0 +1,53 @@
+{
+    "specialite" : [
+        {
+            "id" : 0, 
+            "name" : "Assistance"
+        }, 
+
+        {
+            "id" : 0, 
+            "name" : "Assistance"
+        }
+
+    ],
+
+    "specialite_operateur" : [
+        {"id": 0, "operateur_id" : 0, "specialte_id" : 0},
+        {"id": 1, "operateur_id" : 0, "specialte_id" : 1}
+    ],
+
+    "capacite" : [
+        {"id": 0, "nom": "ROBOTHÉONS V10", "image": "skopos.png"}
+    ],
+
+    "armes" : [
+        {"id": 0, "nom": "PCX-33", "type": "Principale", "image": "arme_principale_skopos.png"},
+        {"id": 0, "nom": "P229", "type": "Secondaire", "image": "arme_secondaire_skopos.png"}
+    ],
+
+    "gadgets" : [
+        {"id": 0, "nom": "Grenade à Percussion", "image": "percussion.png"},
+        {"id": 0, "nom": "Alarme de proximité", "image": "alarme.png"}
+    ],
+
+    "operateurs": [
+        {
+            "id" : 0,
+            "nom": "Skopós",
+            "image": "skopos.png",
+            "camps": "Défense",
+            "bio": "Skopós arrive sur le terrain aux commandes de ses deux Robothéons V10, l'un en tant qu'agent, l'autre en tant qu'outil d'observation équipé d'un bouclier renforcé. Bien qu'elle ne puisse contrôler qu'un seul robot à la fois et que la connexion avec les deux machines sera perdue si l'une d'elles est détruite, sa capacité à passer d'un robot à un autre fait de Skopós une agente aussi efficace pour le renseignement que pour le soutien.", 
+            "annee": 3,
+            "saison": 9,
+            "sante": 2,
+            "vitesse": 2,
+            "difficulte": 2,
+            "arme_principale": [0],
+            "arme_secondaire": [1],
+            "gadget1": 0,
+            "gadget2": 1,
+            "capacite_id": 0
+          }
+    ]
+  }
