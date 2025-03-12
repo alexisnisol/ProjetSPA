@@ -9,12 +9,12 @@ export default class Home {
             /*html*/`
             <div class="col">
             <div class="card shadow-sm">
-                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">${operator.title}</text></svg>
+                <img src="/static/img/operators/${operator.image}" class="bd-placeholder-img card-img-top" width="100%" height="500" alt="${operator.nom}">
                 <div class="card-body">
                     <p class="card-text">${operator.nom ? operator.nom.slice(0, 100) : ''}</p>
                     <div class="d-flex justify-content-between align-items-center">
                         <div class="btn-group">
-                        <a href="#/articles/${operator.id}" class="btn btn-sm btn-outline-secondary">+ détail sur ${operator.nom}</a>
+                        <a href="#/operators/${operator.id}" class="btn btn-sm btn-outline-secondary">+ détail sur ${operator.nom}</a>
                         </div>
                         <small class="text-body-secondary">${operator.id}</small>
                     </div>

@@ -62,6 +62,8 @@
         {"id": 1, "nom": "Fusil à pompe", "principale": true},
         {"id": 2, "nom": "Mitraillette", "principale": true},
         {"id": 3, "nom": "Fusil de Sniper", "principale": true},
+        {"id": 4, "nom": "Bouclier", "principale": true},
+        {"id": 5, "nom": "Fusil-Mitrailleur", "principale": true},
 
         {"id": 50, "nom": "Pistolet", "principale": false},
         {"id": 51, "nom": "Pistolet-Mitrailleur", "principale": false},
@@ -113,7 +115,7 @@
         {"id": 33, "nom": "USP40", "classe_arme": 50, "image": "usp40.png"},
 
         {"id": 34, "nom": "AUG A2", "classe_arme": 0, "image": "aug-a2.png"},
-        {"id": 35, "nom": "MP5K", "classe_arme": 2, "image": "mp5k.png"},
+        {"id": 35, "nom": "MP5 K", "classe_arme": 2, "image": "mp5k.png"},
         {"id": 36, "nom": "P12", "classe_arme": 50, "image": "p12.png"},
         {"id": 37, "nom": "KERATOS .357", "classe_arme": 50, "image": "keratos-357.png"},
 
@@ -125,26 +127,58 @@
         {"id": 42, "nom": "SMG-12", "classe_arme": 51, "image": "smg-12.png"},
 
         {"id": 43, "nom": "SDP 9mm", "classe_arme": 50, "image": "sdp-9mm.png"},
-        {"id": 44, "nom": "...", "classe_arme": 0, "image": "example.png"},
-        {"id": 45, "nom": "...", "classe_arme": 0, "image": "example.png"},
-        {"id": 46, "nom": "...", "classe_arme": 0, "image": "example.png"},
-        {"id": 47, "nom": "...", "classe_arme": 0, "image": "example.png"},
-        {"id": 48, "nom": "...", "classe_arme": 0, "image": "example.png"},
-        {"id": 49, "nom": "...", "classe_arme": 0, "image": "example.png"},
-        {"id": 50, "nom": "...", "classe_arme": 0, "image": "example.png"},
-        {"id": 51, "nom": "...", "classe_arme": 0, "image": "example.png"},
-        {"id": 52, "nom": "...", "classe_arme": 0, "image": "example.png"},
-        {"id": 53, "nom": "...", "classe_arme": 0, "image": "example.png"}
+
+        {"id": 44, "nom": "MP5", "classe_arme": 2, "image": "mp5.png"},
+
+        {"id": 45, "nom": "AUG A3", "classe_arme": 2, "image": "aug-a3.png"},
+        {"id": 46, "nom": ".44 MAG Semi-Auto", "classe_arme": 50, "image": "44-mag-semi-auto.png"},
+        {"id": 47, "nom": "LFP586", "classe_arme": 0, "image": "lfp586.png"},
+
+        {"id": 48, "nom": "Bouclier AEE", "classe_arme": 4, "image": "bouclier-aee.png"},
+        {"id": 49, "nom": "SPSMG9", "classe_arme": 51, "image": "spsmg9.png"},
+
+        {"id": 50, "nom": "ALDA 5.56", "classe_arme": 5, "image": "alda-5-56.png"},
+
+        {"id": 51, "nom": "MX4 Storm", "classe_arme": 2, "image": "mx4-storm.png"},
+        
+        {"id": 52, "nom": "K1A", "classe_arme": 2, "image": "k1a.png"},
+        {"id": 53, "nom": "BOSG.12.2", "classe_arme": 1, "image": "bosg-12-2.png"},
+
+        {"id": 54, "nom": "...", "classe_arme": 0, "image": "example.png"},
+        {"id": 55, "nom": "...", "classe_arme": 0, "image": "example.png"},
+        {"id": 56, "nom": "...", "classe_arme": 0, "image": "example.png"},
+        {"id": 57, "nom": "...", "classe_arme": 0, "image": "example.png"},
+        {"id": 58, "nom": "...", "classe_arme": 0, "image": "example.png"},
+        {"id": 59, "nom": "...", "classe_arme": 0, "image": "example.png"},
+        {"id": 60, "nom": "...", "classe_arme": 0, "image": "example.png"},
+        {"id": 61, "nom": "...", "classe_arme": 0, "image": "example.png"},
+        {"id": 62, "nom": "...", "classe_arme": 0, "image": "example.png"},
+        {"id": 63, "nom": "...", "classe_arme": 0, "image": "example.png"},
+        {"id": 64, "nom": "...", "classe_arme": 0, "image": "example.png"},
+        {"id": 65, "nom": "...", "classe_arme": 0, "image": "example.png"},
+        {"id": 66, "nom": "...", "classe_arme": 0, "image": "example.png"},
+        {"id": 67, "nom": "...", "classe_arme": 0, "image": "example.png"},
+        {"id": 68, "nom": "...", "classe_arme": 0, "image": "example.png"},
+        {"id": 69, "nom": "...", "classe_arme": 0, "image": "example.png"},
+        {"id": 70, "nom": "...", "classe_arme": 0, "image": "example.png"},
+        {"id": 71, "nom": "...", "classe_arme": 0, "image": "example.png"},
+        {"id": 72, "nom": "...", "classe_arme": 0, "image": "example.png"},
+        {"id": 73, "nom": "...", "classe_arme": 0, "image": "example.png"},
+        {"id": 74, "nom": "...", "classe_arme": 0, "image": "example.png"},
+        {"id": 75, "nom": "...", "classe_arme": 0, "image": "example.png"},
+        {"id": 76, "nom": "...", "classe_arme": 0, "image": "example.png"},
+        {"id": 77, "nom": "...", "classe_arme": 0, "image": "example.png"},
+        {"id": 78, "nom": "...", "classe_arme": 0, "image": "example.png"},
     ],
 
     "gadgets" : [
-        {"id": 0, "nom": "Grenade à Percussion", "image": "percussion.png"},
-        {"id": 1, "nom": "Alarme de proximité", "image": "alarme.png"},
-        {"id": 2, "nom": "Fil barbelé", "image": "fil-barbele.png"},
-        {"id": 3, "nom": "Caméra blindée", "image": "camera-blindee.png"},
-        {"id": 4, "nom": "Bouclier déployable", "image": "bouclier-deployable.png"},
-        {"id": 5, "nom": "Bloqueur d'observation", "image": "bloqueur-observation.png"},
-        {"id": 6, "nom": "Nitro", "image": "nitro.png"}
+        {"id": 0, "nom": "Grenade à Percussion", "image": "impact_grenade.png"},
+        {"id": 1, "nom": "Alarme de proximité", "image": "alarme_proximite.png"},
+        {"id": 2, "nom": "Fil barbelé", "image": "barbed_wire.png"},
+        {"id": 3, "nom": "Caméra blindée", "image": "bulletproof_camera.png"},
+        {"id": 4, "nom": "Bouclier déployable", "image": "deployable_shield.png"},
+        {"id": 5, "nom": "Bloqueur d'observation", "image": "observation_blocker.png"},
+        {"id": 6, "nom": "Nitro", "image": "nitro_cell.png"}
     ],
 
     "capacite" : [
@@ -308,7 +342,7 @@
             "bio": "Le gadget Banshee peut être déployé sur n'importe quelle surface, à l'instar de l'Evil Eye de Maestro, mais il opère de façon totalement autonome. Dès qu'un ennemi entre dans son rayon d'action, il émet un son et ralentit sa progression. Il peut être détruit, bien sûr, mais comme il résiste aux balles, les assaillants devront faire appel à des utilitaires ou s'approcher pour le frapper.",
             "annee": 0, "saison": 0,
             "sante": 3, "vitesse": 1, "difficulte": 1,
-            "arme_principale": [6],
+            "arme_principale": [44],
             "arme_secondaire": [25],
             "gadget": 3
         },
