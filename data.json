@@ -37,15 +37,20 @@
         {"id": 16, "operateur_id" : 9, "specialite_id" : 0},
         {"id": 17, "operateur_id" : 9, "specialite_id" : 5},
 
-        {"id": 18, "operateur_id" : 0, "specialite_id" : 1},
-        {"id": 19, "operateur_id" : 0, "specialite_id" : 1},
-        {"id": 20, "operateur_id" : 0, "specialite_id" : 1},
-        {"id": 21, "operateur_id" : 0, "specialite_id" : 1},
-        {"id": 22, "operateur_id" : 0, "specialite_id" : 1},
-        {"id": 23, "operateur_id" : 0, "specialite_id" : 1},
-        {"id": 24, "operateur_id" : 0, "specialite_id" : 1},
-        {"id": 25, "operateur_id" : 0, "specialite_id" : 1},
-        {"id": 26, "operateur_id" : 0, "specialite_id" : 1},
+        {"id": 18, "operateur_id" : 10, "specialite_id" : 1},
+
+        {"id": 19, "operateur_id" : 11, "specialite_id" : 3},
+        {"id": 20, "operateur_id" : 11, "specialite_id" : 4},
+
+        {"id": 21, "operateur_id" : 12, "specialite_id" : 2},
+        {"id": 22, "operateur_id" : 12, "specialite_id" : 4},
+
+        {"id": 23, "operateur_id" : 13, "specialite_id" : 3},
+        {"id": 24, "operateur_id" : 13, "specialite_id" : 0},
+
+        {"id": 25, "operateur_id" : 14, "specialite_id" : 3},
+        {"id": 26, "operateur_id" : 14, "specialite_id" : 0},
+
         {"id": 27, "operateur_id" : 0, "specialite_id" : 1},
         {"id": 28, "operateur_id" : 0, "specialite_id" : 1},
         {"id": 29, "operateur_id" : 0, "specialite_id" : 1},
@@ -103,19 +108,23 @@
         {"id": 29, "nom": "SUPER 90", "classe_arme": 1, "image": "super-90.png"},
         {"id": 30, "nom": "RG15", "classe_arme": 50, "image": "rg15.png"},
 
-        {"id": 31, "nom": "...", "classe_arme": 0, "image": "example.png"},
-        {"id": 32, "nom": "...", "classe_arme": 0, "image": "example.png"},
-        {"id": 33, "nom": "...", "classe_arme": 0, "image": "example.png"},
-        {"id": 34, "nom": "...", "classe_arme": 0, "image": "example.png"},
-        {"id": 35, "nom": "...", "classe_arme": 0, "image": "example.png"},
-        {"id": 36, "nom": "...", "classe_arme": 0, "image": "example.png"},
-        {"id": 37, "nom": "...", "classe_arme": 0, "image": "example.png"},
-        {"id": 38, "nom": "...", "classe_arme": 0, "image": "example.png"},
-        {"id": 39, "nom": "...", "classe_arme": 0, "image": "example.png"},
-        {"id": 40, "nom": "...", "classe_arme": 0, "image": "example.png"},
-        {"id": 41, "nom": "...", "classe_arme": 0, "image": "example.png"},
-        {"id": 42, "nom": "...", "classe_arme": 0, "image": "example.png"},
-        {"id": 43, "nom": "...", "classe_arme": 0, "image": "example.png"},
+        {"id": 31, "nom": "SPAS-12", "classe_arme": 1, "image": "spas-12.png"},
+        {"id": 32, "nom": "T-5 SMG", "classe_arme": 2, "image": "t-5-smg.png"},
+        {"id": 33, "nom": "USP40", "classe_arme": 50, "image": "usp40.png"},
+
+        {"id": 34, "nom": "AUG A2", "classe_arme": 0, "image": "aug-a2.png"},
+        {"id": 35, "nom": "MP5K", "classe_arme": 2, "image": "mp5k.png"},
+        {"id": 36, "nom": "P12", "classe_arme": 50, "image": "p12.png"},
+        {"id": 37, "nom": "KERATOS .357", "classe_arme": 50, "image": "keratos-357.png"},
+
+        {"id": 38, "nom": "Vector .45 ACP", "classe_arme": 2, "image": "vector-45-acp.png"},
+        {"id": 39, "nom": "TCSG12", "classe_arme": 1, "image": "tcsg12.png"},
+
+        {"id": 40, "nom": "M590A1", "classe_arme": 1, "image": "m590a1.png"},
+        {"id": 41, "nom": "P-10C", "classe_arme": 50, "image": "p-10c.png"},
+        {"id": 42, "nom": "SMG-12", "classe_arme": 51, "image": "smg-12.png"},
+
+        {"id": 43, "nom": "SDP 9mm", "classe_arme": 50, "image": "sdp-9mm.png"},
         {"id": 44, "nom": "...", "classe_arme": 0, "image": "example.png"},
         {"id": 45, "nom": "...", "classe_arme": 0, "image": "example.png"},
         {"id": 46, "nom": "...", "classe_arme": 0, "image": "example.png"},
@@ -149,11 +158,11 @@
         {"id": 7, "nom": "Station Kona", "image": "thunderbird.png"},
         {"id": 8, "nom": "Portail Surya", "image": "aruni.png"},
         {"id": 9, "nom": "Défense Sonique Banshee", "image": "melusi.png"},
-        {"id": 10, "nom": "...", "image": "sentry.png"},
-        {"id": 11, "nom": "...", "image": "sentry.png"},
-        {"id": 12, "nom": "...", "image": "sentry.png"},
-        {"id": 13, "nom": "...", "image": "sentry.png"},
-        {"id": 14, "nom": "...", "image": "sentry.png"},
+        {"id": 10, "nom": "Remah Dash", "image": "oryx.png"},
+        {"id": 11, "nom": "Système MAG-NET", "image": "wamai.png"},
+        {"id": 12, "nom": "Bombe Toxique Volcan", "image": "goyo.png"},
+        {"id": 13, "nom": "Lunettes Intelligentes - Regard", "image": "warden.png"},
+        {"id": 14, "nom": "Lance-parasite", "image": "mozzie.png"},
         {"id": 15, "nom": "...", "image": "sentry.png"},
         {"id": 16, "nom": "...", "image": "sentry.png"},
         {"id": 17, "nom": "...", "image": "sentry.png"},
@@ -184,7 +193,7 @@
             "sante": 2, "vitesse": 2, "difficulte": 2,
             "arme_principale": [0],
             "arme_secondaire": [1],
-            "gadget1": 0, "gadget2": 1
+            "gadget": 0
         },
         {
             "id" : 1,
@@ -197,7 +206,7 @@
             "sante": 2, "vitesse": 2, "difficulte": 1,
             "arme_principale": [2],
             "arme_secondaire": [4],
-            "gadget1": 2, "gadget2": 3
+            "gadget": 2
         },
         {
             "id" : 2,
@@ -210,7 +219,7 @@
             "sante": 2, "vitesse": 2, "difficulte": 2,
             "arme_principale": [6],
             "arme_secondaire": [8],
-            "gadget1": 6, "gadget2": 1
+            "gadget": 6
         },
         {
             "id" : 3,
@@ -223,7 +232,7 @@
             "sante": 2, "vitesse": 2, "difficulte": 3,
             "arme_principale": [9],
             "arme_secondaire": [11],
-            "gadget1": 3, "gadget2": 5
+            "gadget": 3
         },
         {
             "id" : 4,
@@ -236,7 +245,7 @@
             "sante": 2, "vitesse": 2, "difficulte": 3,
             "arme_principale": [13],
             "arme_secondaire": [15],
-            "gadget1": 3, "gadget2": 1
+            "gadget": 3
         },
         {
             "id" : 5,
@@ -249,7 +258,7 @@
             "sante": 2, "vitesse": 2, "difficulte": 3,
             "arme_principale": [0],
             "arme_secondaire": [0],
-            "gadget1": 0, "gadget2": 2
+            "gadget": 0
         },
         {
             "id" : 6,
@@ -262,7 +271,7 @@
             "sante": 2, "vitesse": 2, "difficulte": 1,
             "arme_principale": [19],
             "arme_secondaire": [20],
-            "gadget1": 4, "gadget2": 2
+            "gadget": 4
         },
         {
             "id" : 7,
@@ -275,7 +284,7 @@
             "sante": 2, "vitesse": 2, "difficulte": 1,
             "arme_principale": [21],
             "arme_secondaire": [23],
-            "gadget1": 2, "gadget2": 3
+            "gadget": 2
         },
         {
             "id" : 8,
@@ -288,7 +297,7 @@
             "sante": 3, "vitesse": 1, "difficulte": 2,
             "arme_principale": [26],
             "arme_secondaire": [28],
-            "gadget1": 3, "gadget2": 2
+            "gadget": 3
         },
         {
             "id" : 9,
@@ -301,72 +310,72 @@
             "sante": 3, "vitesse": 1, "difficulte": 1,
             "arme_principale": [6],
             "arme_secondaire": [25],
-            "gadget1": 3, "gadget2": 0
+            "gadget": 3
         },
         {
             "id" : 10,
             "capacite_id": 10,
-            "nom": "Sentry",
-            "image": "sentry.png",
+            "nom": "Oryx",
+            "image": "oryx.png",
             "camps": "Défense",
-            "bio": "...",
+            "bio": "Le Sprint Remah lui permet de patrouiller efficacement et de couvrir de courtes distances avec une rapidité sans égale. Il peut également être utilisé pour étourdir les adversaires et sprinter à traverser les murs destructibles, ce qui crée une ouverture. Attention toutefois, car il perd de la santé à chaque fois que le Sprint Remah est utilisé pour détruire un mur. En outre, Oryx dispose de la capacité unique d'interagir avec les trappes cassées. Il peut passer à travers pour remonter pour une rotation rapide ou se suspendre au bord pour jeter un coup d'oeil ou attendre le parfait moment pour monter. Tant qu'il est suspendu, il peut également choisir de redescendre si l'ascension semble trop dangereuse.",
             "annee": 0, "saison": 0,
             "sante": 2, "vitesse": 2, "difficulte": 2,
-            "arme_principale": [0],
-            "arme_secondaire": [0],
-            "gadget1": 0, "gadget2": 0
+            "arme_principale": [31],
+            "arme_secondaire": [12],
+            "gadget": 2
         },
         {
             "id" : 11,
             "capacite_id": 11,
-            "nom": "Sentry",
-            "image": "sentry.png",
+            "nom": "Wamai",
+            "image": "wamai.png",
             "camps": "Défense",
-            "bio": "...",
+            "bio": "Le système Mag-NET est un gadget adhésif à lancer. Il adhère aux surfaces et attend. Sa fonction est d'attirer le projectile d'un ennemi vers sa position, puis de s'autodétruire en faisant exploser ce projectile. De cette manière, Wamai peut non seulement neutraliser les grenades et projectiles des assaillants, mais aussi se servir d'un placement stratégique pour retourner ces projectiles contre eux.",
             "annee": 0, "saison": 0,
             "sante": 2, "vitesse": 2, "difficulte": 2,
-            "arme_principale": [0],
-            "arme_secondaire": [0],
-            "gadget1": 0, "gadget2": 0
+            "arme_principale": [34],
+            "arme_secondaire": [36],
+            "gadget": 1
         },
         {
             "id" : 12,
             "capacite_id": 12,
-            "nom": "Sentry",
-            "image": "sentry.png",
+            "nom": "Goyo",
+            "image": "goyo.png",
             "camps": "Défense",
-            "bio": "...",
+            "bio": "Tout comme les boucliers déployables ordinaires, le bouclier Volcán procure une couverture et permet aux défenseurs de bloquer le passage, mais Goyo pimente les choses avec une bombe incendiaire qui y est fixée. Vu de devant, pourtant, impossible de dire de quel type de bouclier il s'agit. Jusqu'à ce que quelqu'un tire sur la bombe pour la faire exploser, le bouclier fait obstacle aux assaillants.",
             "annee": 0, "saison": 0,
             "sante": 2, "vitesse": 2, "difficulte": 2,
-            "arme_principale": [0],
-            "arme_secondaire": [0],
-            "gadget1": 0, "gadget2": 0
+            "arme_principale": [38],
+            "arme_secondaire": [1],
+            "gadget": 1
         },
         {
             "id" : 13,
             "capacite_id": 13,
-            "nom": "Sentry",
-            "image": "sentry.png",
+            "nom": "Warden",
+            "image": "warden.png",
             "camps": "Défense",
-            "bio": "...",
+            "bio": "La fonction que remplit le Regard était quasiment inexistante chez les défenseurs. Tant qu’il est actif, Warden peut voir à travers la fumée et renverser le manque de renseignements infligé à son équipe. En activant ses Lunettes intelligentes, Warden peut également se protéger des effets aveuglants, ou recouvrer la vue pendant un aveuglement : cela lui permet de reprendre en main ces quelques secondes de danger. Toutefois, la vision thermique du Regard ne fonctionne que si Warden reste immobile. S'il bouge, il sera affecté par la fumée, comme les autres agents. Le Regard est un effet déclenché, il nécessite donc un temps de rechargement après chaque utilisation.",
             "annee": 0, "saison": 0,
-            "sante": 2, "vitesse": 2, "difficulte": 2,
-            "arme_principale": [0],
-            "arme_secondaire": [0],
-            "gadget1": 0, "gadget2": 0
+            "sante": 3, "vitesse": 1, "difficulte": 2,
+            "arme_principale": [40],
+            "arme_secondaire": [41],
+            "gadget": 4
         },
         {
             "id" : 14,
             "capacite_id": 14,
-            "nom": "Sentry",
-            "image": "sentry.png",
+            "nom": "Mozzie",
+            "image": "mozzie.png",
             "camps": "Défense",
-            "bio": "...",
+            "bio": "L'arme de Mozzie, les « nuisibles », sont de minuscules robots quadrupèdes qui peuvent être utilisés pour cibler un drone, ou déployés dans une zone pour empêcher ce dernier d'y accéder. Une fois déployé, le nuisible s'accroche au drone ennemi le plus proche et entrave sa vision. Il initie ensuite une séquence de déblocage pour pirater le drone et permettre à Mozzie de le contrôler. Il peut ainsi recueillir des renseignements sur l'ennemi sans risquer de se faire pirater à son tour. Un nuisible ne peut être utilisé qu'une seule fois : une fois le drone ennemi piraté et contrôlé par Mozzie, le robot s'autodétruit et ne laisse aucune trace.",
             "annee": 0, "saison": 0,
             "sante": 2, "vitesse": 2, "difficulte": 2,
-            "arme_principale": [0],
-            "arme_secondaire": [0],
-            "gadget1": 0, "gadget2": 0
+            "arme_principale": [2],
+            "arme_secondaire": [43],
+            "gadget": 2
         },
         {
             "id" : 15,
@@ -379,7 +388,7 @@
             "sante": 2, "vitesse": 2, "difficulte": 2,
             "arme_principale": [0],
             "arme_secondaire": [0],
-            "gadget1": 0, "gadget2": 0
+            "gadget": 0
         },
         {
             "id" : 16,
@@ -392,7 +401,7 @@
             "sante": 2, "vitesse": 2, "difficulte": 2,
             "arme_principale": [0],
             "arme_secondaire": [0],
-            "gadget1": 0, "gadget2": 0
+            "gadget": 0
         },
         {
             "id" : 17,
@@ -405,7 +414,7 @@
             "sante": 2, "vitesse": 2, "difficulte": 2,
             "arme_principale": [0],
             "arme_secondaire": [0],
-            "gadget1": 0, "gadget2": 0
+            "gadget": 0
         },
         {
             "id" : 18,
@@ -418,7 +427,7 @@
             "sante": 2, "vitesse": 2, "difficulte": 2,
             "arme_principale": [0],
             "arme_secondaire": [0],
-            "gadget1": 0, "gadget2": 0
+            "gadget": 0
         },
         {
             "id" : 19,
@@ -431,7 +440,7 @@
             "sante": 2, "vitesse": 2, "difficulte": 2,
             "arme_principale": [0],
             "arme_secondaire": [0],
-            "gadget1": 0, "gadget2": 0
+            "gadget": 0
         },
         {
             "id" : 20,
@@ -444,7 +453,7 @@
             "sante": 2, "vitesse": 2, "difficulte": 2,
             "arme_principale": [0],
             "arme_secondaire": [0],
-            "gadget1": 0, "gadget2": 0
+            "gadget": 0
         },
         {
             "id" : 21,
@@ -457,7 +466,7 @@
             "sante": 2, "vitesse": 2, "difficulte": 2,
             "arme_principale": [0],
             "arme_secondaire": [0],
-            "gadget1": 0, "gadget2": 0
+            "gadget": 0
         },
         {
             "id" : 22,
@@ -470,7 +479,7 @@
             "sante": 2, "vitesse": 2, "difficulte": 2,
             "arme_principale": [0],
             "arme_secondaire": [0],
-            "gadget1": 0, "gadget2": 0
+            "gadget": 0
         },
         {
             "id" : 23,
@@ -483,7 +492,7 @@
             "sante": 2, "vitesse": 2, "difficulte": 2,
             "arme_principale": [0],
             "arme_secondaire": [0],
-            "gadget1": 0, "gadget2": 0
+            "gadget": 0
         },
         {
             "id" : 24,
@@ -496,7 +505,7 @@
             "sante": 2, "vitesse": 2, "difficulte": 2,
             "arme_principale": [0],
             "arme_secondaire": [0],
-            "gadget1": 0, "gadget2": 0
+            "gadget": 0
         },
         {
             "id" : 25,
@@ -509,7 +518,7 @@
             "sante": 2, "vitesse": 2, "difficulte": 2,
             "arme_principale": [0],
             "arme_secondaire": [0],
-            "gadget1": 0, "gadget2": 0
+            "gadget": 0
         },
         {
             "id" : 26,
@@ -522,7 +531,7 @@
             "sante": 2, "vitesse": 2, "difficulte": 2,
             "arme_principale": [0],
             "arme_secondaire": [0],
-            "gadget1": 0, "gadget2": 0
+            "gadget": 0
         },
         {
             "id" : 27,
@@ -535,7 +544,7 @@
             "sante": 2, "vitesse": 2, "difficulte": 2,
             "arme_principale": [0],
             "arme_secondaire": [0],
-            "gadget1": 0, "gadget2": 0
+            "gadget": 0
         },
         {
             "id" : 28,
@@ -548,7 +557,7 @@
             "sante": 2, "vitesse": 2, "difficulte": 2,
             "arme_principale": [0],
             "arme_secondaire": [0],
-            "gadget1": 0, "gadget2": 0
+            "gadget": 0
         },
         {
             "id" : 29,
@@ -561,7 +570,7 @@
             "sante": 2, "vitesse": 2, "difficulte": 2,
             "arme_principale": [0],
             "arme_secondaire": [0],
-            "gadget1": 0, "gadget2": 0
+            "gadget": 0
         },
         {
             "id" : 30,
@@ -574,7 +583,7 @@
             "sante": 2, "vitesse": 2, "difficulte": 2,
             "arme_principale": [0],
             "arme_secondaire": [0],
-            "gadget1": 0, "gadget2": 0
+            "gadget": 0
         },
         {
             "id" : 31,
@@ -587,7 +596,7 @@
             "sante": 2, "vitesse": 2, "difficulte": 2,
             "arme_principale": [0],
             "arme_secondaire": [0],
-            "gadget1": 0, "gadget2": 0
+            "gadget": 0
         },
         {
             "id" : 32,
@@ -600,7 +609,7 @@
             "sante": 2, "vitesse": 2, "difficulte": 2,
             "arme_principale": [0],
             "arme_secondaire": [0],
-            "gadget1": 0, "gadget2": 0
+            "gadget": 0
         },
         {
             "id" : 33,
@@ -613,7 +622,7 @@
             "sante": 2, "vitesse": 2, "difficulte": 2,
             "arme_principale": [0],
             "arme_secondaire": [0],
-            "gadget1": 0, "gadget2": 0
+            "gadget": 0
         },
         {
             "id" : 34,
@@ -626,7 +635,7 @@
             "sante": 2, "vitesse": 2, "difficulte": 2,
             "arme_principale": [0],
             "arme_secondaire": [0],
-            "gadget1": 0, "gadget2": 0
+            "gadget": 0
         },
         {
             "id" : 35,
@@ -639,7 +648,7 @@
             "sante": 2, "vitesse": 2, "difficulte": 2,
             "arme_principale": [0],
             "arme_secondaire": [0],
-            "gadget1": 0, "gadget2": 0
+            "gadget": 0
         },
         {
             "id" : 36,
@@ -652,7 +661,7 @@
             "sante": 2, "vitesse": 2, "difficulte": 2,
             "arme_principale": [0],
             "arme_secondaire": [0],
-            "gadget1": 0, "gadget2": 0
+            "gadget": 0
         },
         {
             "id" : 37,
@@ -665,7 +674,7 @@
             "sante": 2, "vitesse": 2, "difficulte": 2,
             "arme_principale": [0],
             "arme_secondaire": [0],
-            "gadget1": 0, "gadget2": 0
+            "gadget": 0
         },
         {
             "id" : 38,
@@ -678,7 +687,7 @@
             "sante": 2, "vitesse": 2, "difficulte": 2,
             "arme_principale": [0],
             "arme_secondaire": [0],
-            "gadget1": 0, "gadget2": 0
+            "gadget": 0
         },
         {
             "id" : 39,
@@ -691,7 +700,7 @@
             "sante": 2, "vitesse": 2, "difficulte": 2,
             "arme_principale": [0],
             "arme_secondaire": [0],
-            "gadget1": 0, "gadget2": 0
+            "gadget": 0
         },
         {
             "id" : 40,
@@ -704,7 +713,7 @@
             "sante": 2, "vitesse": 2, "difficulte": 2,
             "arme_principale": [0],
             "arme_secondaire": [0],
-            "gadget1": 0, "gadget2": 0
+            "gadget": 0
         },
         {
             "id" : 41,
@@ -717,7 +726,7 @@
             "sante": 2, "vitesse": 2, "difficulte": 2,
             "arme_principale": [0],
             "arme_secondaire": [0],
-            "gadget1": 0, "gadget2": 0
+            "gadget": 0
         },
         {
             "id" : 42,
@@ -730,7 +739,7 @@
             "sante": 2, "vitesse": 2, "difficulte": 2,
             "arme_principale": [0],
             "arme_secondaire": [0],
-            "gadget1": 0, "gadget2": 0
+            "gadget": 0
         },
         {
             "id" : 43,
@@ -743,7 +752,7 @@
             "sante": 2, "vitesse": 2, "difficulte": 2,
             "arme_principale": [0],
             "arme_secondaire": [0],
-            "gadget1": 0, "gadget2": 0
+            "gadget": 0
         },
         {
             "id" : 44,
@@ -756,7 +765,7 @@
             "sante": 2, "vitesse": 2, "difficulte": 2,
             "arme_principale": [0],
             "arme_secondaire": [0],
-            "gadget1": 0, "gadget2": 0
+            "gadget": 0
         },
         {
             "id" : 45,
@@ -769,7 +778,7 @@
             "sante": 2, "vitesse": 2, "difficulte": 2,
             "arme_principale": [0],
             "arme_secondaire": [0],
-            "gadget1": 0, "gadget2": 0
+            "gadget": 0
         },
         {
             "id" : 46,
@@ -782,7 +791,7 @@
             "sante": 2, "vitesse": 2, "difficulte": 2,
             "arme_principale": [0],
             "arme_secondaire": [0],
-            "gadget1": 0, "gadget2": 0
+            "gadget": 0
         },
         {
             "id" : 47,
@@ -795,7 +804,7 @@
             "sante": 2, "vitesse": 2, "difficulte": 2,
             "arme_principale": [0],
             "arme_secondaire": [0],
-            "gadget1": 0, "gadget2": 0
+            "gadget": 0
         },
         {
             "id" : 48,
@@ -808,7 +817,7 @@
             "sante": 2, "vitesse": 2, "difficulte": 2,
             "arme_principale": [0],
             "arme_secondaire": [0],
-            "gadget1": 0, "gadget2": 0
+            "gadget": 0
         },
         {
             "id" : 49,
@@ -821,7 +830,7 @@
             "sante": 2, "vitesse": 2, "difficulte": 2,
             "arme_principale": [0],
             "arme_secondaire": [0],
-            "gadget1": 0, "gadget2": 0
+            "gadget": 0
         },
         {
             "id" : 50,
@@ -834,7 +843,7 @@
             "sante": 2, "vitesse": 2, "difficulte": 2,
             "arme_principale": [0],
             "arme_secondaire": [0],
-            "gadget1": 0, "gadget2": 0
+            "gadget": 0
         },
         {
             "id" : 51,
@@ -847,7 +856,7 @@
             "sante": 2, "vitesse": 2, "difficulte": 2,
             "arme_principale": [0],
             "arme_secondaire": [0],
-            "gadget1": 0, "gadget2": 0
+            "gadget": 0
         },
         {
             "id" : 52,
@@ -860,7 +869,7 @@
             "sante": 2, "vitesse": 2, "difficulte": 2,
             "arme_principale": [0],
             "arme_secondaire": [0],
-            "gadget1": 0, "gadget2": 0
+            "gadget": 0
         },
         {
             "id" : 53,
@@ -873,7 +882,7 @@
             "sante": 2, "vitesse": 2, "difficulte": 2,
             "arme_principale": [0],
             "arme_secondaire": [0],
-            "gadget1": 0, "gadget2": 0
+            "gadget": 0
         },
         {
             "id" : 54,
@@ -886,7 +895,7 @@
             "sante": 2, "vitesse": 2, "difficulte": 2,
             "arme_principale": [0],
             "arme_secondaire": [0],
-            "gadget1": 0, "gadget2": 0
+            "gadget": 0
         },
         {
             "id" : 55,
@@ -899,7 +908,7 @@
             "sante": 2, "vitesse": 2, "difficulte": 2,
             "arme_principale": [0],
             "arme_secondaire": [0],
-            "gadget1": 0, "gadget2": 0
+            "gadget": 0
         },
         {
             "id" : 56,
@@ -912,7 +921,7 @@
             "sante": 2, "vitesse": 2, "difficulte": 2,
             "arme_principale": [0],
             "arme_secondaire": [0],
-            "gadget1": 0, "gadget2": 0
+            "gadget": 0
         },
         {
             "id" : 57,
@@ -925,7 +934,7 @@
             "sante": 2, "vitesse": 2, "difficulte": 2,
             "arme_principale": [0],
             "arme_secondaire": [0],
-            "gadget1": 0, "gadget2": 0
+            "gadget": 0
         },
         {
             "id" : 58,
@@ -938,7 +947,7 @@
             "sante": 2, "vitesse": 2, "difficulte": 2,
             "arme_principale": [0],
             "arme_secondaire": [0],
-            "gadget1": 0, "gadget2": 0
+            "gadget": 0
         },
         {
             "id" : 59,
@@ -951,7 +960,7 @@
             "sante": 2, "vitesse": 2, "difficulte": 2,
             "arme_principale": [0],
             "arme_secondaire": [0],
-            "gadget1": 0, "gadget2": 0
+            "gadget": 0
         },
         {
             "id" : 60,
@@ -964,7 +973,7 @@
             "sante": 2, "vitesse": 2, "difficulte": 2,
             "arme_principale": [0],
             "arme_secondaire": [0],
-            "gadget1": 0, "gadget2": 0
+            "gadget": 0
         },
         {
             "id" : 61,
@@ -977,7 +986,7 @@
             "sante": 2, "vitesse": 2, "difficulte": 2,
             "arme_principale": [0],
             "arme_secondaire": [0],
-            "gadget1": 0, "gadget2": 0
+            "gadget": 0
         },
         {
             "id" : 62,
@@ -990,7 +999,7 @@
             "sante": 2, "vitesse": 2, "difficulte": 2,
             "arme_principale": [0],
             "arme_secondaire": [0],
-            "gadget1": 0, "gadget2": 0
+            "gadget": 0
         },
         {
             "id" : 63,
@@ -1003,7 +1012,7 @@
             "sante": 2, "vitesse": 2, "difficulte": 2,
             "arme_principale": [0],
             "arme_secondaire": [0],
-            "gadget1": 0, "gadget2": 0
+            "gadget": 0
         },
         {
             "id" : 64,
@@ -1016,7 +1025,7 @@
             "sante": 2, "vitesse": 2, "difficulte": 2,
             "arme_principale": [0],
             "arme_secondaire": [0],
-            "gadget1": 0, "gadget2": 0
+            "gadget": 0
         },
         {
             "id" : 65,
@@ -1029,7 +1038,7 @@
             "sante": 2, "vitesse": 2, "difficulte": 2,
             "arme_principale": [0],
             "arme_secondaire": [0],
-            "gadget1": 0, "gadget2": 0
+            "gadget": 0
         },
         {
             "id" : 66,
@@ -1042,7 +1051,7 @@
             "sante": 2, "vitesse": 2, "difficulte": 2,
             "arme_principale": [0],
             "arme_secondaire": [0],
-            "gadget1": 0, "gadget2": 0
+            "gadget": 0
         },
         {
             "id" : 67,
@@ -1055,7 +1064,7 @@
             "sante": 2, "vitesse": 2, "difficulte": 2,
             "arme_principale": [0],
             "arme_secondaire": [0],
-            "gadget1": 0, "gadget2": 0
+            "gadget": 0
         },
         {
             "id" : 68,
@@ -1068,7 +1077,7 @@
             "sante": 2, "vitesse": 2, "difficulte": 2,
             "arme_principale": [0],
             "arme_secondaire": [0],
-            "gadget1": 0, "gadget2": 0
+            "gadget": 0
         },
         {
             "id" : 69,
@@ -1081,7 +1090,7 @@
             "sante": 2, "vitesse": 2, "difficulte": 2,
             "arme_principale": [0],
             "arme_secondaire": [0],
-            "gadget1": 0, "gadget2": 0
+            "gadget": 0
         },
         {
             "id" : 70,
@@ -1094,7 +1103,7 @@
             "sante": 2, "vitesse": 2, "difficulte": 2,
             "arme_principale": [0],
             "arme_secondaire": [0],
-            "gadget1": 0, "gadget2": 0
+            "gadget": 0
         },
         {
             "id" : 71,
@@ -1107,7 +1116,7 @@
             "sante": 2, "vitesse": 2, "difficulte": 2,
             "arme_principale": [0],
             "arme_secondaire": [0],
-            "gadget1": 0, "gadget2": 0
+            "gadget": 0
         },
         {
             "id" : 72,
@@ -1120,7 +1129,7 @@
             "sante": 2, "vitesse": 2, "difficulte": 2,
             "arme_principale": [0],
             "arme_secondaire": [0],
-            "gadget1": 0, "gadget2": 0
+            "gadget": 0
         },
         {
             "id" : 73,
@@ -1133,7 +1142,7 @@
             "sante": 2, "vitesse": 2, "difficulte": 2,
             "arme_principale": [0],
             "arme_secondaire": [0],
-            "gadget1": 0, "gadget2": 0
+            "gadget": 0
         },
         {
             "id" : 74,
@@ -1146,7 +1155,7 @@
             "sante": 2, "vitesse": 2, "difficulte": 2,
             "arme_principale": [0],
             "arme_secondaire": [0],
-            "gadget1": 0, "gadget2": 0
+            "gadget": 0
         }
     ]
 }
