@@ -27,6 +27,13 @@ const router = async () => {
     let parsedURL = (request.resource ? '/' + request.resource : '/') + (request.id ? '/:id' : '') + (request.verb ? '/' + request.verb : '')
 
     let page = routes[parsedURL] ? new routes[parsedURL] : Error404
+
+
+    //get_head est une méthode asynchrone, on attend donc qu'elle soit résolue
+    let override_head = await page.get_head();
+    //on ajoute le contenu de la méthode get_head dans le head en gardant le contenu déjà présent
+    document.head.innerHTML += override_head;
+    
     
     //await, car on attend que toutes les promesses soient résolues dans la méthode render
     content.innerHTML = await page.render();
