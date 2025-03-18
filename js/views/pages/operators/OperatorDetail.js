@@ -1,7 +1,8 @@
-import Utils        from '../../../services/Utils.js'
+import Utils from '../../../services/Utils.js'
 import OperatorProvider from "./../../../services/OperatorProvider.js";
+import Views from "../../Views.js";
 
-export default class OperatorDetail {
+export default class OperatorDetail extends Views {
     async render () {
         let request = Utils.parseRequestURL()
         let post = await OperatorProvider.getOperator(request.id)

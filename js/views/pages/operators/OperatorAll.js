@@ -1,6 +1,7 @@
 import OperatorProvider from "../../../services/OperatorProvider.js";
+import Views from "../../Views.js";
 
-export default class OperatorAll {
+export default class OperatorAll extends Views {
 
     async get_head() {
         return `
@@ -9,7 +10,7 @@ export default class OperatorAll {
     }
 
     async render () {
-        let articles = await OperatorProvider.fetchOperator(50);
+        let articles = await OperatorProvider.fetchOperator(75);
         let view =  /*html*/`
             <h2>Les Agents</h2>
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
