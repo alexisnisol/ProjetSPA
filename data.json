@@ -115,7 +115,7 @@
         {"id": 33, "nom": "USP40", "classe_arme": 50, "image": "usp40.png"},
 
         {"id": 34, "nom": "AUG A2", "classe_arme": 0, "image": "aug-a2.png"},
-        {"id": 35, "nom": "MP5 K", "classe_arme": 2, "image": "mp5k.png"},
+        {"id": 35, "nom": "MP5K", "classe_arme": 2, "image": "mp5k.png"},
         {"id": 36, "nom": "P12", "classe_arme": 50, "image": "p12.png"},
         {"id": 37, "nom": "KERATOS .357", "classe_arme": 50, "image": "keratos-357.png"},
 
@@ -144,31 +144,98 @@
         {"id": 52, "nom": "K1A", "classe_arme": 2, "image": "k1a.png"},
         {"id": 53, "nom": "BOSG.12.2", "classe_arme": 1, "image": "bosg-12-2.png"},
 
-        {"id": 54, "nom": "...", "classe_arme": 0, "image": "example.png"},
-        {"id": 55, "nom": "...", "classe_arme": 0, "image": "example.png"},
-        {"id": 56, "nom": "...", "classe_arme": 0, "image": "example.png"},
-        {"id": 57, "nom": "...", "classe_arme": 0, "image": "example.png"},
-        {"id": 58, "nom": "...", "classe_arme": 0, "image": "example.png"},
-        {"id": 59, "nom": "...", "classe_arme": 0, "image": "example.png"},
-        {"id": 60, "nom": "...", "classe_arme": 0, "image": "example.png"},
-        {"id": 61, "nom": "...", "classe_arme": 0, "image": "example.png"},
-        {"id": 62, "nom": "...", "classe_arme": 0, "image": "example.png"},
-        {"id": 63, "nom": "...", "classe_arme": 0, "image": "example.png"},
-        {"id": 64, "nom": "...", "classe_arme": 0, "image": "example.png"},
-        {"id": 65, "nom": "...", "classe_arme": 0, "image": "example.png"},
-        {"id": 66, "nom": "...", "classe_arme": 0, "image": "example.png"},
-        {"id": 67, "nom": "...", "classe_arme": 0, "image": "example.png"},
-        {"id": 68, "nom": "...", "classe_arme": 0, "image": "example.png"},
-        {"id": 69, "nom": "...", "classe_arme": 0, "image": "example.png"},
-        {"id": 70, "nom": "...", "classe_arme": 0, "image": "example.png"},
-        {"id": 71, "nom": "...", "classe_arme": 0, "image": "example.png"},
-        {"id": 72, "nom": "...", "classe_arme": 0, "image": "example.png"},
-        {"id": 73, "nom": "...", "classe_arme": 0, "image": "example.png"},
-        {"id": 74, "nom": "...", "classe_arme": 0, "image": "example.png"},
-        {"id": 75, "nom": "...", "classe_arme": 0, "image": "example.png"},
-        {"id": 76, "nom": "...", "classe_arme": 0, "image": "example.png"},
-        {"id": 77, "nom": "...", "classe_arme": 0, "image": "example.png"},
-        {"id": 78, "nom": "...", "classe_arme": 0, "image": "example.png"}
+        {"id": 54, "nom": "Scorpion EVO 3 A1", "classe_arme": 2, "image": "scorpion-evo-3-a1.png"},
+        {"id": 55, "nom": "FO-12", "classe_arme": 1, "image": "fo-12.png"},
+
+        {"id": 56, "nom": "SIX12 SD", "classe_arme": 1, "image": "six12-sd.png"},
+
+        {"id": 57, "nom": "MP5SD", "classe_arme": 2, "image": "mp5sd.png"},
+        {"id": 58, "nom": "SuperNova", "classe_arme": 1, "image": "supernova.png"},
+
+        {"id": 59, "nom": "M12", "classe_arme": 2, "image": "p12.png"},
+        {"id": 60, "nom": "Luison", "classe_arme": 50, "image": "luison.png"},
+
+        {"id": 61, "nom": "9mm C1", "classe_arme": 2, "image": "9mm-c1.png"},
+        {"id": 62, "nom": "MK1 9mm", "classe_arme": 50, "image": "mk1-9mm.png"},
+
+        {"id": 63, "nom": "FMG-9", "classe_arme": 2, "image": "fmg-9.png"},
+
+        {"id": 64, "nom": "UMP45", "classe_arme": 2, "image": "ump45.png"},
+        {"id": 65, "nom": "M1014", "classe_arme": 1, "image": "m1014.png"},
+        {"id": 66, "nom": "M45 MEUSOC", "classe_arme": 50, "image": "m45-meusoc.png"},
+
+        {"id": 67, "nom": "SG-CQB", "classe_arme": 1, "image": "sg-cqb.png"},
+        {"id": 68, "nom": "P9", "classe_arme": 50, "image": "p9.png"},
+
+        {"id": 69, "nom": "416-C Carbine", "classe_arme": 0, "image": "416-c-carbine.png"},
+
+        {"id": 70, "nom": "DP27", "classe_arme": 5, "image": "dp27.png"},
+        {"id": 71, "nom": "PMM", "classe_arme": 50, "image": "pmm.png"},
+        {"id": 72, "nom": "GSH-18", "classe_arme": 50, "image": "gsh-18.png"},
+
+        {"id": 73, "nom": "417", "classe_arme": 3, "image": "417.png"},
+        {"id": 74, "nom": "M249", "classe_arme": 5, "image": "m249.png"},
+        {"id": 75, "nom": "Reaper MK2", "classe_arme": 0, "image": "reaper-mk2.png"},
+
+        {"id": 76, "nom": "M4", "classe_arme": 0, "image": "m4.png"},
+
+        {"id": 77, "nom": "AK-74M", "classe_arme": 0, "image": "ak-74m.png"},
+        {"id": 78, "nom": ".44 VENDETTA", "classe_arme": 50, "image": "44-vendetta.png"},
+
+        {"id": 79, "nom": "LMG-E", "classe_arme": 5, "image": "lmg-e.png"},
+        {"id": 80, "nom": "R4-C", "classe_arme": 0, "image": "r4-c.png"},
+
+        {"id": 81, "nom": "PARA-308", "classe_arme": 0, "image": "para-308.png"},
+        {"id": 82, "nom": "CAMRS", "classe_arme": 3, "image": "camrs.png"},
+        {"id": 83, "nom": "552 Commando", "classe_arme": 0, "image": "552-commando.png"},
+        {"id": 84, "nom": "POF9", "classe_arme": 0, "image": "pof9.png"},
+        {"id": 85, "nom": "556XI", "classe_arme": 0, "image": "556xi.png"},
+        {"id": 86, "nom": "PDW9", "classe_arme": 2, "image": "pdw9.png"},
+
+        {"id": 87, "nom": "AR33", "classe_arme": 0, "image": "ar33.png"},
+        {"id": 88, "nom": "SR-25", "classe_arme": 3, "image": "sr-25.png"},
+
+        {"id": 89, "nom": "Gonne-6", "classe_arme": 50, "image": "gonne-6.png"},
+        {"id": 90, "nom": "SC3000K", "classe_arme": 0, "image": "sc3000k.png"},
+
+        {"id": 91, "nom": "AK-12", "classe_arme": 0, "image": "ak-12.png"},
+
+        {"id": 92, "nom": "ARX200", "classe_arme": 0, "image": "arx200.png"},
+        {"id": 93, "nom": "G36C", "classe_arme": 0, "image": "g36c.png"},
+
+        {"id": 94, "nom": "CSRX 300", "classe_arme": 3, "image": "csrx-300.png"},
+
+        {"id": 95, "nom": "G8A1", "classe_arme": 5, "image": "g8a1.png"},
+
+        {"id": 96, "nom": "F90", "classe_arme": 0, "image": "f90.png"},
+        {"id": 97, "nom": "M249 SAW", "classe_arme": 0, "image": "m249-saw.png"},
+
+        {"id": 98, "nom": "V308", "classe_arme": 0, "image": "v308.png"},
+
+        {"id": 99, "nom": "6P41", "classe_arme": 5, "image": "6p41.png"},
+
+        {"id": 100, "nom": "M762", "classe_arme": 0, "image": "m762.png"},
+        {"id": 101, "nom": "T-95 LSW", "classe_arme": 5, "image": "t-95-lsw.png"},
+        {"id": 102, "nom": "SIX12", "classe_arme": 1, "image": "six12.png"},
+
+        {"id": 103, "nom": "C7E", "classe_arme": 0, "image": "c7e.png"},
+
+        {"id": 104, "nom": "Type-89", "classe_arme": 0, "image": "type-89.png"},
+
+        {"id": 105, "nom": "MK17 CQB", "classe_arme": 0, "image": "mk17-cqb.png"},
+
+        {"id": 106, "nom": "C8-SFW", "classe_arme": 0, "image": "c8-sfw.png"},
+
+        {"id": 107, "nom": "L85A2", "classe_arme": 0, "image": "l85a2.png"},
+
+        {"id": 108, "nom": "Bouclier Le Roc", "classe_arme": 4, "image": "bouclier-roc.png"},
+        {"id": 109, "nom": "F2", "classe_arme": 0, "image": "f2.png"},
+
+        {"id": 110, "nom": "G52-Tactical Shield", "classe_arme": 4, "image": "g52-shield.png"},
+
+        {"id": 111, "nom": "Bouclier Balistique", "classe_arme": 4, "image": "shield.png"},
+
+        {"id": 112, "nom": "OTS-03", "classe_arme": 3, "image": "ots-03.png"}
     ],
 
     "gadgets" : [
@@ -178,7 +245,15 @@
         {"id": 3, "nom": "Caméra blindée", "image": "bulletproof_camera.png"},
         {"id": 4, "nom": "Bouclier déployable", "image": "deployable_shield.png"},
         {"id": 5, "nom": "Bloqueur d'observation", "image": "observation_blocker.png"},
-        {"id": 6, "nom": "Nitro", "image": "nitro_cell.png"}
+        {"id": 6, "nom": "Nitro", "image": "nitro_cell.png"},
+
+        {"id": 7, "nom": "Grenade Fumigène", "image": "smoke_grenade.png"},
+        {"id": 8, "nom": "Explosifs", "image": "breach_charge.png"},
+        {"id": 9, "nom": "Claymore", "image": "claymore.png"},
+        {"id": 10, "nom": "Grenade Frag", "image": "frag_grenade.png"},
+        {"id": 11, "nom": "Charge de brèche lourde", "image": "secondary_breacher.png"},
+        {"id": 12, "nom": "Grenade Flash", "image": "stun_grenade.png"},
+        {"id": 13, "nom": "Grenade IEM à Percussion", "image": "emp_impact_grenade.png"}
     ],
 
     "capacite" : [
