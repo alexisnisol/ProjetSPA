@@ -1,24 +1,12 @@
 import OperatorProvider from "../../services/OperatorProvider.js";
+import Card from "../../components/Card.js";
 import Views from "../Views.js";
 
 export default class Home extends Views {
 
     async render() {
         let operators = await OperatorProvider.fetchOperator(3);
-        let html = operators.map(operator =>
-            /*html*/`
-            <div class="col">
-                <div class="card shadow-sm">
-                    <img src="/static/img/operators/${operator.image}" alt="${operator.nom}">
-                    <div class="card-body">
-                        <p class="card-text">${operator.nom ? operator.nom.slice(0, 100) : ''}</p>
-                        <div class="btn-group">
-                            <a href="#/operators/${operator.id}" class="btn btn-sm btn-outline-secondary">+ Détails sur ${operator.nom}</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            `
+        let html = operators.map(operator => Card.render(operator)
         ).join('\n ');
 
         return /*html*/`
