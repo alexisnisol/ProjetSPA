@@ -1,0 +1,101 @@
+/* Réinitialisation des styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Header */
+.header {
+    background-color: #262626;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Alignement à gauche */
+    gap: 30px; /* Espacement entre logo et menu */
+    padding: 15px 50px;
+}
+
+.header img {
+    height: 50px; /* Ajuste la taille du logo */
+}
+
+.header nav {
+    display: flex;
+    gap: 20px;
+}
+
+.header a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Contenu principal */
+.content {
+    flex-grow: 1;
+}
+
+/* Footer */
+.footer {
+    background-color: #262626;
+    color: white;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+}
+
+.logo-ubisoft {
+    width: 5rem;
+    height: 5rem;
+}
+
+.footer .footer_logo_left,
+.footer .left, 
+.footer .center, 
+.footer .right {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 1rem;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer .age-rating {
+    width: 5vw;
+    height: 7vw;
+}
+
+/* Effet de transition pour le survol */
+.header a, .footer a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.header a:hover, footer a:hover {
+    color: #00C3AD; 
+}
+
+@media screen and (max-width: 768px) {
+    .footer .age-rating {
+        width: 8vw;
+        height: auto;
+    }
+}
