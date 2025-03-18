@@ -168,7 +168,7 @@
         {"id": 75, "nom": "...", "classe_arme": 0, "image": "example.png"},
         {"id": 76, "nom": "...", "classe_arme": 0, "image": "example.png"},
         {"id": 77, "nom": "...", "classe_arme": 0, "image": "example.png"},
-        {"id": 78, "nom": "...", "classe_arme": 0, "image": "example.png"},
+        {"id": 78, "nom": "...", "classe_arme": 0, "image": "example.png"}
     ],
 
     "gadgets" : [
