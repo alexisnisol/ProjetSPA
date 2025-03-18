@@ -1,7 +1,7 @@
-// Instantiate API
 import OperatorProvider from "../../services/OperatorProvider.js";
+import Views from "../Views.js";
 
-export default class Home {
+export default class Home extends Views {
 
     async render() {
         let operators = await OperatorProvider.fetchOperator(3)
