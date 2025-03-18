@@ -1,4 +1,6 @@
-export default class About {
+import Views from "../Views.js";
+
+export default class About extends Views {
     async render () {
         return /*html*/`
             <section class="section">

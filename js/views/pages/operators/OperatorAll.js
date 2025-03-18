@@ -1,6 +1,7 @@
 import OperatorProvider from "../../../services/OperatorProvider.js";
+import Views from "../../Views.js";
 
-export default class OperatorAll {
+export default class OperatorAll extends Views {
 
     async get_head() {
         return `
