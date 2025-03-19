@@ -10,7 +10,7 @@ export default class OperatorAll extends Views {
     }
 
     async render () {
-        let articles = await OperatorProvider.fetchOperator(75);
+        let articles = await OperatorProvider.fetchOperators(75);
         let view =  /*html*/`
             <h2>Les Agents</h2>
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
