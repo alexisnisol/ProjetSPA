@@ -1,45 +1,43 @@
 import OperatorProvider from "../../services/OperatorProvider.js";
+import Card from "../../components/Card.js";
 import Views from "../Views.js";
 
 export default class Home extends Views {
 
+    async get_head() {
+        return `
+        <link rel="stylesheet" href="../../../static/css/home.css">
+        `
+    }
+
     async render() {
-        let operators = await OperatorProvider.fetchOperator(3)
-        let html = operators.map(operator =>
-            /*html*/`
-            <div class="col">
-            <div class="card shadow-sm">
-                <img src="/static/img/operators/${operator.image}" class="bd-placeholder-img card-img-top" width="100%" height="500" alt="${operator.nom}">
-                <div class="card-body">
-                    <p class="card-text">${operator.nom ? operator.nom.slice(0, 100) : ''}</p>
-                    <div class="d-flex justify-content-between align-items-center">
-                        <div class="btn-group">
-                        <a href="#/operators/${operator.id}" class="btn btn-sm btn-outline-secondary">+ détail sur ${operator.nom}</a>
-                        </div>
-                        <small class="text-body-secondary">${operator.id}</small>
-                    </div>
-                </div>
-            </div>
-            </div>
-            `
-        ).join('\n ');
-        
+        let operators = await OperatorProvider.fetchOperator(3);
+        let html = operators.map(operator => Card.render(operator)).join('\n ');
+
         return /*html*/`
-            <section class="py-5 text-center container">
-                <div class="row py-lg-5">
-                    <div class="col-lg-6 col-md-8 mx-auto">
-                        <h1 class="fw-light">Articles example</h1>
-                        <p class="lead text-body-secondary">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem, aliquid voluptas sit aperiam quis architecto quaerat vel ratione placeat delectus repellendus cum animi sequi amet corporis minima ab, nisi at!</p>
-                        <p>
-                            <a href="" class="btn btn-primary my-2">Main call to action</a>
-                            <a href="" class="btn btn-secondary my-2">Secondary action</a>
-                        </p>
-                    </div>
+            <div class="hero-section">
+                <div>
+                    <h1>TOM CLANCY'S RAINBOW SIX SIEGE</h1>
+                    <p>Personalisez votre arsenal selon votre style.</p>
+                    <a href="#en-savoir-plus" class="btn btn-primary">En savoir plus</a>
                 </div>
-            </section>
-            <h2>Les 3 premiers articles</h2>
-            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-                ${html}
+            </div>
+            <div class="recent-characters-section">
+                <h2 class="title_3_persos">LES NOUVEAUX PERSONNAGES</h2>
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 justify-content-center">
+                    ${html}
+                </div>
+            </div>
+            </div>
+            <div class="video-section">
+                <video autoplay muted loop class="background-video">
+                    <source src="/static/video/video_presentation_deimos.mp4" type="video/mp4">
+                </video>
+                <div class="content-box">
+                    <h2>OPÉRATION DEALY OMEN</h2>
+                    <p>L'infâme Deimos, un des piliers fondateurs de Rainbow Six et aujourd'hui un de ses plus fervents détracteurs, a été ajouté à la liste des agents cette saison. Originaire des États-Unis, il est équipé de son redoutable traqueur, le DeathMARK.</p>
+                    <a href="#rejoindre" class="btn btn-primary">Détails Deimos</a>
+                </div>
             </div>
         `;
     }
