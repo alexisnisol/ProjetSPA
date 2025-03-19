@@ -2,8 +2,14 @@ import OperatorProvider from "../../../services/OperatorProvider.js";
 
 export default class OperatorAll {
 
+    async get_head() {
+        return `
+        <link href="/static/css/operators.css" rel="stylesheet">
+        `
+    }
+
     async render () {
-        let articles = await OperatorProvider.fetchOperator(50);
+        let articles = await OperatorProvider.fetchOperator(75);
         let view =  /*html*/`
             <h2>Les Agents</h2>
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
