@@ -10,11 +10,11 @@ export default class OperatorAll extends Views {
     }
 
     async render () {
-        let articles = await OperatorProvider.fetchOperators(75);
+        let operators = await OperatorProvider.fetchOperators(75);
         let view =  /*html*/`
             <h2>Les Agents</h2>
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-                ${ articles.map(operator => 
+                ${ operators.map(operator => 
                     /*html*/`
                     <div class="col">
                     <div class="card shadow-sm">
@@ -23,7 +23,7 @@ export default class OperatorAll extends Views {
                             <p class="card-text">${operator.nom ? operator.nom.slice(0,100) : ''}</p>
                             <div class="d-flex justify-content-between align-items-center">
                                 <div class="btn-group">
-                                <a href="#/articles/${operator.id}" class="btn btn-sm btn-outline-secondary">Voir ${operator.nom}</a>
+                                <a href="#/operators/${operator.id}" class="btn btn-sm btn-outline-secondary">Voir ${operator.nom}</a>
                                 </div>
                                 <small class="text-body-secondary">${operator.id}</small>
                             </div>
