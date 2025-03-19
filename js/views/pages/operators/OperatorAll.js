@@ -4,7 +4,7 @@ import Views from "../../Views.js";
 export default class OperatorAll extends Views {
 
     async get_head() {
-        return `
+        return /*html*/`
         <link href="/static/css/operators.css" rel="stylesheet">
         `
     }
