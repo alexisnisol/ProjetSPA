@@ -4,13 +4,17 @@ import Views from "../Views.js";
 
 export default class Home extends Views {
 
+    async get_head() {
+        return `
+        <link rel="stylesheet" href="../../../static/css/home.css">
+        `
+    }
+
     async render() {
         let operators = await OperatorProvider.fetchOperator(3);
-        let html = operators.map(operator => Card.render(operator)
-        ).join('\n ');
+        let html = operators.map(operator => Card.render(operator)).join('\n ');
 
         return /*html*/`
-            <link rel="stylesheet" href="../../../static/css/home.css">
             <div class="hero-section">
                 <div>
                     <h1>TOM CLANCY'S RAINBOW SIX SIEGE</h1>
