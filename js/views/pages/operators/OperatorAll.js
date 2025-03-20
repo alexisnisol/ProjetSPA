@@ -11,7 +11,7 @@ export default class OperatorAll extends Views {
     }
 
     async render () {
-        let operators = await OperatorProvider.fetchOperator(75);
+        let operators = await OperatorProvider.fetchOperators(75);
         let html = operators.map(operator => Card.render(operator, true)).join('\n ');
         let view =  /*html*/`
             <!-- Section Hero avec boutons et barre de recherche -->
