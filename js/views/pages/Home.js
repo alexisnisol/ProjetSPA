@@ -1,4 +1,4 @@
-import OperatorProvider from "../../services/OperatorProvider.js";
+import OperatorSortProvider from "../../services/OperatorSortProvider.js";
 import Card from "../../components/Card.js";
 import Views from "../Views.js";
 
@@ -11,7 +11,7 @@ export default class Home extends Views {
     }
 
     async render() {
-        let operators = await OperatorProvider.fetchOperator(3);
+        let operators = await OperatorSortProvider.fetchByDate(3);
         let html = operators.map(operator => Card.render(operator)).join('\n ');
 
         return /*html*/`
