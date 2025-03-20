@@ -85,11 +85,11 @@ html, body {
     color: white;
     text-decoration: none;
     transition: color 0.3s ease;
-    text-shadow: 2px 2px 4px rgba(0, 195, 173, 0.5);
 }
 
 .header a:hover, footer a:hover {
     color: #00C3AD; 
+    text-shadow: 2px 2px 4px rgba(0, 195, 173, 0.7);
 }
 
 @media screen and (max-width: 768px) {
