@@ -49,4 +49,14 @@ export default class OperatorProvider {
     static getOperator = async (id) => {
         return await OperatorProvider.fetchRequest(`/${id}`, GET)
     }
+
+    /**
+     * Récupère les opérateurs selon un filtre de recherche.
+     * La recherche est effectuée sur l'attribut de l'image afin d'éviter les soucis de caractères spéciaux dans les noms. Exemple : "Skopós" devient "skopos".
+     * @param search Le filtre de recherche à appliquer
+     * @returns Les opérateurs respectant le filtre
+     */
+    static searchOperator = async (search) => {
+        return await OperatorProvider.fetchRequest(`?q=${search}`, GET)
+    }
 }
