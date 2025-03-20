@@ -3,6 +3,10 @@ export default class Card {
         return /*html*/`
             <div class="col">
                 <div class="card shadow-sm">
+                    <!-- Ajout du logo ici -->
+                    <div class="operator-logo">
+                        <img class="logo_perso" src="/static/img/logos/logo_${operator.nom.toLowerCase().replace(/\s+/g, '_')}.png" alt="Logo de ${operator.nom}">
+                    </div>
                     <img src="/static/img/operators/${operator.image}" alt="${operator.nom}">
                     <div class="card-body">
                         <p class="card-text">${operator.nom ? operator.nom.slice(0, 100) : ''}</p>
@@ -13,6 +17,7 @@ export default class Card {
                     </div>
                 </div>
             </div>
+
         `;
     }
 

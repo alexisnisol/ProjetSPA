@@ -11,9 +11,9 @@ main {
     background-position: center;
     display: flex;
     justify-content: center;
-    align-items: flex-start; /* Change à flex-start pour aligner vers le haut */
+    align-items: flex-start;
     text-align: center;
-    padding-top: 40px; /* Ajoute un peu de marge en haut pour remonter le titre et les boutons */
+    padding-top: 40px;
 }
 
 .hero-content {

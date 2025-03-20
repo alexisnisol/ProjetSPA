@@ -1082,7 +1082,7 @@
         {
             "id" : 57,
             "capacite_id": 57,
-            "nom": "Dokkaeibi",
+            "nom": "Dokkaebi",
             "image": "dokkaebi.png",
             "camps": "Assaillant",
             "bio": "Grace utilise un ordinateur balistique blindé, nom de code Bombe logique, afin de pirater les équipements tactiques ennemis. Le programme transmet un virus de son invention qui peut contourner les pare-feu, allumer les appareils proches et émettre un son bruyant pour compromettre la position d'un ennemi.",
