@@ -23,7 +23,7 @@ export default class Card {
     static renderLikeButton(isLiked) {
         const likeButtonClass = isLiked ? "❤️" : "🤍";
         return /*html*/`
-            <button class="btn btn-outline-primary like-button" onclick="toggleLike()">
+            <button class="btn btn-outline-primary like-button">
                 ${likeButtonClass}
             </button>
         `;

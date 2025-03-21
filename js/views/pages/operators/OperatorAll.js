@@ -2,6 +2,7 @@ import OperatorProvider from "../../../services/OperatorProvider.js";
 import Views from "../../Views.js";
 import Card from "../../../components/Card.js";
 import { setupButtonHandlers, updateOperators } from "../../../services/OperatorHandlers.js";
+import { setupLikeButtons } from "../../../services/LikeHandler.js";
 
 export default class OperatorAll extends Views {
 
@@ -58,7 +59,9 @@ export default class OperatorAll extends Views {
                 ${html}
             </div>
         `;
+
         setupButtonHandlers();
+        setupLikeButtons();
 
         return content;
     }
