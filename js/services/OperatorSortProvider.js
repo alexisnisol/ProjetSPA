@@ -6,4 +6,9 @@ export default class OperatorSortProvider {
         let filter = desc ? "-annee,-saison" : "annee,saison"
         return await OperatorProvider.fetchOperatorsBySort(filter, limit)
     }
+
+    static fetchByCamp = async (camp) => {
+        let operators = await OperatorProvider.fetchOperators(75);
+        return camp === "all" ? operators : operators.filter(op => op.camps === camp);
+    }
 }
