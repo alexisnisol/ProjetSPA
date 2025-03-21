@@ -42,6 +42,19 @@ export default class OperatorProvider {
     }
 
     /**
+     * Récupère les opérateurs en fonction de leur camp (Assaillant ou Défenseur).
+     * 
+     * @param {String} camp - Le camp des opérateurs à récupérer : "Assaillant", "Défenseur" ou "all" pour récupérer tous les opérateurs.
+     * @param {Number} limit - Le nombre maximal d'opérateurs à récupérer. Par défaut, 10 opérateurs sont récupérés.
+     * 
+     * @returns {Array} - Un tableau d'opérateurs récupérés en fonction du camp et de la limite spécifiée.
+     */
+    static fetchOperatorsByCamp = async (camp, limit = 10) => {
+        let query = (camp === "Assaillant" || camp === "Défense") ? `&camps=${camp}` : "";
+        return await OperatorProvider.fetchRequest(`?_limit=${limit}${query}`, GET);
+    }
+
+    /**
      * Récupère un opérateur spécifique selon son id
      * @param {Number} id L'id de l'opérateur à récupérer
      * @returns L'opérateur récupéré, sous forme de JSON

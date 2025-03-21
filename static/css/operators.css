@@ -1,5 +1,5 @@
 main {
-    background-image: url('/static/img/ui/background.png');
+    background-image: url('/static/img/ui/background.jpg');
     background-size: cover;
 }
 
@@ -47,6 +47,10 @@ main {
     border-radius: 5px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
     transition: background-color 0.3s;
+}
+
+.btn:hover{
+    cursor: pointer;
 }
 
 /* Apparence de l'icône dans les boutons */

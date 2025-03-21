@@ -1,32 +1,33 @@
 import OperatorProvider from "../../../services/OperatorProvider.js";
 import Views from "../../Views.js";
 import Card from "../../../components/Card.js";
+import OperatorSortProvider from "../../../services/OperatorSortProvider.js";
 
 export default class OperatorAll extends Views {
 
     async get_head() {
         return /*html*/`
         <link href="/static/css/operators.css" rel="stylesheet">
-        `
+        `;
     }
 
-    async render () {
+    async render() {
         let operators = await OperatorProvider.fetchOperators(75);
         let html = operators.map(operator => Card.render(operator, true)).join('\n ');
-        let view =  /*html*/`
+        let content = /*html*/`
             <!-- Section Hero avec boutons et barre de recherche -->
             <div class="hero-section">
                 <div class="hero-content">
                     <h1>TOUS LES AGENTS</h1>
                     <div class="button-container">
-                        <a href="#details" class="btn btn-orange" id="orange-btn">
-                            <img src="../../static/img/ui/logoAssaillant.png" alt="Icon 1" id="icon1" class="btn-icon">
+                        <button class="btn btn-orange" id="orange-btn">
+                            <img src="../../static/img/ui/logoAssaillant.png" alt="Icon 1" class="btn-icon">
                             ASSAILLANTS
-                        </a>
-                        <a href="#en-savoir-plus" class="btn btn-blue" id="blue-btn">
-                            <img src="../../static/img/ui/logoDefenseur.png" alt="Icon 2" id="icon2" class="btn-icon">
+                        </button>
+                        <button class="btn btn-blue" id="blue-btn">
+                            <img src="../../static/img/ui/logoDefenseur.png" alt="Icon 2" class="btn-icon">
                             DÉFENSEURS
-                        </a>
+                        </button>
                     </div>
 
                     <!-- Titre au-dessus de la barre de recherche -->
@@ -56,8 +57,40 @@ export default class OperatorAll extends Views {
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 justify-content-center">
                 ${html}
             </div>
-        `
-        return view
+        `;
+
+        setTimeout(() => {
+            let orangeBtn = document.getElementById("orange-btn");
+            let blueBtn = document.getElementById("blue-btn");
+
+            if (orangeBtn && blueBtn) {
+                orangeBtn.addEventListener("click", async (event) => {
+                    event.preventDefault();
+                    let assailants = await OperatorSortProvider.fetchByCamp("Assaillant");
+                    this.updateOperators(assailants);
+                });
+
+                blueBtn.addEventListener("click", async (event) => {
+                    event.preventDefault();
+                    let defenseurs = await OperatorSortProvider.fetchByCamp("Défense");
+                    this.updateOperators(defenseurs);
+                });
+            } else {
+                console.error("Les boutons ne sont pas trouvés !");
+            }
+        }, 100);
+
+        return content;
     }
 
+    updateOperators(operators) {
+        console.log("Mise à jour des opérateurs", operators);
+        let container = document.querySelector(".row");
+        if (container) {
+            let html = operators.map(operator => Card.render(operator, true)).join("\n ");
+            container.innerHTML = html;
+        } else {
+            console.error("Le conteneur des opérateurs n'a pas été trouvé !");
+        }
+    }
 }
