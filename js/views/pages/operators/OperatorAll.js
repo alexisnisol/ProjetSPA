@@ -1,7 +1,7 @@
 import OperatorProvider from "../../../services/OperatorProvider.js";
 import Views from "../../Views.js";
 import Card from "../../../components/Card.js";
-import OperatorSortProvider from "../../../services/OperatorSortProvider.js";
+import { setupButtonHandlers, updateOperators } from "../../../services/OperatorHandlers.js";
 
 export default class OperatorAll extends Views {
 
@@ -58,39 +58,8 @@ export default class OperatorAll extends Views {
                 ${html}
             </div>
         `;
-
-        setTimeout(() => {
-            let orangeBtn = document.getElementById("orange-btn");
-            let blueBtn = document.getElementById("blue-btn");
-
-            if (orangeBtn && blueBtn) {
-                orangeBtn.addEventListener("click", async (event) => {
-                    event.preventDefault();
-                    let assailants = await OperatorSortProvider.fetchByCamp("Assaillant");
-                    this.updateOperators(assailants);
-                });
-
-                blueBtn.addEventListener("click", async (event) => {
-                    event.preventDefault();
-                    let defenseurs = await OperatorSortProvider.fetchByCamp("Défense");
-                    this.updateOperators(defenseurs);
-                });
-            } else {
-                console.error("Les boutons ne sont pas trouvés !");
-            }
-        }, 100);
+        setupButtonHandlers();
 
         return content;
-    }
-
-    updateOperators(operators) {
-        console.log("Mise à jour des opérateurs", operators);
-        let container = document.querySelector(".row");
-        if (container) {
-            let html = operators.map(operator => Card.render(operator, true)).join("\n ");
-            container.innerHTML = html;
-        } else {
-            console.error("Le conteneur des opérateurs n'a pas été trouvé !");
-        }
     }
 }
