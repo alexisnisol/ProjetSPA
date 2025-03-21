@@ -12,6 +12,7 @@ export default class OperatorAll extends Views {
         this.operatorsPerPage = 10;
         this.totalOperators = 75;
         this.operators = [];
+        this.currentFilter = null;
         this.paginationHandler = new PaginationHandler(this.totalOperators, this.operatorsPerPage, this.currentPage);
     }
 
@@ -20,7 +21,6 @@ export default class OperatorAll extends Views {
         <link href="/static/css/operators.css" rel="stylesheet">
         <link href="/static/css/pagination.css" rel="stylesheet">
         `;
-        
     }
 
     async render() {
@@ -28,12 +28,18 @@ export default class OperatorAll extends Views {
         return this.renderPage();
     }
 
-    renderPage() {
+    async renderPage() {
+        let filteredOperators = this.operators;
+        if (this.currentFilter) {
+            filteredOperators = await OperatorProvider.fetchOperatorsByCamp(this.currentFilter, this.totalOperators);
+        }
+
         const startIndex = (this.currentPage - 1) * this.operatorsPerPage;
         const endIndex = startIndex + this.operatorsPerPage;
-        const operatorsToShow = this.operators.slice(startIndex, endIndex);
+        const operatorsToShow = filteredOperators.slice(startIndex, endIndex);
 
         const html = operatorsToShow.map(operator => Card.render(operator, true)).join('\n ');
+
         const paginationHTML = this.paginationHandler.renderPagination();
 
         const content = /*html*/`
@@ -93,7 +99,7 @@ export default class OperatorAll extends Views {
             mainContainer.innerHTML = content;
         }
 
-        setupButtonHandlers();
+        setupButtonHandlers(this);
         setupLikeButtons();
         this.paginationHandler.setupPagination((page) => {
             this.currentPage = page;
