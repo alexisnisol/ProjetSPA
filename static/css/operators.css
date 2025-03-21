@@ -300,6 +300,25 @@ main {
     flex-basis: calc(20% - 1rem); 
 }
 
+.pagination {
+    margin-top: 20px;
+}
+
+.page-item.active .page-link {
+    background-color: #007bff;
+    border-color: #007bff;
+    color: white;
+}
+
+.page-link {
+    color: #007bff;
+    cursor: pointer;
+}
+
+.page-link:hover {
+    color: #0056b3;
+}
+
 @media (max-width: 991px) {
     .row-cols-md-5 {
         flex-basis: calc(50% - 1rem);

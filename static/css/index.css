@@ -19,13 +19,13 @@ html, body {
     color: white;
     display: flex;
     align-items: center;
-    justify-content: flex-start; /* Alignement à gauche */
-    gap: 30px; /* Espacement entre logo et menu */
+    justify-content: flex-start;
+    gap: 30px;
     padding: 15px 50px;
 }
 
 .header img {
-    height: 50px; /* Ajuste la taille du logo */
+    height: 50px;
 }
 
 .header nav {
@@ -80,7 +80,6 @@ html, body {
     height: 7vw;
 }
 
-/* Effet de transition pour le survol */
 .header a, .footer a {
     color: white;
     text-decoration: none;

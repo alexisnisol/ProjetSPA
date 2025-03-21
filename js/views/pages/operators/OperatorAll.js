@@ -3,19 +3,40 @@ import Views from "../../Views.js";
 import Card from "../../../components/Card.js";
 import { setupButtonHandlers, updateOperators } from "../../../services/OperatorHandlers.js";
 import { setupLikeButtons } from "../../../services/LikeHandler.js";
+import { PaginationHandler } from "../../../services/PaginationHandler.js";
 
 export default class OperatorAll extends Views {
+    constructor() {
+        super();
+        this.currentPage = 1;
+        this.operatorsPerPage = 10;
+        this.totalOperators = 75;
+        this.operators = [];
+        this.paginationHandler = new PaginationHandler(this.totalOperators, this.operatorsPerPage, this.currentPage);
+    }
 
     async get_head() {
         return /*html*/`
         <link href="/static/css/operators.css" rel="stylesheet">
+        <link href="/static/css/pagination.css" rel="stylesheet">
         `;
+        
     }
 
     async render() {
-        let operators = await OperatorProvider.fetchOperators(75);
-        let html = operators.map(operator => Card.render(operator, true)).join('\n ');
-        let content = /*html*/`
+        this.operators = await OperatorProvider.fetchOperators(this.totalOperators);
+        return this.renderPage();
+    }
+
+    renderPage() {
+        const startIndex = (this.currentPage - 1) * this.operatorsPerPage;
+        const endIndex = startIndex + this.operatorsPerPage;
+        const operatorsToShow = this.operators.slice(startIndex, endIndex);
+
+        const html = operatorsToShow.map(operator => Card.render(operator, true)).join('\n ');
+        const paginationHTML = this.paginationHandler.renderPagination();
+
+        const content = /*html*/`
             <!-- Section Hero avec boutons et barre de recherche -->
             <div class="hero-section">
                 <div class="hero-content">
@@ -58,10 +79,26 @@ export default class OperatorAll extends Views {
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-5 g-3 justify-content-center">
                 ${html}
             </div>
+
+            <!-- Pagination -->
+            <nav aria-label="Page navigation">
+                <ul class="pagination justify-content-center mt-4">
+                    ${paginationHTML}
+                </ul>
+            </nav>
         `;
+
+        const mainContainer = document.querySelector('main');
+        if (mainContainer) {
+            mainContainer.innerHTML = content;
+        }
 
         setupButtonHandlers();
         setupLikeButtons();
+        this.paginationHandler.setupPagination((page) => {
+            this.currentPage = page;
+            this.renderPage();
+        });
 
         return content;
     }
