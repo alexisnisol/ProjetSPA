@@ -1,12 +1,16 @@
 main {
     background-image: url('/static/img/ui/background.jpg');
     background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .hero-section {
     position: relative;
     width: 100%;
-    height: 100vh;
+    height: auto;
+    min-height: 100vh;
     background-size: cover;
     background-position: center;
     display: flex;
@@ -14,6 +18,7 @@ main {
     align-items: flex-start;
     text-align: center;
     padding-top: 40px;
+    margin-bottom: 0;
 }
 
 .hero-content {
@@ -44,9 +49,9 @@ main {
     color: white;
     text-decoration: none;
     font-size: 1.2rem;
+    border: none;
     border-radius: 5px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-    transition: background-color 0.3s;
+    transition: background-color 0.2s;
 }
 
 .btn:hover{
@@ -60,6 +65,7 @@ main {
 }
 
 .btn-orange {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
     background-color: #DC6235;
 }
 
@@ -68,6 +74,7 @@ main {
 }
 
 .btn-blue {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
     background-color: #2B7AD4;
 }
 
@@ -80,7 +87,7 @@ main {
 }
 
 #icon1{
-    margin-right: 15px;
+    margin-right: 20px;
 }
 
 #icon2{
@@ -157,4 +164,150 @@ main {
 
 .search-btn img {
     margin-right: 0.5rem;
+}
+
+/*persos*/
+
+.operator-all-section {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+/* Styles des cartes */
+.operator-all-section .card {
+    width: 200px;
+    margin-bottom: 0.8rem;
+    background-color: rgba(255, 255, 255, 0.3);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    z-index: 1;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+.operator-all-section .card:hover {
+    transform: scale(1.05) translateY(-8px);
+    box-shadow: 0 8px 16px rgba(0, 195, 173, 0.4);
+}
+
+/* Image principale */
+.operator-all-section .card img {
+    width: 200px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Conteneur des cartes */
+.operator-all-section .row {
+    display: flex;
+    justify-content: center;
+    gap: 0.8rem;
+    flex-wrap: wrap;
+}
+
+/* Contenu de la carte */
+.operator-all-section .card-body {
+    padding: 1rem;
+    background-image: url('/static/img/ui/background_bottom_card.jpg');
+    background-size: cover;
+}
+
+/* Texte de la carte */
+.operator-all-section .card-text {
+    font-size: 1rem;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    padding-bottom: 0.4rem;
+}
+
+/* Bouton détails */
+.operator-all-section .btn-outline-secondary {
+    font-size: 0.8rem;
+    padding: 0.3rem 0.9rem;
+    background-color: #205c55;
+    color: white;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    text-decoration: none;
+    display: inline-block;
+    clip-path: polygon(
+        0 8px,
+        8px 0,
+        100% 0,
+        100% calc(100% - 8px),
+        calc(100% - 8px) 100%,
+        0 100%
+    );
+}
+
+.operator-all-section .btn-outline-secondary:hover {
+    background-color: #2B7AD4;
+}
+
+/* Logo de l'opérateur */
+.operator-all-section .operator-logo {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    background-color: transparent;
+}
+
+.operator-all-section .logo_perso {
+    width: auto;
+    height: 5rem;
+    max-width: 5rem;
+    display: block;
+    margin: 0 auto;
+    object-fit: contain;
+}
+
+
+/* Bouton Like */
+.operator-all-section .like-button {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background: transparent;
+    border: none;
+    padding: 6px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+}
+
+.operator-all-section .like-button:hover {
+    transform: scale(1.1);
+}
+
+/* Assurer que les cartes s'affichent en 5 par ligne */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.row-cols-md-5 {
+    flex-basis: calc(20% - 1rem); 
+}
+
+@media (max-width: 991px) {
+    .row-cols-md-5 {
+        flex-basis: calc(50% - 1rem);
+    }
+}
+
+@media (max-width: 575px) {
+    .row-cols-md-5 {
+        flex-basis: 100%;
+    }
 }

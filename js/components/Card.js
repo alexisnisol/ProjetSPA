@@ -1,9 +1,9 @@
 export default class Card {
     static render(operator, withLike = false, isLiked = false) {
         return /*html*/`
-            <div class="col">
+            <div class="col operator-all-section">
                 <div class="card shadow-sm">
-                    <!-- Ajout du logo ici -->
+                    <!-- Logo -->
                     <div class="operator-logo">
                         <img class="logo_perso" src="/static/img/logos/logo_${operator.nom.toLowerCase().replace(/\s+/g, '_')}.png" alt="Logo de ${operator.nom}">
                     </div>
@@ -17,7 +17,6 @@ export default class Card {
                     </div>
                 </div>
             </div>
-
         `;
     }
 
@@ -25,7 +24,7 @@ export default class Card {
         const likeButtonClass = isLiked ? "❤️" : "🤍";
         return /*html*/`
             <button class="btn btn-outline-primary like-button" onclick="toggleLike()">
-                ${likeButtonClass} Like
+                ${likeButtonClass}
             </button>
         `;
     }

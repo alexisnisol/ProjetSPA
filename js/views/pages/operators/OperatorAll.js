@@ -21,11 +21,11 @@ export default class OperatorAll extends Views {
                     <h1>TOUS LES AGENTS</h1>
                     <div class="button-container">
                         <button class="btn btn-orange" id="orange-btn">
-                            <img src="../../static/img/ui/logoAssaillant.png" alt="Icon 1" class="btn-icon">
+                            <img src="../../static/img/ui/logoAssaillant.png" alt="Icon 1" id="icon1" class="btn-icon">
                             ASSAILLANTS
                         </button>
                         <button class="btn btn-blue" id="blue-btn">
-                            <img src="../../static/img/ui/logoDefenseur.png" alt="Icon 2" class="btn-icon">
+                            <img src="../../static/img/ui/logoDefenseur.png" alt="Icon 2" id="icon2" class="btn-icon">
                             DÉFENSEURS
                         </button>
                     </div>
@@ -54,7 +54,7 @@ export default class OperatorAll extends Views {
             </div>
 
             <!-- Liste des opérateurs -->
-            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 justify-content-center">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-5 g-3 justify-content-center">
                 ${html}
             </div>
         `;
