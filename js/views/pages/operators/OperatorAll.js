@@ -25,10 +25,6 @@ export default class OperatorAll extends Views {
 
     async render() {
         this.operators = await OperatorProvider.fetchOperators(this.totalOperators);
-        return this.renderPage();
-    }
-
-    async renderPage() {
         let filteredOperators = this.operators;
         if (this.currentFilter) {
             filteredOperators = await OperatorProvider.fetchOperatorsByCamp(this.currentFilter, this.totalOperators);
@@ -93,11 +89,6 @@ export default class OperatorAll extends Views {
                 </ul>
             </nav>
         `;
-
-        const mainContainer = document.querySelector('main');
-        if (mainContainer) {
-            mainContainer.innerHTML = content;
-        }
 
         setupButtonHandlers(this);
         setupLikeButtons();

@@ -288,18 +288,21 @@ main {
     transform: scale(1.1);
 }
 
-/* Assurer que les cartes s'affichent en 5 par ligne */
 .row {
     display: flex;
     flex-wrap: wrap;
-    gap: 1rem;
+    gap: 0.5rem;
     justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;
 }
 
-.row-cols-md-5 {
-    flex-basis: calc(20% - 1rem); 
+.row > * {
+    width: calc(20% - 0.5rem);
 }
 
+/* Pagination styles */
 .pagination {
     margin-top: 20px;
 }
@@ -319,14 +322,16 @@ main {
     color: #0056b3;
 }
 
+/* Responsive: 2 colonnes par ligne sur tablette */
 @media (max-width: 991px) {
-    .row-cols-md-5 {
-        flex-basis: calc(50% - 1rem);
+    .row > * {
+        width: calc(50% - 0.5rem);
     }
 }
 
+/* Responsive: 1 colonne par ligne sur mobile */
 @media (max-width: 575px) {
-    .row-cols-md-5 {
-        flex-basis: 100%;
+    .row > * {
+        width: 100%;
     }
 }
