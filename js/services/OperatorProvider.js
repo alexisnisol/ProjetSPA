@@ -1,4 +1,4 @@
-import { ENDPOINT_OPERATORS, GET } from '../config.js'
+import {ENDPOINT_OPERATORS, GET} from '../config.js'
 
 /**
  * Classe permettant de récupérer les données des opérateurs dans le json-server
@@ -13,14 +13,17 @@ export default class OperatorProvider {
      */
     static fetchRequest = async (request, http_request)  => {
          try {
-              const response = await fetch(`${ENDPOINT_OPERATORS}${request}`, http_request);
-              
+              const response = await fetch(`${ENDPOINT_OPERATORS}${request}`, http_request)
+                  .then(response => {
+                      return response.blob()
+                  })
+                 .then(data => {
+                     console.log(data)
+                 });
               if (!response.ok) {
                 throw new Error(`HTTP error! Status: ${response.status}`);
             }
-              const json = await response.json();
-              console.log('Parsed JSON:', json);
-              return json;
+             return await response.json();
          } catch (err) {
               console.log('Error getting documents', err);
          }

@@ -21,11 +21,10 @@ export default class OperatorAll extends Views {
     }
 
     async render() {
-        this.operators = this.paginationHandler.operators;
+        this.operators = await this.paginationHandler.requestPage();
         const html = this.operators.map(operator => Card.render(operator, true)).join('\n ');
 
         const paginationHTML = PaginationView.render(this.paginationHandler.currentPage, this.paginationHandler.totalPages);
-
         const content = /*html*/`
             <!-- Section Hero avec boutons et barre de recherche -->
             <div class="hero-section">
