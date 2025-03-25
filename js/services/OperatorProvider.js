@@ -1,4 +1,4 @@
-import { ENDPOINT_OPERATORS, GET } from '../config.js'
+import { ENDPOINT, ENDPOINT_OPERATORS, GET } from '../config.js';
 
 /**
  * Classe permettant de récupérer les données des opérateurs dans le json-server
@@ -62,4 +62,75 @@ export default class OperatorProvider {
     static getOperator = async (id) => {
         return await OperatorProvider.fetchRequest(`/${id}`, GET)
     }
+
+    static async getOperatorSpecialties(operatorId) {
+        try {
+            console.log(`Fetching specialties for operator: ${operatorId}`);
+    
+            const operator = await OperatorProvider.getOperator(operatorId);
+            if (!operator) {
+                console.error(`No operator found with ID: ${operatorId}`);
+                return [];
+            }
+    
+            console.log("Operator fetched:", operator);
+    
+            const specialites = await OperatorProvider.fetchRequest(`/specialite`, GET) ?? [];
+            const specialiteOperateur = await OperatorProvider.fetchRequest(`/specialite_operateur`, GET) ?? [];
+    
+            if (!Array.isArray(specialites) || !Array.isArray(specialiteOperateur)) {
+                console.error("Invalid data format received for specialties or relations.");
+                return [];
+            }
+    
+            console.log("Available specialties:", specialites);
+            console.log("Operator-specialty relations:", specialiteOperateur);
+    
+            const operatorSpecialties = specialiteOperateur
+                .filter(rel => rel.operateur_id == operatorId)
+                .map(rel => specialites.find(spec => spec.id == rel.specialite_id)?.name)
+                .filter(Boolean);
+    
+            console.log("Specialties found:", operatorSpecialties);
+    
+            return operatorSpecialties;
+        } catch (error) {
+            console.error("Error fetching operator specialties:", error);
+            return [];
+        }
+    }
+
+    /**
+     * Met à jour un opérateur existant
+     * @param {Number} id - L'ID de l'opérateur à mettre à jour
+     * @param {Object} data - Les nouvelles données de l'opérateur
+     * @returns {Promise} - La promesse de la requête PUT
+     */
+    static updateOperator = async (id, data) => {
+        console.log("Envoi de la requête PUT pour l'opérateur", id);
+        console.log("Données:", data);
+        
+        try {
+            const response = await fetch(`${ENDPOINT_OPERATORS}/${id}`, {
+                method: 'PUT',
+                headers: { 
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json'
+                },
+                body: JSON.stringify(data)
+            });
+    
+            if (!response.ok) {
+                throw new Error(`Erreur HTTP! Statut: ${response.status}`);
+            }
+    
+            const result = await response.json();
+            console.log("Réponse du serveur:", result);
+            return result;
+        } catch (error) {
+            console.error("Erreur dans updateOperator:", error);
+            throw error;
+        }
+    }
+    
 }

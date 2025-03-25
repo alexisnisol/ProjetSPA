@@ -142,33 +142,6 @@
     letter-spacing: 2px;
 }
 
-.attribute {
-    display: flex;
-    align-items: center;
-    margin-bottom: 15px;
-    gap: 15px;
-}
-
-.attribute span {
-    width: 100px;
-    font-size: 1.1rem;
-    text-transform: uppercase;
-}
-
-.stat-bar {
-    flex-grow: 1;
-    height: 8px;
-    background: rgba(255, 255, 255, 0.2);
-    border-radius: 4px;
-    overflow: hidden;
-}
-
-.stat-fill {
-    height: 100%;
-    background: #ff9800;
-    border-radius: 4px;
-}
-
 /* Responsive */
 @media (max-width: 768px) {
     .detail-content {
