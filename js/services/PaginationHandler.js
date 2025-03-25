@@ -7,15 +7,14 @@ export class PaginationHandler {
         this.paginate = {};
         this.operators = [];
         this.totalPages = 10;
-        this.totalOperators = 0;
     }
 
     async requestPage(page=this.currentPage) {
         this.currentPage = page;
         this.paginate = await OperatorProvider.fetchPagesOperators(this.currentPage, this.itemsPerPage);
-        this.operators = this.paginate;
-        this.totalOperators = this.paginate;
-        return this.paginate;
+        this.operators = this.paginate['data'];
+        this.totalPages = this.paginate['pages'];
+        return this.operators;
     }
 
     async handleNextPage() {

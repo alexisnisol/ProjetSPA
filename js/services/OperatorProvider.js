@@ -13,13 +13,7 @@ export default class OperatorProvider {
      */
     static fetchRequest = async (request, http_request)  => {
          try {
-              const response = await fetch(`${ENDPOINT_OPERATORS}${request}`, http_request)
-                  .then(response => {
-                      return response.blob()
-                  })
-                 .then(data => {
-                     console.log(data)
-                 });
+              const response = await fetch(`${ENDPOINT_OPERATORS}${request}`, http_request);
               if (!response.ok) {
                 throw new Error(`HTTP error! Status: ${response.status}`);
             }
@@ -78,6 +72,6 @@ export default class OperatorProvider {
      * @returns Les opérateurs récupérés
      */
     static fetchPagesOperators = async (page, limit = 10) => {
-        return await OperatorProvider.fetchRequest(`?_page=${page}&_limit=${limit}`, GET)
+        return await OperatorProvider.fetchRequest(`?_page=${page}&_per_page=${limit}`, GET)
     }
 }
