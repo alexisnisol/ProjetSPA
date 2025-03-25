@@ -13,11 +13,16 @@ export default class OperatorProvider {
      */
     static fetchRequest = async (request, http_request)  => {
          try {
-              const response = await fetch(`${ENDPOINT_OPERATORS}${request}`, http_request)
+              const response = await fetch(`${ENDPOINT_OPERATORS}${request}`, http_request);
+              
+              if (!response.ok) {
+                throw new Error(`HTTP error! Status: ${response.status}`);
+            }
               const json = await response.json();
-              return json
+              console.log('Parsed JSON:', json);
+              return json;
          } catch (err) {
-              console.log('Error getting documents', err)
+              console.log('Error getting documents', err);
          }
     }
 
@@ -61,5 +66,15 @@ export default class OperatorProvider {
      */
     static getOperator = async (id) => {
         return await OperatorProvider.fetchRequest(`/${id}`, GET)
+    }
+
+    /**
+     * Récupère les opérateurs par page. Par défaut, 10 opérateurs sont récupérés.
+     * @param {*} page Le numéro de la page à récupérer
+     * @param {*} limit Le nombre d'opérateurs à récupérer par page
+     * @returns Les opérateurs récupérés
+     */
+    static fetchPagesOperators = async (page, limit = 10) => {
+        return await OperatorProvider.fetchRequest(`?_page=${page}&_limit=${limit}`, GET)
     }
 }

@@ -4,16 +4,13 @@ import Card from "../../../components/Card.js";
 import { setupButtonHandlers, updateOperators } from "../../../services/OperatorHandlers.js";
 import { setupLikeButtons } from "../../../services/LikeHandler.js";
 import { PaginationHandler } from "../../../services/PaginationHandler.js";
+import PaginationView from "../../../components/PaginationView.js";
 
 export default class OperatorAll extends Views {
+    
     constructor() {
         super();
-        this.currentPage = 1;
-        this.operatorsPerPage = 10;
-        this.totalOperators = 75;
-        this.operators = [];
-        this.currentFilter = null;
-        this.paginationHandler = new PaginationHandler(this.totalOperators, this.operatorsPerPage, this.currentPage);
+        this.paginationHandler = new PaginationHandler();
     }
 
     async get_head() {
@@ -24,19 +21,10 @@ export default class OperatorAll extends Views {
     }
 
     async render() {
-        this.operators = await OperatorProvider.fetchOperators(this.totalOperators);
-        let filteredOperators = this.operators;
-        if (this.currentFilter) {
-            filteredOperators = await OperatorProvider.fetchOperatorsByCamp(this.currentFilter, this.totalOperators);
-        }
+        this.operators = this.paginationHandler.operators;
+        const html = this.operators.map(operator => Card.render(operator, true)).join('\n ');
 
-        const startIndex = (this.currentPage - 1) * this.operatorsPerPage;
-        const endIndex = startIndex + this.operatorsPerPage;
-        const operatorsToShow = filteredOperators.slice(startIndex, endIndex);
-
-        const html = operatorsToShow.map(operator => Card.render(operator, true)).join('\n ');
-
-        const paginationHTML = this.paginationHandler.renderPagination();
+        const paginationHTML = PaginationView.render(this.paginationHandler.currentPage, this.paginationHandler.totalPages);
 
         const content = /*html*/`
             <!-- Section Hero avec boutons et barre de recherche -->
@@ -92,11 +80,6 @@ export default class OperatorAll extends Views {
 
         setupButtonHandlers(this);
         setupLikeButtons();
-        this.paginationHandler.setupPagination((page) => {
-            this.currentPage = page;
-            this.renderPage();
-        });
-
         return content;
     }
 }

@@ -1,4 +1,5 @@
 export default class Card {
+
     static render(operator, withLike = false, isLiked = false) {
         return /*html*/`
             <div class="col operator-all-section">
