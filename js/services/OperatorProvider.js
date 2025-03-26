@@ -1,4 +1,5 @@
 import {ENDPOINT_OPERATORS, GET} from '../config.js'
+import QueryBuilder from "./QueryBuilder.js";
 
 /**
  * Classe permettant de récupérer les données des opérateurs dans le json-server
@@ -11,16 +12,16 @@ export default class OperatorProvider {
      * @param {*} http_request La méthode HTTP à utiliser : GET, POST, PUT, DELETE
      * @returns Le résultat de la requête fetch au format JSON.
      */
-    static fetchRequest = async (request, http_request)  => {
-         try {
-              const response = await fetch(`${ENDPOINT_OPERATORS}${request}`, http_request);
-              if (!response.ok) {
+    static fetchRequest = async (request, http_request) => {
+        try {
+            const response = await fetch(`${ENDPOINT_OPERATORS}${request}`, http_request);
+            if (!response.ok) {
                 throw new Error(`HTTP error! Status: ${response.status}`);
             }
-             return await response.json();
-         } catch (err) {
-              console.log('Error getting documents', err);
-         }
+            return await response.json();
+        } catch (err) {
+            console.log('Error getting documents', err);
+        }
     }
 
     /**
@@ -45,10 +46,10 @@ export default class OperatorProvider {
 
     /**
      * Récupère les opérateurs en fonction de leur camp (Assaillant ou Défenseur).
-     * 
+     *
      * @param {String} camp - Le camp des opérateurs à récupérer : "Assaillant", "Défenseur" ou "all" pour récupérer tous les opérateurs.
      * @param {Number} limit - Le nombre maximal d'opérateurs à récupérer. Par défaut, 10 opérateurs sont récupérés.
-     * 
+     *
      * @returns {Array} - Un tableau d'opérateurs récupérés en fonction du camp et de la limite spécifiée.
      */
     static fetchOperatorsByCamp = async (camp, limit = 10) => {
