@@ -1,4 +1,9 @@
 export default class PaginationView {
+
+    constructor(view, paginationHandler) {
+        this.view = view;
+        this.paginationHandler = paginationHandler;
+    }
     
     static render(currentPage, totalPages) {
         let paginationHTML = '';
@@ -26,7 +31,17 @@ export default class PaginationView {
                 </li>
             `;
         }
-
         return paginationHTML;
+    }
+
+    setupButtons() {
+        const paginationLinks = document.querySelectorAll('.page-link');
+        paginationLinks.forEach(link => {
+            link.addEventListener('click', async (event) => {
+                event.preventDefault();
+                const page = parseInt(link.dataset.page);
+                await this.paginationHandler.changePage(page);
+            });
+        });
     }
 }

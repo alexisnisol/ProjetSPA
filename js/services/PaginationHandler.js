@@ -11,17 +11,15 @@ export class PaginationHandler {
 
     async requestPage(page=this.currentPage) {
         this.currentPage = page;
+        console.log("request page operators : ", this.currentPage, this.itemsPerPage);
         this.paginate = await OperatorProvider.fetchPagesOperators(this.currentPage, this.itemsPerPage);
         this.operators = this.paginate['data'];
         this.totalPages = this.paginate['pages'];
         return this.operators;
     }
 
-    async handleNextPage() {
-        await this.requestPage(this.paginate['next']);
+    changePage(page) {
+        this.currentPage = page;
     }
 
-    async handlePreviousPage() {
-        await this.requestPage(this.paginate['prev'] || 1);
-    }
 }

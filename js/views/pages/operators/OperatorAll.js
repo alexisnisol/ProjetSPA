@@ -11,6 +11,7 @@ export default class OperatorAll extends Views {
     constructor() {
         super();
         this.paginationHandler = new PaginationHandler();
+        this.paginationView = new PaginationView(this, this.paginationHandler);
     }
 
     async get_head() {
@@ -77,8 +78,12 @@ export default class OperatorAll extends Views {
             </nav>
         `;
 
+        return content;
+    }
+
+    async after_render() {
+        this.paginationView.setupButtons();
         setupButtonHandlers(this);
         setupLikeButtons();
-        return content;
     }
 }
