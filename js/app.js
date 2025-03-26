@@ -29,6 +29,8 @@ const router = async () => {
     document.querySelector("#stylesheet").innerHTML = head;
     
     content.innerHTML = await page.render();
+
+    await page.after_render();
 }
 
 window.addEventListener('hashchange', router);

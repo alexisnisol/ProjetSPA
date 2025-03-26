@@ -2,7 +2,6 @@ import OperatorSortProvider from "./OperatorSortProvider.js";
 import Card from "../components/Card.js";
 
 export function setupButtonHandlers(operatorAllInstance) {
-    setTimeout(() => {
         let orangeBtn = document.getElementById("orange-btn");
         let blueBtn = document.getElementById("blue-btn");
 
@@ -13,7 +12,7 @@ export function setupButtonHandlers(operatorAllInstance) {
                 operatorAllInstance.currentPage = 1;
                 let assailants = await OperatorSortProvider.fetchByCamp("Assaillant");
                 updateOperators(assailants);
-                operatorAllInstance.renderPage();
+                operatorAllInstance.render();
             });
 
             blueBtn.addEventListener("click", async (event) => {
@@ -22,12 +21,11 @@ export function setupButtonHandlers(operatorAllInstance) {
                 operatorAllInstance.currentPage = 1;
                 let defenseurs = await OperatorSortProvider.fetchByCamp("Défense");
                 updateOperators(defenseurs);
-                operatorAllInstance.renderPage();
+                operatorAllInstance.render();
             });
         } else {
             console.error("Les boutons ne sont pas trouvés !");
         }
-    }, 100);
 }
 
 export function updateOperators(operators) {

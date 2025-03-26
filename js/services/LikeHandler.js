@@ -1,10 +1,8 @@
 export function setupLikeButtons() {
-    setTimeout(() => {
         const likeButtons = document.querySelectorAll('.like-button');
         likeButtons.forEach(button => {
             button.addEventListener('click', toggleLike);
         });
-    }, 100);
 }
 
 function toggleLike(event) {
