@@ -27,8 +27,9 @@ const router = async () => {
     //get_head est une méthode asynchrone, on attend donc qu'elle soit résolue
     let head = await page.get_head();
     document.querySelector("#stylesheet").innerHTML = head;
-    
+
     content.innerHTML = await page.render();
+    await page.after_render();
 }
 
 window.addEventListener('hashchange', router);
