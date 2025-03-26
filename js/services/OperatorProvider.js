@@ -71,8 +71,10 @@ export default class OperatorProvider {
      * @returns {Array} - Un tableau d'opérateurs récupérés en fonction du camp et de la limite spécifiée.
      */
     static fetchOperatorsByCamp = async (camp, limit = 10) => {
-        let query = (camp === "Assaillant" || camp === "Défense") ? `&camps=${camp}` : "";
-        return await OperatorProvider.fetchRequest(`?_limit=${limit}${query}`, GET);
+        let query = new QueryBuilder()
+            .setFilter("camps", camp)
+            .setLimit(limit)
+        return await OperatorProvider.fetchQuery(query);
     }
 
     /**
