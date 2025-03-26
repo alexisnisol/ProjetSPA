@@ -1,4 +1,5 @@
 import { ENDPOINT_OPERATORS, GET } from '../config.js'
+import QueryBuilder from "./QueryBuilder";
 
 /**
  * Classe permettant de récupérer les données des opérateurs dans le json-server
@@ -22,12 +23,24 @@ export default class OperatorProvider {
     }
 
     /**
+     * Effectue une requête fetch sur le json-server avec une query
+     * @param query La query à effectuer, sous forme de chaîne de caractères. Créé à partir de QueryBuilder.js
+     * @returns le résultat de la requête fetch au format JSON.
+     */
+    static fetchQuery = async (query) => {
+        return await OperatorProvider.fetchRequest(`?${query}`, GET);
+    }
+
+    /**
      * Récupère les opérateurs
      * @param {Number} limit La limite d'éléments à récupérer
      * @returns Les opérateurs récupérés, limités à 10 par défaut
      */
     static fetchOperators = async (limit = 10) => {
-        return await OperatorProvider.fetchRequest(`?_limit=${limit}`, GET)
+        let query = new QueryBuilder()
+            .setLimit(limit)
+            .build();
+        return await OperatorProvider.fetchQuery(query);
     }
 
     /**
@@ -38,7 +51,11 @@ export default class OperatorProvider {
      * @returns Les opérateurs récupérés, limités à 10 par défaut, triés selon le filtre
      */
     static fetchOperatorsBySort = async (filter, limit = 10) => {
-        return await OperatorProvider.fetchRequest(`?_sort=${filter}&_limit=${limit}`, GET)
+        let query = new QueryBuilder()
+            .setSort(filter)
+            .setLimit(limit)
+            .build();
+        return await OperatorProvider.fetchQuery(query);
     }
 
     /**
