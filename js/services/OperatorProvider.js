@@ -1,4 +1,5 @@
 import { ENDPOINT, ENDPOINT_OPERATORS, GET } from '../config.js';
+import SpecialtyProvider from './SpecialityProvider.js';
 
 /**
  * Classe permettant de récupérer les données des opérateurs dans le json-server
@@ -65,37 +66,11 @@ export default class OperatorProvider {
 
     static async getOperatorSpecialties(operatorId) {
         try {
-            console.log(`Fetching specialties for operator: ${operatorId}`);
-    
-            const operator = await OperatorProvider.getOperator(operatorId);
-            if (!operator) {
-                console.error(`No operator found with ID: ${operatorId}`);
-                return [];
-            }
-    
-            console.log("Operator fetched:", operator);
-    
-            const specialites = await OperatorProvider.fetchRequest(`/specialite`, GET) ?? [];
-            const specialiteOperateur = await OperatorProvider.fetchRequest(`/specialite_operateur`, GET) ?? [];
-    
-            if (!Array.isArray(specialites) || !Array.isArray(specialiteOperateur)) {
-                console.error("Invalid data format received for specialties or relations.");
-                return [];
-            }
-    
-            console.log("Available specialties:", specialites);
-            console.log("Operator-specialty relations:", specialiteOperateur);
-    
-            const operatorSpecialties = specialiteOperateur
-                .filter(rel => rel.operateur_id == operatorId)
-                .map(rel => specialites.find(spec => spec.id == rel.specialite_id)?.name)
-                .filter(Boolean);
-    
-            console.log("Specialties found:", operatorSpecialties);
-    
-            return operatorSpecialties;
+            const specialties = await SpecialtyProvider.getSpecialtiesForOperator(operatorId);
+            console.log('Specialties for operator', operatorId, ':', specialties);
+            return specialties;
         } catch (error) {
-            console.error("Error fetching operator specialties:", error);
+            console.error('Error:', error);
             return [];
         }
     }
