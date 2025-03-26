@@ -26,7 +26,12 @@ export default class OperatorDetail extends Views {
                     <img src="/static/img/operators/${operator.image}" alt="${operator.nom}" class="operator-character">
                     
                     <div class="detail-content">
-                        <h1 class="resultation-title">DÉTAILS ${operator.nom.toUpperCase()}</h1>
+                        <div class="operator-header">
+                        <div class="operator-title-logo">
+                            <img class="logo_perso" src="/static/img/logos/logo_${operator.nom.toLowerCase().replace(/\s+/g, '_')}.png" alt="Logo de ${operator.nom}">
+                            <h1 class="resultation-title">DÉTAILS ${operator.nom.toUpperCase()}</h1>
+                        </div>
+                    </div>
                         
                         <div class="bio-section">
                             <h2 class="bio-title">BIOGRAPHIE</h2>
@@ -41,7 +46,7 @@ export default class OperatorDetail extends Views {
                             </div>
                             
                             <div class="specialite-section">
-                                <h3 class="specialite-title">SPÉCIALITÉ</h3>
+                                <h3 class="specialite-title">SPÉCIALITÉ(S)</h3>
                                 <p class="specialite-value">${operatorSpecialties.join(", ") || "Aucune"}</p>
                             </div>
                             

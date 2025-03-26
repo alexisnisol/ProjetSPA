@@ -60,6 +60,24 @@
     text-shadow: 3px 3px 0 #000;
 }
 
+.operator-header {
+    display: flex;
+    align-items: center;
+}
+
+.operator-title-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-direction: row-reverse;
+}
+
+.operator-logo img {
+    max-height: 50px;
+    width: auto;
+}
+
+
 .bio-section {
     margin-bottom: 40px;
 }
