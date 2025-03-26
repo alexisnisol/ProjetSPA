@@ -142,6 +142,41 @@
     background-size: cover;
 }
 
+/*logo*/
+
+.recent-characters-section .card {
+    background-color: rgba(255, 255, 255, 0.3);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 250px;
+    margin-bottom: 1rem;
+    position: relative;
+    z-index: 1;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.recent-characters-section .card.shadow-sm {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.operator-logo {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    background-color: transparent;
+}
+
+.logo_perso {
+    width: 7rem;
+    height: auto;
+    max-height: 7rem;
+    display: block;
+    margin: 0 auto;
+}
+
+
 /*video section*/
 
 .video-section {
