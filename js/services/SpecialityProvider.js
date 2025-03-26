@@ -1,6 +1,16 @@
 import { ENDPOINT, ENDPOINT_SPECIALTE, GET } from '../config.js';
 
+/**
+ * Classe fournissant des services pour la gestion des spécialités des opérateurs
+ */
 export default class SpecialtyProvider {
+    /**
+     * Effectue une requête HTTP générique
+     * @param {string} url - L'URL à interroger
+     * @param {Object} http_request - La configuration de la requête (méthode, headers...)
+     * @returns {Promise<Object|null>} Les données JSON ou null en cas d'erreur
+     * @throws {Error} Si la réponse réseau n'est pas valide
+     */
     static async fetchRequest(url, http_request) {
         try {
             const response = await fetch(url, http_request);
@@ -12,10 +22,23 @@ export default class SpecialtyProvider {
         }
     }
 
+    /**
+     * Récupère toutes les spécialités disponibles
+     * @returns {Promise<Array>} Un tableau de toutes les spécialités
+     */
     static async getAllSpecialties() {
         return await this.fetchRequest(ENDPOINT_SPECIALTE, GET);
     }
 
+    /**
+     * Récupère les spécialités d'un opérateur spécifique
+     * @param {number|string} operatorId - L'identifiant de l'opérateur
+     * @returns {Promise<Array<string>>} Un tableau des noms de spécialités
+     * 
+     * @example
+     * // Renvoie ["Assistance", "Anti-Intrusion"]
+     * const specialties = await SpecialtyProvider.getSpecialtiesForOperator(2);
+     */
     static async getSpecialtiesForOperator(operatorId) {
         try {
             const relations = await this.fetchRequest(
@@ -39,7 +62,7 @@ export default class SpecialtyProvider {
                 .filter(Boolean);
                 
         } catch (error) {
-            console.error('Error:', error);
+            console.error('Error getting operator specialties:', error);
             return [];
         }
     }
