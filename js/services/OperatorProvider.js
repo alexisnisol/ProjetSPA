@@ -93,6 +93,9 @@ export default class OperatorProvider {
      * @returns Les opérateurs récupérés
      */
     static fetchPagesOperators = async (page, limit = 10) => {
-        return await OperatorProvider.fetchRequest(`?_page=${page}&_per_page=${limit}`, GET);
+        let query = new QueryBuilder()
+            .setPage(page, limit)
+            .build();
+        return await OperatorProvider.fetchQuery(query);
     }
 }
