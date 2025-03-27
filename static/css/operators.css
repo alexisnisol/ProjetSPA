@@ -78,6 +78,14 @@ main {
     background-color: #2B7AD4;
 }
 
+.btn-blue.selected {
+    border-bottom: 5px solid #00ffe5;
+}
+
+.btn-orange.selected {
+    border-bottom: 5px solid #f6ab0a;
+}
+
 .btn-blue:hover {
     background-color: #004a99;
 }

@@ -1,10 +1,9 @@
-import OperatorProvider from "../../../services/providers/OperatorProvider.js";
 import Views from "../../Views.js";
 import Card from "../../../components/Card.js";
-import OperatorsHandler, { setupButtonHandlers, updateOperators } from "../../../services/handlers/OperatorsHandler.js";
 import { setupLikeButtons } from "../../../services/handlers/LikeHandler.js";
 import { PaginationHandler } from "../../../services/handlers/PaginationHandler.js";
 import PaginationView from "../../../components/PaginationView.js";
+import OperatorsHandler from "../../../services/handlers/OperatorsHandler.js";
 
 export default class OperatorAll extends Views {
     
@@ -38,11 +37,11 @@ export default class OperatorAll extends Views {
                 <div class="hero-content">
                     <h1>TOUS LES AGENTS</h1>
                     <div class="button-container">
-                        <button class="btn btn-orange" id="orange-btn">
+                        <button class="btn btn-orange ${this.paginationHandler.hasFilter("camps", "Assaillant") ? "selected" : ""}" id="orange-btn">
                             <img src="../../static/img/ui/logoAssaillant.png" alt="Icon 1" id="icon1" class="btn-icon">
                             ASSAILLANTS
                         </button>
-                        <button class="btn btn-blue" id="blue-btn">
+                        <button class="btn btn-blue ${this.paginationHandler.hasFilter("camps", "Défense") ? "selected" : ""}" id="blue-btn">
                             <img src="../../static/img/ui/logoDefenseur.png" alt="Icon 2" id="icon2" class="btn-icon">
                             DÉFENSEURS
                         </button>
@@ -89,7 +88,7 @@ export default class OperatorAll extends Views {
 
     async after_render() {
         this.paginationView.setupButtons();
-        setupButtonHandlers(this);
+        OperatorsHandler.setupButtonHandlers(this);
         setupLikeButtons();
     }
 }

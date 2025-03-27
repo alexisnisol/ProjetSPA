@@ -26,6 +26,10 @@ export class PaginationHandler {
         this.filters[key] = value;
     }
 
+    hasFilter(key, value) {
+        return this.filters[key] === value;
+    }
+
     clearFilters() {
         this.filters = {};
     }

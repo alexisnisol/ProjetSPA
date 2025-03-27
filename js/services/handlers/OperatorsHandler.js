@@ -18,27 +18,31 @@ export default class OperatorsHandler {
         }
     }
 
-    setupButtonHandlers(operatorAllInstance) {
+    static setupButtonHandlers(views) {
         let orangeBtn = document.getElementById("orange-btn");
         let blueBtn = document.getElementById("blue-btn");
 
         if (orangeBtn && blueBtn) {
             orangeBtn.addEventListener("click", async (event) => {
                 event.preventDefault();
-                operatorAllInstance.currentFilter = "Assaillant";
-                operatorAllInstance.currentPage = 1;
-                let assailants = await OperatorSortProvider.fetchByCamp("Assaillant");
-                updateOperators(assailants);
-                operatorAllInstance.render();
+                orangeBtn.classList.remove("selected");
+                blueBtn.classList.remove("selected");
+                if (views.paginationHandler.hasFilter("camps", "Assaillant")) {
+                    await views.applyFilter("camps", "");
+                    return;
+                }
+                await views.applyFilter("camps", "Assaillant");
             });
 
             blueBtn.addEventListener("click", async (event) => {
                 event.preventDefault();
-                operatorAllInstance.currentFilter = "Défense";
-                operatorAllInstance.currentPage = 1;
-                let defenseurs = await OperatorSortProvider.fetchByCamp("Défense");
-                updateOperators(defenseurs);
-                operatorAllInstance.render();
+                orangeBtn.classList.remove("selected");
+                blueBtn.classList.remove("selected");
+                if (views.paginationHandler.hasFilter("camps", "Défense")) {
+                    await views.applyFilter("camps", "");
+                    return;
+                }
+                await views.applyFilter("camps", "Défense");
             });
         } else {
             console.error("Les boutons ne sont pas trouvés !");

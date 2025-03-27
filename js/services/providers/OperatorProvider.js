@@ -1,6 +1,6 @@
 import {ENDPOINT_OPERATORS, GET} from '../../config.js'
 import SpecialtyProvider from './SpecialityProvider.js'
-import QueryBuilder from "./QueryBuilder.js";
+import QueryBuilder from "../QueryBuilder.js";
 
 /**
  * Classe permettant de récupérer les données des opérateurs dans le json-server
@@ -89,14 +89,19 @@ export default class OperatorProvider {
      * Récupère les opérateurs par page. Par défaut, 10 opérateurs sont récupérés.
      * @param {*} page Le numéro de la page à récupérer
      * @param {*} limit Le nombre d'opérateurs à récupérer par page
+     * @param filters Les filtres à appliquer à la requête, si nécessaire
      * @returns Les opérateurs récupérés
      */
     static fetchPagesOperators = async (page, limit = 10, filters = {}) => {
-        let query = new QueryBuilder()
+        let queryBuilder = new QueryBuilder()
             .setPage(page, limit)
-            .setSort("-annee,-saison")
-            .build();
-        return await OperatorProvider.fetchQuery(query);
+            .setSort("-annee,-saison");
+
+        for (const [key, value] of Object.entries(filters)) {
+            queryBuilder.setFilter(key, value);
+        }
+        let queryString = queryBuilder.build();
+        return await OperatorProvider.fetchQuery(queryString);
     }
 
     /**
