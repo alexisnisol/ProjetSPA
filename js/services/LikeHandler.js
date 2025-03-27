@@ -17,7 +17,7 @@ function toggleLike(event, idOperator) {
  * Récupère la liste des favoris depuis le localStorage.
  * @returns {string[]} Liste des favoris, contenant l'id des personnages.
  */
-function getFavorites() {
+export function getFavorites() {
     const favorites = localStorage.getItem("favorites");
     return favorites ? JSON.parse(favorites) : [];
 }
