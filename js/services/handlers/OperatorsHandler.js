@@ -1,4 +1,3 @@
-import OperatorSortProvider from "../providers/OperatorSortProvider.js";
 import Views from "../../views/Views.js";
 
 export default class OperatorsHandler {
