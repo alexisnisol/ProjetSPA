@@ -1,9 +1,9 @@
-import OperatorProvider from "../../../services/OperatorProvider.js";
+import OperatorProvider from "../../../services/providers/OperatorProvider.js";
 import Views from "../../Views.js";
 import Card from "../../../components/Card.js";
-import { setupButtonHandlers, updateOperators } from "../../../services/OperatorHandlers.js";
-import { setupLikeButtons } from "../../../services/LikeHandler.js";
-import { PaginationHandler } from "../../../services/PaginationHandler.js";
+import OperatorsHandler, { setupButtonHandlers, updateOperators } from "../../../services/handlers/OperatorsHandler.js";
+import { setupLikeButtons } from "../../../services/handlers/LikeHandler.js";
+import { PaginationHandler } from "../../../services/handlers/PaginationHandler.js";
 import PaginationView from "../../../components/PaginationView.js";
 
 export default class OperatorAll extends Views {
@@ -12,6 +12,12 @@ export default class OperatorAll extends Views {
         super();
         this.paginationHandler = new PaginationHandler();
         this.paginationView = new PaginationView(this, this.paginationHandler);
+    }
+
+    async applyFilter(filterKey, filterValue) {
+        this.paginationHandler.setFilter(filterKey, filterValue);
+        this.paginationHandler.changePage(1);
+        await OperatorsHandler.updateOperators(this);
     }
 
     async get_head() {

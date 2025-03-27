@@ -1,4 +1,4 @@
-import {ENDPOINT_OPERATORS, GET} from '../config.js'
+import {ENDPOINT_OPERATORS, GET} from '../../config.js'
 import SpecialtyProvider from './SpecialityProvider.js'
 
 /**
@@ -72,7 +72,8 @@ export default class OperatorProvider {
      * @param {*} limit Le nombre d'opérateurs à récupérer par page
      * @returns Les opérateurs récupérés
      */
-    static fetchPagesOperators = async (page, limit = 10) => {
+    static fetchPagesOperators = async (page, limit = 10, filters = {}) => {
+
         return await OperatorProvider.fetchRequest(`?_page=${page}&_per_page=${limit}`, GET);
     }
 

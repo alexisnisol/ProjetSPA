@@ -1,4 +1,4 @@
-import OperatorProvider from "./OperatorProvider.js";
+import OperatorProvider from "../providers/OperatorProvider.js";
 
 export class PaginationHandler {
     constructor(itemsPerPage = 10, startPage = 1) {
@@ -7,11 +7,12 @@ export class PaginationHandler {
         this.paginate = {};
         this.operators = [];
         this.totalPages = 10;
+        this.filters = {};
     }
 
     async requestPage(page=this.currentPage) {
         this.currentPage = page;
-        this.paginate = await OperatorProvider.fetchPagesOperators(this.currentPage, this.itemsPerPage);
+        this.paginate = await OperatorProvider.fetchPagesOperators(this.currentPage, this.itemsPerPage, this.filters);
         this.operators = this.paginate['data'];
         this.totalPages = this.paginate['pages'];
         return this.operators;
@@ -21,4 +22,11 @@ export class PaginationHandler {
         this.currentPage = page;
     }
 
+    setFilter(key, value) {
+        this.filters[key] = value;
+    }
+
+    clearFilters() {
+        this.filters = {};
+    }
 }
