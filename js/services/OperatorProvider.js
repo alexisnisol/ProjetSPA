@@ -1,4 +1,5 @@
 import {ENDPOINT_OPERATORS, GET} from '../config.js'
+import SpecialtyProvider from './SpecialityProvider.js'
 
 /**
  * Classe permettant de récupérer les données des opérateurs dans le json-server

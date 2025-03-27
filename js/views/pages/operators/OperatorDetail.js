@@ -16,7 +16,7 @@ export default class OperatorDetail extends Views {
         let request = Utils.parseRequestURL();
         let operator = await OperatorProvider.getOperator(request.id);
         let operatorSpecialties = await OperatorProvider.getOperatorSpecialties(request.id);
-        let sliderHTML = await Slider.render(operator);
+        let sliderHTML = Slider.render(operator);
 
         return /*html*/`
             <section class="operator-detail">
@@ -61,7 +61,8 @@ export default class OperatorDetail extends Views {
         `;
     }
 
-    async afterRender() {
+    async after_render() {
+        console.log("ééééééééééééééééééééééééééé")
         Slider.initSliders();
     }
 }

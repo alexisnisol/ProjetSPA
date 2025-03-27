@@ -83,11 +83,9 @@ export default class Slider {
                 
                 console.log(`[Slider Event] Input détecté - Attr: ${attribute}, Valeur: ${value}, OpID: ${operatorId}`);
                 
-                // Mise à jour visuelle immédiate
                 console.log(`[Slider Event] Mise à jour visuelle du span...`);
                 this.nextElementSibling.textContent = value;
                 
-                // Sauvegarde
                 console.log(`[Slider Event] Appel de updateSlider...`);
                 const success = await Slider.updateSlider(attribute, value, operatorId);
                 
