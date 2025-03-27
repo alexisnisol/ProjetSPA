@@ -1,5 +1,6 @@
 import {ENDPOINT_OPERATORS, GET} from '../config.js'
 import SpecialtyProvider from './SpecialityProvider.js'
+import QueryBuilder from "./QueryBuilder.js";
 
 /**
  * Classe permettant de récupérer les données des opérateurs dans le json-server
@@ -25,12 +26,24 @@ export default class OperatorProvider {
     }
 
     /**
+     * Effectue une requête fetch sur le json-server avec une query
+     * @param query La query à effectuer, sous forme de chaîne de caractères. Créé à partir de QueryBuilder.js
+     * @returns le résultat de la requête fetch au format JSON.
+     */
+    static fetchQuery = async (query) => {
+        return await OperatorProvider.fetchRequest(`?${query}`, GET);
+    }
+
+    /**
      * Récupère les opérateurs
      * @param {Number} limit La limite d'éléments à récupérer
      * @returns Les opérateurs récupérés, limités à 10 par défaut
      */
     static fetchOperators = async (limit = 10) => {
-        return await OperatorProvider.fetchRequest(`?_limit=${limit}`, GET)
+        let query = new QueryBuilder()
+            .setLimit(limit)
+            .build();
+        return await OperatorProvider.fetchQuery(query);
     }
 
     /**
@@ -41,7 +54,11 @@ export default class OperatorProvider {
      * @returns Les opérateurs récupérés, limités à 10 par défaut, triés selon le filtre
      */
     static fetchOperatorsBySort = async (filter, limit = 10) => {
-        return await OperatorProvider.fetchRequest(`?_sort=${filter}&_limit=${limit}`, GET)
+        let query = new QueryBuilder()
+            .setSort(filter)
+            .setLimit(limit)
+            .build();
+        return await OperatorProvider.fetchQuery(query);
     }
 
     /**
@@ -53,8 +70,10 @@ export default class OperatorProvider {
      * @returns {Array} - Un tableau d'opérateurs récupérés en fonction du camp et de la limite spécifiée.
      */
     static fetchOperatorsByCamp = async (camp, limit = 10) => {
-        let query = (camp === "Assaillant" || camp === "Défense") ? `&camps=${camp}` : "";
-        return await OperatorProvider.fetchRequest(`?_limit=${limit}${query}`, GET);
+        let query = new QueryBuilder()
+            .setFilter("camps", camp)
+            .setLimit(limit)
+        return await OperatorProvider.fetchQuery(query);
     }
 
     /**
@@ -73,16 +92,20 @@ export default class OperatorProvider {
      * @returns Les opérateurs récupérés
      */
     static fetchPagesOperators = async (page, limit = 10) => {
-        return await OperatorProvider.fetchRequest(`?_page=${page}&_per_page=${limit}`, GET);
+        let query = new QueryBuilder()
+            .setPage(page, limit)
+            .setSort("-annee,-saison")
+            .build();
+        return await OperatorProvider.fetchQuery(query);
     }
 
     /**
      * Récupère les spécialités d'un opérateur en fonction de son identifiant.
-     * 
+     *
      * Cette méthode permet de récupérer les spécialités d'un opérateur donné. Elle prend en entrée l'identifiant d'un opérateur
      * et retourne un tableau contenant les spécialités associées.
      * En cas d'erreur, un tableau vide est renvoyé.
-     * 
+     *
      * @param {string|number} operatorId L'identifiant de l'opérateur dont on souhaite récupérer les spécialités.
      * @returns {Promise<Array>} Une promesse qui renvoie un tableau des spécialités de l'opérateur.
      */
@@ -103,21 +126,21 @@ export default class OperatorProvider {
      * @returns {Promise} - La promesse de la requête PUT
      */
     static updateOperator = async (id, data) => {
-        
+
         try {
             const response = await fetch(`${ENDPOINT_OPERATORS}/${id}`, {
                 method: 'PUT',
-                headers: { 
+                headers: {
                     'Content-Type': 'application/json',
                     'Accept': 'application/json'
                 },
                 body: JSON.stringify(data)
             });
-    
+
             if (!response.ok) {
                 throw new Error(`Erreur HTTP! Statut: ${response.status}`);
             }
-    
+
             const result = await response.json();
             console.log("Réponse du serveur:", result);
             return result;
@@ -126,5 +149,5 @@ export default class OperatorProvider {
             throw error;
         }
     }
-    
+
 }
