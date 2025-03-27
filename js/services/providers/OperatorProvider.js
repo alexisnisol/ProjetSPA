@@ -47,6 +47,17 @@ export default class OperatorProvider {
     }
 
     /**
+     * Récupère tous les opérateurs
+     * @returns Tous les opérateurs
+     */
+    static fetchAllOperators = async (filter) => {
+        let query = new QueryBuilder()
+            .setSort(filter)
+            .build()
+        return await OperatorProvider.fetchQuery(query);
+    }
+
+    /**
      * Méthode utile pour récupérer les opérateurs selon un filtre et une limite.
      * Des méthodes de tri spécifiques sont implémentées dans OperatorSortProvider.js.
      * @param {String} filter Le filtre à appliquer
