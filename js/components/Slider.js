@@ -1,7 +1,8 @@
-import OperatorProvider from "../services/OperatorProvider.js";
-
 export default class Slider {
     static render(operator) {
+        console.log(`[Slider.render] Rendu des sliders pour l'opérateur ${operator.nom} (ID: ${operator.id})`);
+        console.log(`[Slider.render] Valeurs initiales - Santé: ${operator.sante}, Vitesse: ${operator.vitesse}, Difficulté: ${operator.difficulte}`);
+        
         return /*html*/`
             <div class="operator-slider-section">
                 <div class="attribute">
@@ -29,14 +30,20 @@ export default class Slider {
     }
 
     static async updateSlider(attribute, value, operatorId) {
+        console.log(`[updateSlider] Début de mise à jour - Attr: ${attribute}, Valeur: ${value}, OpID: ${operatorId}`);
+        
         try {
+            console.log(`[updateSlider] Récupération de l'opérateur ${operatorId}...`);
             const operator = await OperatorProvider.getOperator(operatorId);
             
             if (operator) {
+                console.log(`[updateSlider] Opérateur trouvé:`, operator);
                 const numericValue = parseInt(value, 10);
                 
                 if (numericValue < 1 || numericValue > 3) {
-                    throw new Error("Valeur invalide. Doit être 1, 2 ou 3");
+                    const errorMsg = `Valeur invalide ${numericValue}. Doit être entre 1 et 3`;
+                    console.error(`[updateSlider] ${errorMsg}`);
+                    throw new Error(errorMsg);
                 }
     
                 const updatedData = {
@@ -44,37 +51,55 @@ export default class Slider {
                     [attribute]: numericValue
                 };
                 
-                console.log("Envoi des données:", updatedData);
+                console.log(`[updateSlider] Préparation des données pour PUT:`, updatedData);
+                console.log(`[updateSlider] Envoi à OperatorProvider.updateOperator...`);
+                
                 const result = await OperatorProvider.updateOperator(operatorId, updatedData);
-                console.log("Mise à jour réussie", result);
+                
+                console.log(`[updateSlider] Réponse du serveur:`, result);
+                console.log(`[updateSlider] Mise à jour réussie pour ${attribute} = ${numericValue}`);
                 return true;
+            } else {
+                console.error(`[updateSlider] Opérateur non trouvé (ID: ${operatorId})`);
+                return false;
             }
         } catch (error) {
-            console.error("Erreur lors de la mise à jour:", error);
+            console.error(`[updateSlider] Erreur lors de la mise à jour:`, error);
             return false;
         }
     }
 
     static initSliders() {
+        console.log(`[initSliders] Initialisation des sliders...`);
         const sliders = document.querySelectorAll('.stat-slider');
         
         sliders.forEach(slider => {
-            slider.addEventListener('change', async function() {
+            console.log(`[initSliders] Ajout listener pour slider:`, slider);
+            
+            slider.addEventListener('input', async function() {
                 const value = this.value;
                 const attribute = this.getAttribute('data-attribute');
                 const operatorId = this.getAttribute('data-operator-id');
                 
+                console.log(`[Slider Event] Input détecté - Attr: ${attribute}, Valeur: ${value}, OpID: ${operatorId}`);
+                
                 // Mise à jour visuelle immédiate
+                console.log(`[Slider Event] Mise à jour visuelle du span...`);
                 this.nextElementSibling.textContent = value;
                 
                 // Sauvegarde
+                console.log(`[Slider Event] Appel de updateSlider...`);
                 const success = await Slider.updateSlider(attribute, value, operatorId);
                 
                 if (!success) {
-                    // Revert visuel si échec
-                    this.value = this.nextElementSibling.textContent;
+                    console.warn(`[Slider Event] Échec de la mise à jour, revert visuel`);
+                    this.nextElementSibling.textContent = this.value;
+                } else {
+                    console.log(`[Slider Event] Mise à jour réussie`);
                 }
             });
         });
+        
+        console.log(`[initSliders] ${sliders.length} sliders initialisés`);
     }
 }
