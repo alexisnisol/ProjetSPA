@@ -62,7 +62,6 @@ export default class OperatorDetail extends Views {
     }
 
     async after_render() {
-        console.log("ééééééééééééééééééééééééééé")
         Slider.initSliders();
     }
 }
