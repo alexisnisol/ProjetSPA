@@ -59,7 +59,7 @@ export default class OperatorDetail extends Views {
                                 ${sliderHTML}  
                             </div>
                             <div class="equipment-section">
-                                <h3 class="equipment-title">ÉQUIPEMENT</h3> <!-- Correction de la balise fermante -->
+                                <h3 class="equipment-title">ÉQUIPEMENT</h3>
                                 ${equipmentHTML}
                             </div>
                         </div>

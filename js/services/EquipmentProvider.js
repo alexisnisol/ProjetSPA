@@ -2,7 +2,19 @@ import WeaponProvider from "./WeaponProvider.js";
 import GadgetProvider from "./GadgetProvider.js";
 import CapacityProvider from "./CapacityProvider.js";
 
+/**
+ * Classe fournissant des services pour la gestion de l'équipement des opérateurs
+ */
 export default class EquipmentProvider {
+
+    /**
+     * Récupère l'équipement complet d'un opérateur
+     * @param {Object} operator - L'opérateur dont on veut l'équipement
+     * @returns {Promise<Object>} Un objet contenant armes, gadgets et capacité
+     * @example
+     * // Renvoie { primaryWeapons: [...], secondaryWeapons: [...], gadget: {...}, capacity: {...} }
+     * const equipment = await EquipmentProvider.getOperatorEquipment(operator);
+     */
     static async getOperatorEquipment(operator) {
         try {
             const [primaryWeapons, secondaryWeapons, gadget, capacity] = await Promise.all([
