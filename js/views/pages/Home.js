@@ -1,4 +1,4 @@
-import OperatorSortProvider from "../../services/OperatorSortProvider.js";
+import OperatorSortProvider from "../../services/providers/OperatorSortProvider.js";
 import Card from "../../components/Card.js";
 import Views from "../Views.js";
 

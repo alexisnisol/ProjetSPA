@@ -1,3 +1,5 @@
+import OperatorsHandler from "../services/handlers/OperatorsHandler.js";
+
 export default class PaginationView {
 
     constructor(view, paginationHandler) {
@@ -40,10 +42,7 @@ export default class PaginationView {
             link.addEventListener('click', async (event) => {
                 const page = parseInt(link.dataset.page);
                 await this.paginationHandler.changePage(page);
-                // On remplace le contenu de la page par le contenu de la vue
-                const content = null || document.querySelector('#content');
-                content.innerHTML = await this.view.render();
-                await this.view.after_render();
+                await OperatorsHandler.updateOperators(this.view);
             });
         });
     }
