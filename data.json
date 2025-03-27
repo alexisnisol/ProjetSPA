@@ -282,7 +282,7 @@
       "id": "8",
       "nom": "P226 MK 25",
       "classe_arme": 50,
-      "image": "p226-mk-25.png"
+      "image": "p226_mk_25.png"
     },
     {
       "id": "9",
@@ -1448,7 +1448,7 @@
       "bio": "La vérité éclate au grand jour grâce au capteur électrique SPEC-IO de Solis, un nouveau dispositif de détection de gadgets pour les défenseurs. Avec la possibilité de marquer ou pinger les appareils électroniques de ses adversaires, personne ne pourra se cacher.",
       "annee": 7,
       "saison": 4,
-      "sante": 2,
+      "sante": 1,
       "vitesse": 2,
       "difficulte": 3,
       "arme_principale": [

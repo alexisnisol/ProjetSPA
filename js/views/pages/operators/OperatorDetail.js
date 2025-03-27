@@ -2,6 +2,8 @@ import Utils from '../../../services/Utils.js';
 import OperatorProvider from "../../../services/OperatorProvider.js";
 import Views from "../../Views.js";
 import Slider from "../../../components/Slider.js";
+import EquipmentProvider from "../../../services/EquipmentProvider.js";
+import EquipmentGrid from "../../../components/EquipmentGrid.js"
 
 export default class OperatorDetail extends Views {
     async get_head() {
@@ -17,6 +19,8 @@ export default class OperatorDetail extends Views {
         let operator = await OperatorProvider.getOperator(request.id);
         let operatorSpecialties = await OperatorProvider.getOperatorSpecialties(request.id);
         let sliderHTML = Slider.render(operator);
+        let equipmentData = await EquipmentProvider.getOperatorEquipment(operator);
+        let equipmentHTML = EquipmentGrid.render(equipmentData);
 
         return /*html*/`
             <section class="operator-detail">
@@ -53,6 +57,10 @@ export default class OperatorDetail extends Views {
                             <div class="attributes-section">
                                 <h3 class="attributes-title">ATTRIBUTS</h3>
                                 ${sliderHTML}  
+                            </div>
+                            <div class="equipment-section">
+                                <h3 class="equipment-title">ÉQUIPEMENT</h3> <!-- Correction de la balise fermante -->
+                                ${equipmentHTML}
                             </div>
                         </div>
                     </div>
