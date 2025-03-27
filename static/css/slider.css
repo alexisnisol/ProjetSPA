@@ -1,0 +1,74 @@
+/* Style de base pour les attributs */
+.attribute {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    gap: 15px;
+}
+
+/* Style du texte des attributs */
+.attribute span:first-child {
+    min-width: 100px;
+    text-transform: uppercase;
+}
+
+/* Style du slider */
+.stat-slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 8px;
+    background: rgba(255, 255, 255, 0.2); /* Partie droite (inactive) */
+    border-radius: 4px;
+    outline: none;
+    margin: 0 10px;
+}
+
+/* Barre remplie (orange) - Partie gauche */
+.stat-slider::-webkit-slider-runnable-track {
+    height: 8px;
+    background: linear-gradient(to right, #ff9800 0%, #ff9800 var(--fill-percent), 
+                rgba(255, 255, 255, 0.2) var(--fill-percent), 
+                rgba(255, 255, 255, 0.2) 100%);
+    border-radius: 4px;
+}
+
+/* Curseur (thumb) */
+.stat-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 18px;
+    height: 18px;
+    background: #fff;
+    border-radius: 50%;
+    border: 2px solid #ff9800;
+    cursor: pointer;
+    margin-top: -5px;
+    position: relative;
+    z-index: 1;
+}
+
+/* Style pour Firefox */
+.stat-slider::-moz-range-track {
+    height: 8px;
+    background: linear-gradient(to right, #ff9800 0%, #ff9800 var(--fill-percent), 
+              rgba(255, 255, 255, 0.2) var(--fill-percent), 
+              rgba(255, 255, 255, 0.2) 100%);
+    border-radius: 4px;
+}
+
+.stat-slider::-moz-range-thumb {
+    width: 18px;
+    height: 18px;
+    background: #fff;
+    border-radius: 50%;
+    border: 2px solid #ff9800;
+    cursor: pointer;
+}
+
+/* Style pour la valeur numérique */
+.value {
+    font-size: 1.1rem;
+    color: #ff9800;
+    font-weight: 700;
+    min-width: 20px;
+    text-align: center;
+}
