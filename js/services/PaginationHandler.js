@@ -1,50 +1,24 @@
+import OperatorProvider from "./OperatorProvider.js";
+
 export class PaginationHandler {
-    constructor(totalItems, itemsPerPage, currentPage = 1) {
-        this.totalItems = totalItems;
+    constructor(itemsPerPage = 10, startPage = 1) {
         this.itemsPerPage = itemsPerPage;
-        this.currentPage = currentPage;
+        this.currentPage = startPage;
+        this.paginate = {};
+        this.operators = [];
+        this.totalPages = 10;
     }
 
-    renderPagination() {
-        const totalPages = Math.ceil(this.totalItems / this.itemsPerPage);
-        let paginationHTML = '';
-
-        if (this.currentPage > 1) {
-            paginationHTML += /*html*/`
-                <li class="page-item">
-                    <a class="page-link" href="#" data-page="${this.currentPage - 1}">Précédent</a>
-                </li>
-            `;
-        }
-
-        for (let i = 1; i <= totalPages; i++) {
-            paginationHTML += /*html*/`
-                <li class="page-item ${i === this.currentPage ? 'active' : ''}">
-                    <a class="page-link" href="#" data-page="${i}">${i}</a>
-                </li>
-            `;
-        }
-
-        if (this.currentPage < totalPages) {
-            paginationHTML += /*html*/`
-                <li class="page-item">
-                    <a class="page-link" href="#" data-page="${this.currentPage + 1}">Suivant</a>
-                </li>
-            `;
-        }
-
-        return paginationHTML;
+    async requestPage(page=this.currentPage) {
+        this.currentPage = page;
+        this.paginate = await OperatorProvider.fetchPagesOperators(this.currentPage, this.itemsPerPage);
+        this.operators = this.paginate['data'];
+        this.totalPages = this.paginate['pages'];
+        return this.operators;
     }
 
-    setupPagination(callback) {
-        const paginationLinks = document.querySelectorAll('.page-link');
-        paginationLinks.forEach(link => {
-            link.addEventListener('click', (event) => {
-                event.preventDefault();
-                const page = parseInt(link.dataset.page);
-                this.currentPage = page;
-                callback(page);
-            });
-        });
+    changePage(page) {
+        this.currentPage = page;
     }
+
 }
