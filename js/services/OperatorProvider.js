@@ -1,6 +1,6 @@
 import {ENDPOINT_OPERATORS, GET} from '../config.js'
 import SpecialtyProvider from './SpecialityProvider.js'
-import QueryBuilder from "./QueryBuilder";
+import QueryBuilder from "./QueryBuilder.js";
 
 /**
  * Classe permettant de récupérer les données des opérateurs dans le json-server
