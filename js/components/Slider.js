@@ -1,4 +1,4 @@
-import OperatorProvider from '../services/OperatorProvider.js'
+import OperatorProvider from '../services/providers/OperatorProvider.js'
 
 export default class Slider {
     static render(operator) {

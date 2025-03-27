@@ -1,10 +1,9 @@
-import OperatorProvider from "../../../services/OperatorProvider.js";
 import Views from "../../Views.js";
 import Card from "../../../components/Card.js";
-import { setupButtonHandlers, updateOperators } from "../../../services/OperatorHandlers.js";
-import { setupLikeButtons } from "../../../services/LikeHandler.js";
-import { PaginationHandler } from "../../../services/PaginationHandler.js";
+import { setupLikeButtons } from "../../../services/handlers/LikeHandler.js";
+import { PaginationHandler } from "../../../services/handlers/PaginationHandler.js";
 import PaginationView from "../../../components/PaginationView.js";
+import OperatorsHandler from "../../../services/handlers/OperatorsHandler.js";
 
 export default class OperatorAll extends Views {
     
@@ -12,6 +11,12 @@ export default class OperatorAll extends Views {
         super();
         this.paginationHandler = new PaginationHandler();
         this.paginationView = new PaginationView(this, this.paginationHandler);
+    }
+
+    async applyFilter(filterKey, filterValue) {
+        this.paginationHandler.setFilter(filterKey, filterValue);
+        this.paginationHandler.changePage(1);
+        await OperatorsHandler.updateOperators(this);
     }
 
     async get_head() {
@@ -32,11 +37,11 @@ export default class OperatorAll extends Views {
                 <div class="hero-content">
                     <h1>TOUS LES AGENTS</h1>
                     <div class="button-container">
-                        <button class="btn btn-orange" id="orange-btn">
+                        <button class="btn btn-orange ${this.paginationHandler.hasFilter("camps", "Assaillant") ? "selected" : ""}" id="orange-btn">
                             <img src="../../static/img/ui/logoAssaillant.png" alt="Icon 1" id="icon1" class="btn-icon">
                             ASSAILLANTS
                         </button>
-                        <button class="btn btn-blue" id="blue-btn">
+                        <button class="btn btn-blue ${this.paginationHandler.hasFilter("camps", "Défense") ? "selected" : ""}" id="blue-btn">
                             <img src="../../static/img/ui/logoDefenseur.png" alt="Icon 2" id="icon2" class="btn-icon">
                             DÉFENSEURS
                         </button>
@@ -83,7 +88,7 @@ export default class OperatorAll extends Views {
 
     async after_render() {
         this.paginationView.setupButtons();
-        setupButtonHandlers(this);
+        OperatorsHandler.setupButtonHandlers(this);
         setupLikeButtons();
     }
 }
