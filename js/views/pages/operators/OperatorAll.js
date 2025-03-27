@@ -2,7 +2,7 @@ import OperatorProvider from "../../../services/OperatorProvider.js";
 import Views from "../../Views.js";
 import Card from "../../../components/Card.js";
 import { setupButtonHandlers, updateOperators } from "../../../services/OperatorHandlers.js";
-import { setupLikeButtons } from "../../../services/LikeHandler.js";
+import {isFavorite, setupLikeButtons} from "../../../services/LikeHandler.js";
 import { PaginationHandler } from "../../../services/PaginationHandler.js";
 import PaginationView from "../../../components/PaginationView.js";
 
@@ -23,7 +23,7 @@ export default class OperatorAll extends Views {
 
     async render() {
         this.operators = await this.paginationHandler.requestPage();
-        const html = this.operators.map(operator => Card.render(operator, true)).join('\n ');
+        const html = this.operators.map(operator => Card.render(operator, true, isFavorite(operator.id))).join('\n ');
 
         const paginationHTML = PaginationView.render(this.paginationHandler.currentPage, this.paginationHandler.totalPages);
         const content = /*html*/`

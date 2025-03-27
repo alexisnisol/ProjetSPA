@@ -13,7 +13,7 @@ export default class Card {
                         <p class="card-text">${operator.nom ? operator.nom.slice(0, 100) : ''}</p>
                         <div class="btn-group">
                             <a href="#/operators/${operator.id}" class="btn btn-outline-secondary">+ Détails sur ${operator.nom}</a>
-                            ${withLike ? Card.renderLikeButton(isLiked) : ''}
+                            ${withLike ? Card.renderLikeButton(operator.id, isLiked) : ''}
                         </div>
                     </div>
                 </div>
@@ -21,10 +21,10 @@ export default class Card {
         `;
     }
 
-    static renderLikeButton(isLiked) {
+    static renderLikeButton(idOperator, isLiked) {
         const likeButtonClass = isLiked ? "❤️" : "🤍";
         return /*html*/`
-            <button class="btn btn-outline-primary like-button">
+            <button class="btn btn-outline-primary like-button" data-operator-id="${idOperator}">
                 ${likeButtonClass}
             </button>
         `;
