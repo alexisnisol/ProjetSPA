@@ -10,6 +10,7 @@ export default class OperatorDetail extends Views {
         return /*html*/`
             <link href="/static/css/details.css" rel="stylesheet">
             <link href="/static/css/slider.css" rel="stylesheet">
+            <link href="/static/css/equipment.css" rel="stylesheet">
             <script src="../../../services/CursorSlider.js" defer></script>
         `;
     }
@@ -58,10 +59,10 @@ export default class OperatorDetail extends Views {
                                 <h3 class="attributes-title">ATTRIBUTS</h3>
                                 ${sliderHTML}  
                             </div>
-                            <div class="equipment-section">
-                                <h3 class="equipment-title">ÉQUIPEMENT</h3>
-                                ${equipmentHTML}
-                            </div>
+                        </div>
+                        <div class="equipment-section">
+                            <h3 id="equipement" class="equipment-title">ÉQUIPEMENT</h3>
+                            ${equipmentHTML}
                         </div>
                     </div>
                 </div>
