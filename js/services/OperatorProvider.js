@@ -76,6 +76,16 @@ export default class OperatorProvider {
         return await OperatorProvider.fetchRequest(`?_page=${page}&_per_page=${limit}`, GET);
     }
 
+    /**
+     * Récupère les spécialités d'un opérateur en fonction de son identifiant.
+     * 
+     * Cette méthode permet de récupérer les spécialités d'un opérateur donné. Elle prend en entrée l'identifiant d'un opérateur
+     * et retourne un tableau contenant les spécialités associées.
+     * En cas d'erreur, un tableau vide est renvoyé.
+     * 
+     * @param {string|number} operatorId L'identifiant de l'opérateur dont on souhaite récupérer les spécialités.
+     * @returns {Promise<Array>} Une promesse qui renvoie un tableau des spécialités de l'opérateur.
+     */
     static async getOperatorSpecialties(operatorId) {
         try {
             const specialties = await SpecialtyProvider.getSpecialtiesForOperator(operatorId);
