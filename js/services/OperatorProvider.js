@@ -94,6 +94,7 @@ export default class OperatorProvider {
     static fetchPagesOperators = async (page, limit = 10) => {
         let query = new QueryBuilder()
             .setPage(page, limit)
+            .setSort("-annee,-saison")
             .build();
         return await OperatorProvider.fetchQuery(query);
     }
