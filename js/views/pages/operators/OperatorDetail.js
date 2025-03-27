@@ -29,7 +29,7 @@ export default class OperatorDetail extends Views {
                         <div class="operator-header">
                         <div class="operator-title-logo">
                             <img class="logo_perso" src="/static/img/logos/logo_${operator.nom.toLowerCase().replace(/\s+/g, '_')}.png" alt="Logo de ${operator.nom}">
-                            <h1 class="resultation-title">DÉTAILS ${operator.nom.toUpperCase()}</h1>
+                            <h1 class="resultation-title">${operator.nom.toUpperCase()}</h1>
                         </div>
                     </div>
                         
