@@ -1,6 +1,5 @@
 import {ENDPOINT_OPERATORS, GET} from '../config.js'
-import QueryBuilder from "./QueryBuilder";
-import { ENDPOINT_OPERATORS, GET } from '../config.js'
+import SpecialtyProvider from './SpecialityProvider.js'
 import QueryBuilder from "./QueryBuilder";
 
 /**
@@ -98,4 +97,56 @@ export default class OperatorProvider {
             .build();
         return await OperatorProvider.fetchQuery(query);
     }
+
+    /**
+     * Récupère les spécialités d'un opérateur en fonction de son identifiant.
+     *
+     * Cette méthode permet de récupérer les spécialités d'un opérateur donné. Elle prend en entrée l'identifiant d'un opérateur
+     * et retourne un tableau contenant les spécialités associées.
+     * En cas d'erreur, un tableau vide est renvoyé.
+     *
+     * @param {string|number} operatorId L'identifiant de l'opérateur dont on souhaite récupérer les spécialités.
+     * @returns {Promise<Array>} Une promesse qui renvoie un tableau des spécialités de l'opérateur.
+     */
+    static async getOperatorSpecialties(operatorId) {
+        try {
+            const specialties = await SpecialtyProvider.getSpecialtiesForOperator(operatorId);
+            return specialties;
+        } catch (error) {
+            console.error('Error:', error);
+            return [];
+        }
+    }
+
+    /**
+     * Met à jour un opérateur existant
+     * @param {Number} id - L'ID de l'opérateur à mettre à jour
+     * @param {Object} data - Les nouvelles données de l'opérateur
+     * @returns {Promise} - La promesse de la requête PUT
+     */
+    static updateOperator = async (id, data) => {
+
+        try {
+            const response = await fetch(`${ENDPOINT_OPERATORS}/${id}`, {
+                method: 'PUT',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json'
+                },
+                body: JSON.stringify(data)
+            });
+
+            if (!response.ok) {
+                throw new Error(`Erreur HTTP! Statut: ${response.status}`);
+            }
+
+            const result = await response.json();
+            console.log("Réponse du serveur:", result);
+            return result;
+        } catch (error) {
+            console.error("Erreur dans updateOperator:", error);
+            throw error;
+        }
+    }
+
 }

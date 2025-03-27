@@ -1,10 +1,11 @@
 export const ENDPOINT = 'http://localhost:3000';
-export const ENDPOINT_OPERATORS = 'http://localhost:3000/operateurs';
+export const ENDPOINT_OPERATORS = `${ENDPOINT}/operateurs`;
+export const ENDPOINT_SPECIALTE = `${ENDPOINT}/specialite`;
 
 export const GET = {
     method: 'GET',
     headers: {
-        'Content-Type': 'application/json'
+        'Content-Type': 'application/json',
     }
 };
 
