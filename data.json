@@ -1528,9 +1528,9 @@
       "bio": "Une fois en place, le portail projette un rayon laser capable de détecter le moindre mouvement qui le traverse. Lorsqu'un intru est détecté, l'énergie émise par le laser augmente drastiquement, causant des brûlures au second et au troisième degré. Nous avons passé près d'une heure à jeter divers objets à travers le portail, que ce soit des liasses de papier ou des morceaux des fruits, pour enfin trouver le paramétrage qui causerait le plus de dégâts tout en consommant le moins d'énergie.",
       "annee": 5,
       "saison": 4,
-      "sante": 3,
-      "vitesse": 1,
-      "difficulte": 1,
+      "sante": 2,
+      "vitesse": 2,
+      "difficulte": 2,
       "arme_principale": [
         26
       ],

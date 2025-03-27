@@ -89,7 +89,6 @@ export default class OperatorProvider {
     static async getOperatorSpecialties(operatorId) {
         try {
             const specialties = await SpecialtyProvider.getSpecialtiesForOperator(operatorId);
-            console.log('Specialties for operator', operatorId, ':', specialties);
             return specialties;
         } catch (error) {
             console.error('Error:', error);
@@ -104,8 +103,6 @@ export default class OperatorProvider {
      * @returns {Promise} - La promesse de la requête PUT
      */
     static updateOperator = async (id, data) => {
-        console.log("Envoi de la requête PUT pour l'opérateur", id);
-        console.log("Données:", data);
         
         try {
             const response = await fetch(`${ENDPOINT_OPERATORS}/${id}`, {
