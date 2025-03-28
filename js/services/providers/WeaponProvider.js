@@ -1,4 +1,4 @@
-import { ENDPOINT_ARMES, ENDPOINT_CLASSE_ARME, GET } from '../config.js';
+import { ENDPOINT_ARMES, ENDPOINT_CLASSE_ARME, GET } from '../../config.js';
 
 /**
  * Classe fournissant des services pour la gestion des armes
