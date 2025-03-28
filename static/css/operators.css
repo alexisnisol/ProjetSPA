@@ -195,6 +195,7 @@ main {
 .operator-all-section .card:hover {
     transform: scale(1.05) translateY(-8px);
     box-shadow: 0 8px 16px rgba(0, 195, 173, 0.4);
+    cursor: pointer;
 }
 
 /* Image principale */
