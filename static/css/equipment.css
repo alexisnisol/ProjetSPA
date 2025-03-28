@@ -44,6 +44,7 @@
     flex-wrap: wrap;
     gap: 15px;
     justify-content: center;
+    padding-bottom: 3rem;
 }
 
 .equipment-item {
