@@ -246,7 +246,7 @@
       "id": "2",
       "nom": "Commando 9",
       "classe_arme": 0,
-      "image": "commando9.png"
+      "image": "commando-9.png"
     },
     {
       "id": "3",
@@ -1390,7 +1390,7 @@
       "saison": 0,
       "sante": 2,
       "vitesse": 2,
-      "difficulte": 1,
+      "difficulte": 2,
       "arme_principale": [
         2
       ],
