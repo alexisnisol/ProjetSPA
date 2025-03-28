@@ -29,7 +29,8 @@ export default class OperatorDetail extends Views {
             <section class="operator-detail">
                 <div class="main-background">
                     <div class="background-overlay"></div>
-                    
+                    <button class="back-button" onclick="window.history.back()">&#8592; Retour</button>
+
                     <img src="/static/img/operators/${operator.image}" alt="${operator.nom}" class="operator-character">
                     
                     <div class="detail-content">

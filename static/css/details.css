@@ -30,6 +30,32 @@
     z-index: 2;
 }
 
+.back-button {
+    position: absolute;
+    top: 6.5rem;
+    left: 1.6rem;
+    padding: 10px 15px;
+    background-color: #ff9800;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    z-index: 5;
+    display: flex;
+    align-items: center; /* Aligne verticalement la flèche et le texte */
+}
+
+.back-button:hover {
+    background-color: #dd8502;
+}
+
+.back-button span {
+    margin-right: 8px; /* Ajoute de l'espace entre la flèche et le texte */
+}
+
+
+
 .operator-character {
     position: relative;
     top: 10rem;
