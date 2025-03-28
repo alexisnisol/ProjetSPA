@@ -10,7 +10,6 @@ main {
     position: relative;
     width: 100%;
     height: auto;
-    min-height: 40vh;
     background-size: cover;
     background-position: center;
     display: flex;
@@ -18,7 +17,7 @@ main {
     align-items: flex-start;
     text-align: center;
     padding-top: 40px;
-    margin-bottom: 0;
+    margin-bottom: 2em;
 }
 
 .hero-content {
@@ -76,6 +75,14 @@ main {
 .btn-blue {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
     background-color: #2B7AD4;
+}
+
+.btn-blue.selected {
+    border-bottom: 5px solid #00ffe5;
+}
+
+.btn-orange.selected {
+    border-bottom: 5px solid #f6ab0a;
 }
 
 .btn-blue:hover {

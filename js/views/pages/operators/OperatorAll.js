@@ -1,17 +1,25 @@
-import OperatorProvider from "../../../services/OperatorProvider.js";
 import Views from "../../Views.js";
 import Card from "../../../components/Card.js";
-import { setupButtonHandlers, updateOperators } from "../../../services/OperatorHandlers.js";
-import { setupLikeButtons } from "../../../services/LikeHandler.js";
-import { PaginationHandler } from "../../../services/PaginationHandler.js";
+import { isFavorite, setupLikeButtons } from "../../../services/handlers/LikeHandler.js";
+import { PaginationHandler } from "../../../services/handlers/PaginationHandler.js";
 import PaginationView from "../../../components/PaginationView.js";
+import OperatorsHandler from "../../../services/handlers/OperatorsHandler.js";
+import OperatorSortProvider from "../../../services/providers/OperatorSortProvider.js";
+import SearchHandler from "../../../services/handlers/SearchHandler.js";
 
 export default class OperatorAll extends Views {
     
     constructor() {
         super();
         this.paginationHandler = new PaginationHandler();
+        this.searchHandler = new SearchHandler();
         this.paginationView = new PaginationView(this, this.paginationHandler);
+    }
+
+    async applyFilter(filterKey, filterValue) {
+        this.paginationHandler.setFilter(filterKey, filterValue);
+        this.paginationHandler.changePage(1);
+        await OperatorsHandler.updateOperators(this);
     }
 
     async get_head() {
@@ -23,8 +31,13 @@ export default class OperatorAll extends Views {
 
     async render() {
         this.operators = await this.paginationHandler.requestPage();
-        const html = this.operators.map(operator => Card.render(operator, true)).join('\n ');
-
+        if(this.searchHandler.hasSearch()) {
+            this.operators = (await OperatorSortProvider.fetchAllByDate()).filter(operator => operator.image.toLowerCase().includes(this.searchHandler.getSearch().toLowerCase()));
+        }
+        let html = this.operators.map(operator => Card.render(operator, true, isFavorite(operator.id))).join('\n ');
+        if (this.operators.length === 0) {
+            html = "<p class='btn'>Aucun personnage</p>";
+        }
         const paginationHTML = PaginationView.render(this.paginationHandler.currentPage, this.paginationHandler.totalPages);
         const content = /*html*/`
             <!-- Section Hero avec boutons et barre de recherche -->
@@ -32,11 +45,11 @@ export default class OperatorAll extends Views {
                 <div class="hero-content">
                     <h1>TOUS LES AGENTS</h1>
                     <div class="button-container">
-                        <button class="btn btn-orange" id="orange-btn">
+                        <button class="btn btn-orange ${this.paginationHandler.hasFilter("camps", "Assaillant") ? "selected" : ""}" id="orange-btn">
                             <img src="../../static/img/ui/logoAssaillant.png" alt="Icon 1" id="icon1" class="btn-icon">
                             ASSAILLANTS
                         </button>
-                        <button class="btn btn-blue" id="blue-btn">
+                        <button class="btn btn-blue ${this.paginationHandler.hasFilter("camps", "Défense") ? "selected" : ""}" id="blue-btn">
                             <img src="../../static/img/ui/logoDefenseur.png" alt="Icon 2" id="icon2" class="btn-icon">
                             DÉFENSEURS
                         </button>
@@ -52,7 +65,7 @@ export default class OperatorAll extends Views {
                             Voir les filtres
                         </button>
                         <div class="search-bar">
-                            <input type="text" placeholder="Rechercher un agent...">
+                            <input type="text" id="search-input" placeholder="Rechercher un agent..." value="${this.searchHandler.getSearch()}">
                             <button class="search-btn">
                                 <img src="../../static/img/ui/loupe.png" alt="Rechercher">
                             </button>
@@ -73,7 +86,7 @@ export default class OperatorAll extends Views {
             <!-- Pagination -->
             <nav aria-label="Page navigation">
                 <ul class="pagination justify-content-center mt-4">
-                    ${paginationHTML}
+                    ${this.searchHandler.hasSearch() ? "" : paginationHTML}
                 </ul>
             </nav>
         `;
@@ -83,7 +96,8 @@ export default class OperatorAll extends Views {
 
     async after_render() {
         this.paginationView.setupButtons();
-        setupButtonHandlers(this);
+        OperatorsHandler.setupButtonHandlers(this);
         setupLikeButtons();
+        this.searchHandler.setup(this);
     }
 }

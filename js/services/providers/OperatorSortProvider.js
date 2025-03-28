@@ -7,9 +7,9 @@ export default class OperatorSortProvider {
         return await OperatorProvider.fetchOperatorsBySort(filter, limit);
     }
 
-    static fetchByCamp = async (camp) => {
-        const operators = await OperatorProvider.fetchOperatorsByCamp(camp, 75);
-        return operators;
-    };
+    static fetchAllByDate = async (desc = true) => {
+        let filter = desc ? "-annee,-saison" : "annee,saison";
+        return await OperatorProvider.fetchAllOperators(filter);
+    }
     
 }

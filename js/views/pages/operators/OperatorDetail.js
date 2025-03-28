@@ -1,5 +1,5 @@
 import Utils from '../../../services/Utils.js';
-import OperatorProvider from "../../../services/OperatorProvider.js";
+import OperatorProvider from "../../../services/providers/OperatorProvider.js";
 import Views from "../../Views.js";
 import Slider from "../../../components/Slider.js";
 import EquipmentProvider from "../../../services/EquipmentProvider.js";

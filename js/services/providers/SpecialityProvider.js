@@ -1,4 +1,4 @@
-import { ENDPOINT, ENDPOINT_SPECIALTE, GET } from '../config.js';
+import { ENDPOINT, ENDPOINT_SPECIALTE, GET } from '../../config.js';
 
 /**
  * Classe fournissant des services pour la gestion des spécialités des opérateurs

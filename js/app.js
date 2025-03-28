@@ -1,15 +1,18 @@
 import Home from './views/pages/Home.js';
 import OperatorAll from './views/pages/operators/OperatorAll.js';
 import OperatorDetail from './views/pages/operators/OperatorDetail.js';
+import Favorites from "./views/pages/operators/Favorites.js";
 import About from './views/pages/About.js';
 import Error404 from './views/pages/Error404.js';
 
 import Utils from './services/Utils.js';
 
+
 const routes = {
     '/'                     : Home
     , '/about'              : About
     , '/operators'           : OperatorAll
+    , '/favorites'           : Favorites
     , '/operators/:id'       : OperatorDetail
 };
 
