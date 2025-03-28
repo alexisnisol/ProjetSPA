@@ -2,12 +2,15 @@ import Utils from '../../../services/Utils.js';
 import OperatorProvider from "../../../services/providers/OperatorProvider.js";
 import Views from "../../Views.js";
 import Slider from "../../../components/Slider.js";
+import EquipmentProvider from "../../../services/EquipmentProvider.js";
+import EquipmentGrid from "../../../components/EquipmentGrid.js"
 
 export default class OperatorDetail extends Views {
     async get_head() {
         return /*html*/`
             <link href="/static/css/details.css" rel="stylesheet">
             <link href="/static/css/slider.css" rel="stylesheet">
+            <link href="/static/css/equipment.css" rel="stylesheet">
             <script src="../../../services/CursorSlider.js" defer></script>
         `;
     }
@@ -17,6 +20,8 @@ export default class OperatorDetail extends Views {
         let operator = await OperatorProvider.getOperator(request.id);
         let operatorSpecialties = await OperatorProvider.getOperatorSpecialties(request.id);
         let sliderHTML = Slider.render(operator);
+        let equipmentData = await EquipmentProvider.getOperatorEquipment(operator);
+        let equipmentHTML = EquipmentGrid.render(equipmentData);
 
         return /*html*/`
             <section class="operator-detail">
@@ -54,6 +59,10 @@ export default class OperatorDetail extends Views {
                                 <h3 class="attributes-title">ATTRIBUTS</h3>
                                 ${sliderHTML}  
                             </div>
+                        </div>
+                        <div class="equipment-section">
+                            <h3 id="equipement" class="equipment-title">ÉQUIPEMENT</h3>
+                            ${equipmentHTML}
                         </div>
                     </div>
                 </div>
