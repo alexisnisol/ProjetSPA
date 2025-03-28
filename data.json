@@ -1377,7 +1377,8 @@
       "arme_secondaire": [
         1
       ],
-      "gadget": 0
+      "gadget": 0,
+      "note": 3
     },
     {
       "id": "1",
@@ -1397,7 +1398,8 @@
       "arme_secondaire": [
         4
       ],
-      "gadget": 2
+      "gadget": 2,
+      "note": 3
     },
     {
       "id": "2",
@@ -1417,7 +1419,8 @@
       "arme_secondaire": [
         8
       ],
-      "gadget": 6
+      "gadget": 6,
+      "note": 3
     },
     {
       "id": "3",
@@ -1437,7 +1440,8 @@
       "arme_secondaire": [
         11
       ],
-      "gadget": 3
+      "gadget": 3,
+      "note": 3
     },
     {
       "id": "4",
@@ -1457,7 +1461,8 @@
       "arme_secondaire": [
         15
       ],
-      "gadget": 3
+      "gadget": 3,
+      "note": 3
     },
     {
       "id": "5",
@@ -1477,7 +1482,8 @@
       "arme_secondaire": [
         0
       ],
-      "gadget": 0
+      "gadget": 0,
+      "note": 1
     },
     {
       "id": "6",
@@ -1497,7 +1503,8 @@
       "arme_secondaire": [
         20
       ],
-      "gadget": 4
+      "gadget": 4,
+      "note": 3
     },
     {
       "id": "7",
@@ -1517,7 +1524,8 @@
       "arme_secondaire": [
         23
       ],
-      "gadget": 2
+      "gadget": 2,
+      "note": 3
     },
     {
       "id": "8",
@@ -1537,7 +1545,8 @@
       "arme_secondaire": [
         28
       ],
-      "gadget": 3
+      "gadget": 3,
+      "note": 3
     },
     {
       "id": "9",
@@ -1557,7 +1566,8 @@
       "arme_secondaire": [
         25
       ],
-      "gadget": 3
+      "gadget": 3,
+      "note": 3
     },
     {
       "id": "10",
@@ -1577,7 +1587,8 @@
       "arme_secondaire": [
         12
       ],
-      "gadget": 2
+      "gadget": 2,
+      "note": 3
     },
     {
       "id": "11",
@@ -1597,7 +1608,8 @@
       "arme_secondaire": [
         36
       ],
-      "gadget": 1
+      "gadget": 1,
+      "note": 3
     },
     {
       "id": "12",
@@ -1617,7 +1629,8 @@
       "arme_secondaire": [
         1
       ],
-      "gadget": 1
+      "gadget": 1,
+      "note": 3
     },
     {
       "id": "13",
@@ -1637,7 +1650,8 @@
       "arme_secondaire": [
         41
       ],
-      "gadget": 4
+      "gadget": 4,
+      "note": 3
     },
     {
       "id": "14",
@@ -1657,7 +1671,8 @@
       "arme_secondaire": [
         43
       ],
-      "gadget": 2
+      "gadget": 2,
+      "note": 3
     },
     {
       "id": "15",
@@ -1677,7 +1692,8 @@
       "arme_secondaire": [
         0
       ],
-      "gadget": 0
+      "gadget": 0,
+      "note": 3
     },
     {
       "id": "16",
@@ -1697,7 +1713,8 @@
       "arme_secondaire": [
         0
       ],
-      "gadget": 0
+      "gadget": 0,
+      "note": 3
     },
     {
       "id": "17",
@@ -1717,7 +1734,8 @@
       "arme_secondaire": [
         0
       ],
-      "gadget": 0
+      "gadget": 0,
+      "note": 3
     },
     {
       "id": "18",
@@ -1737,7 +1755,8 @@
       "arme_secondaire": [
         0
       ],
-      "gadget": 0
+      "gadget": 0,
+      "note": 3
     },
     {
       "id": "19",
@@ -1757,7 +1776,8 @@
       "arme_secondaire": [
         0
       ],
-      "gadget": 0
+      "gadget": 0,
+      "note": 3
     },
     {
       "id": "20",
@@ -1777,7 +1797,8 @@
       "arme_secondaire": [
         0
       ],
-      "gadget": 0
+      "gadget": 0,
+      "note": 3
     },
     {
       "id": "21",
@@ -1797,7 +1818,8 @@
       "arme_secondaire": [
         0
       ],
-      "gadget": 0
+      "gadget": 0,
+      "note": 3
     },
     {
       "id": "22",
@@ -1817,7 +1839,8 @@
       "arme_secondaire": [
         0
       ],
-      "gadget": 0
+      "gadget": 0,
+      "note": 3
     },
     {
       "id": "23",
@@ -1837,7 +1860,8 @@
       "arme_secondaire": [
         0
       ],
-      "gadget": 0
+      "gadget": 0,
+      "note": 3
     },
     {
       "id": "24",
@@ -1857,7 +1881,8 @@
       "arme_secondaire": [
         0
       ],
-      "gadget": 0
+      "gadget": 0,
+      "note": 3
     },
     {
       "id": "25",
@@ -1877,7 +1902,8 @@
       "arme_secondaire": [
         0
       ],
-      "gadget": 0
+      "gadget": 0,
+      "note": 3
     },
     {
       "id": "26",
@@ -1897,7 +1923,8 @@
       "arme_secondaire": [
         0
       ],
-      "gadget": 0
+      "gadget": 0,
+      "note": 3
     },
     {
       "id": "27",
@@ -1917,7 +1944,8 @@
       "arme_secondaire": [
         0
       ],
-      "gadget": 0
+      "gadget": 0,
+      "note": 3
     },
     {
       "id": "28",
@@ -1937,7 +1965,8 @@
       "arme_secondaire": [
         0
       ],
-      "gadget": 0
+      "gadget": 0,
+      "note": 3
     },
     {
       "id": "29",
@@ -1957,7 +1986,8 @@
       "arme_secondaire": [
         0
       ],
-      "gadget": 0
+      "gadget": 0,
+      "note": 3
     },
     {
       "id": "30",
@@ -1977,7 +2007,8 @@
       "arme_secondaire": [
         0
       ],
-      "gadget": 0
+      "gadget": 0,
+      "note": 3
     },
     {
       "id": "31",
@@ -1997,7 +2028,8 @@
       "arme_secondaire": [
         0
       ],
-      "gadget": 0
+      "gadget": 0,
+      "note": 3
     },
     {
       "id": "32",
@@ -2017,7 +2049,8 @@
       "arme_secondaire": [
         0
       ],
-      "gadget": 0
+      "gadget": 0,
+      "note": 3
     },
     {
       "id": "33",
@@ -2037,7 +2070,8 @@
       "arme_secondaire": [
         0
       ],
-      "gadget": 0
+      "gadget": 0,
+      "note": 3
     },
     {
       "id": "34",
@@ -2057,7 +2091,8 @@
       "arme_secondaire": [
         0
       ],
-      "gadget": 0
+      "gadget": 0,
+      "note": 3
     },
     {
       "id": "35",
@@ -2077,7 +2112,8 @@
       "arme_secondaire": [
         0
       ],
-      "gadget": 0
+      "gadget": 0,
+      "note": 3
     },
     {
       "id": "36",
@@ -2097,7 +2133,8 @@
       "arme_secondaire": [
         0
       ],
-      "gadget": 0
+      "gadget": 0,
+      "note": 3
     },
     {
       "id": "37",
@@ -2117,7 +2154,8 @@
       "arme_secondaire": [
         0
       ],
-      "gadget": 0
+      "gadget": 0,
+      "note": 3
     },
     {
       "id": "38",
@@ -2137,7 +2175,8 @@
       "arme_secondaire": [
         0
       ],
-      "gadget": 0
+      "gadget": 0,
+      "note": 3
     },
     {
       "id": "39",
@@ -2157,7 +2196,8 @@
       "arme_secondaire": [
         0
       ],
-      "gadget": 0
+      "gadget": 0,
+      "note": 3
     },
     {
       "id": "40",
@@ -2177,7 +2217,8 @@
       "arme_secondaire": [
         0
       ],
-      "gadget": 0
+      "gadget": 0,
+      "note": 3
     },
     {
       "id": "41",
@@ -2197,7 +2238,8 @@
       "arme_secondaire": [
         0
       ],
-      "gadget": 0
+      "gadget": 0,
+      "note": 3
     },
     {
       "id": "42",
@@ -2217,7 +2259,8 @@
       "arme_secondaire": [
         0
       ],
-      "gadget": 0
+      "gadget": 0,
+      "note": 3
     },
     {
       "id": "43",
@@ -2237,7 +2280,8 @@
       "arme_secondaire": [
         0
       ],
-      "gadget": 0
+      "gadget": 0,
+      "note": 3
     },
     {
       "id": "44",
@@ -2257,7 +2301,8 @@
       "arme_secondaire": [
         0
       ],
-      "gadget": 0
+      "gadget": 0,
+      "note": 3
     },
     {
       "id": "45",
@@ -2277,7 +2322,8 @@
       "arme_secondaire": [
         0
       ],
-      "gadget": 0
+      "gadget": 0,
+      "note": 3
     },
     {
       "id": "46",
@@ -2297,7 +2343,8 @@
       "arme_secondaire": [
         0
       ],
-      "gadget": 0
+      "gadget": 0,
+      "note": 3
     },
     {
       "id": "47",
@@ -2317,7 +2364,8 @@
       "arme_secondaire": [
         0
       ],
-      "gadget": 0
+      "gadget": 0,
+      "note": 3
     },
     {
       "id": "48",
@@ -2337,7 +2385,8 @@
       "arme_secondaire": [
         0
       ],
-      "gadget": 0
+      "gadget": 0,
+      "note": 3
     },
     {
       "id": "49",
@@ -2357,7 +2406,8 @@
       "arme_secondaire": [
         0
       ],
-      "gadget": 0
+      "gadget": 0,
+      "note": 3
     },
     {
       "id": "50",
@@ -2377,7 +2427,8 @@
       "arme_secondaire": [
         0
       ],
-      "gadget": 0
+      "gadget": 0,
+      "note": 3
     },
     {
       "id": "51",
@@ -2397,7 +2448,8 @@
       "arme_secondaire": [
         0
       ],
-      "gadget": 0
+      "gadget": 0,
+      "note": 3
     },
     {
       "id": "52",
@@ -2417,7 +2469,8 @@
       "arme_secondaire": [
         0
       ],
-      "gadget": 0
+      "gadget": 0,
+      "note": 3
     },
     {
       "id": "53",
@@ -2437,7 +2490,8 @@
       "arme_secondaire": [
         0
       ],
-      "gadget": 0
+      "gadget": 0,
+      "note": 3
     },
     {
       "id": "54",
@@ -2457,7 +2511,8 @@
       "arme_secondaire": [
         0
       ],
-      "gadget": 0
+      "gadget": 0,
+      "note": 3
     },
     {
       "id": "55",
@@ -2477,7 +2532,8 @@
       "arme_secondaire": [
         0
       ],
-      "gadget": 0
+      "gadget": 0,
+      "note": 3
     },
     {
       "id": "56",
@@ -2497,7 +2553,8 @@
       "arme_secondaire": [
         0
       ],
-      "gadget": 0
+      "gadget": 0,
+      "note": 3
     },
     {
       "id": "57",
@@ -2517,7 +2574,8 @@
       "arme_secondaire": [
         0
       ],
-      "gadget": 0
+      "gadget": 0,
+      "note": 3
     },
     {
       "id": "58",
@@ -2537,7 +2595,8 @@
       "arme_secondaire": [
         0
       ],
-      "gadget": 0
+      "gadget": 0,
+      "note": 3
     },
     {
       "id": "59",
@@ -2557,7 +2616,8 @@
       "arme_secondaire": [
         0
       ],
-      "gadget": 0
+      "gadget": 0,
+      "note": 3
     },
     {
       "id": "60",
@@ -2577,7 +2637,8 @@
       "arme_secondaire": [
         0
       ],
-      "gadget": 0
+      "gadget": 0,
+      "note": 3
     },
     {
       "id": "61",
@@ -2597,7 +2658,8 @@
       "arme_secondaire": [
         0
       ],
-      "gadget": 0
+      "gadget": 0,
+      "note": 3
     },
     {
       "id": "62",
@@ -2617,7 +2679,8 @@
       "arme_secondaire": [
         0
       ],
-      "gadget": 0
+      "gadget": 0,
+      "note": 3
     },
     {
       "id": "63",
@@ -2637,7 +2700,8 @@
       "arme_secondaire": [
         0
       ],
-      "gadget": 0
+      "gadget": 0,
+      "note": 3
     },
     {
       "id": "64",
@@ -2657,7 +2721,8 @@
       "arme_secondaire": [
         0
       ],
-      "gadget": 0
+      "gadget": 0,
+      "note": 3
     },
     {
       "id": "65",
@@ -2677,7 +2742,8 @@
       "arme_secondaire": [
         0
       ],
-      "gadget": 0
+      "gadget": 0,
+      "note": 3
     },
     {
       "id": "66",
@@ -2697,7 +2763,8 @@
       "arme_secondaire": [
         0
       ],
-      "gadget": 0
+      "gadget": 0,
+      "note": 3
     },
     {
       "id": "67",
@@ -2717,7 +2784,8 @@
       "arme_secondaire": [
         0
       ],
-      "gadget": 0
+      "gadget": 0,
+      "note": 3
     },
     {
       "id": "68",
@@ -2737,7 +2805,8 @@
       "arme_secondaire": [
         0
       ],
-      "gadget": 0
+      "gadget": 0,
+      "note": 3
     },
     {
       "id": "69",
@@ -2757,7 +2826,8 @@
       "arme_secondaire": [
         0
       ],
-      "gadget": 0
+      "gadget": 0,
+      "note": 3
     },
     {
       "id": "70",
@@ -2777,7 +2847,8 @@
       "arme_secondaire": [
         0
       ],
-      "gadget": 0
+      "gadget": 0,
+      "note": 3
     },
     {
       "id": "71",
@@ -2797,7 +2868,8 @@
       "arme_secondaire": [
         0
       ],
-      "gadget": 0
+      "gadget": 0,
+      "note": 3
     },
     {
       "id": "72",
@@ -2817,7 +2889,8 @@
       "arme_secondaire": [
         0
       ],
-      "gadget": 0
+      "gadget": 0,
+      "note": 3
     },
     {
       "id": "73",
@@ -2837,7 +2910,8 @@
       "arme_secondaire": [
         0
       ],
-      "gadget": 0
+      "gadget": 0,
+      "note": 3
     },
     {
       "id": "74",
@@ -2857,7 +2931,8 @@
       "arme_secondaire": [
         0
       ],
-      "gadget": 0
+      "gadget": 0,
+      "note": 3
     }
   ]
 }

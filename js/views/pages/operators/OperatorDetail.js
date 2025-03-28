@@ -4,6 +4,7 @@ import Views from "../../Views.js";
 import Slider from "../../../components/Slider.js";
 import EquipmentProvider from "../../../services/providers/EquipmentProvider.js";
 import EquipmentGrid from "../../../components/EquipmentGrid.js"
+import StarRating from "../../../components/StarRating.js";
 
 export default class OperatorDetail extends Views {
     async get_head() {
@@ -11,6 +12,7 @@ export default class OperatorDetail extends Views {
             <link href="/static/css/details.css" rel="stylesheet">
             <link href="/static/css/slider.css" rel="stylesheet">
             <link href="/static/css/equipment.css" rel="stylesheet">
+            <link href="/static/css/star.css" rel="stylesheet">
             <script src="../../../services/CursorSlider.js" defer></script>
         `;
     }
@@ -37,6 +39,7 @@ export default class OperatorDetail extends Views {
                             <h1 class="resultation-title">${operator.nom.toUpperCase()}</h1>
                         </div>
                     </div>
+                    ${StarRating.render(operator)}
                         
                         <div class="bio-section">
                             <h2 class="bio-title">BIOGRAPHIE</h2>
@@ -72,5 +75,6 @@ export default class OperatorDetail extends Views {
 
     async after_render() {
         Slider.initSliders();
+        StarRating.initStarRatings();
     }
 }

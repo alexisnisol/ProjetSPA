@@ -1,0 +1,24 @@
+.star-rating {
+    margin-bottom: 0.5rem;
+    display: inline-flex;
+}
+
+.star {
+    font-size: 38px;
+    cursor: pointer;
+    color: #666;
+    transition: color 0.2s, transform 0.2s;
+    padding: 0 2px;
+}
+
+.star.active, .star-rating:hover .star {
+    color: #ffd700;
+}
+
+.star-rating .star:hover ~ .star {
+    color: #666;
+}
+
+.star.active {
+    color: #ffd700;
+}
