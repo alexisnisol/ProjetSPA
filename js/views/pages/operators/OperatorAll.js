@@ -1,6 +1,6 @@
 import Views from "../../Views.js";
 import Card from "../../../components/Card.js";
-import { setupLikeButtons } from "../../../services/handlers/LikeHandler.js";
+import { isFavorite, setupLikeButtons } from "../../../services/handlers/LikeHandler.js";
 import { PaginationHandler } from "../../../services/handlers/PaginationHandler.js";
 import PaginationView from "../../../components/PaginationView.js";
 import OperatorsHandler from "../../../services/handlers/OperatorsHandler.js";
@@ -28,7 +28,7 @@ export default class OperatorAll extends Views {
 
     async render() {
         this.operators = await this.paginationHandler.requestPage();
-        const html = this.operators.map(operator => Card.render(operator, true)).join('\n ');
+        const html = this.operators.map(operator => Card.render(operator, true, isFavorite(operator.id))).join('\n ');
 
         const paginationHTML = PaginationView.render(this.paginationHandler.currentPage, this.paginationHandler.totalPages);
         const content = /*html*/`
