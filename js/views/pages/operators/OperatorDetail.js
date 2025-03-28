@@ -2,7 +2,7 @@ import Utils from '../../../services/Utils.js';
 import OperatorProvider from "../../../services/providers/OperatorProvider.js";
 import Views from "../../Views.js";
 import Slider from "../../../components/Slider.js";
-import EquipmentProvider from "../../../services/EquipmentProvider.js";
+import EquipmentProvider from "../../../services/providers/EquipmentProvider.js";
 import EquipmentGrid from "../../../components/EquipmentGrid.js"
 
 export default class OperatorDetail extends Views {

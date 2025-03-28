@@ -1,4 +1,4 @@
-import { ENDPOINT_CAPACITES, GET } from '../config.js';
+import { ENDPOINT_CAPACITES, GET } from '../../config.js';
 
 /**
  * Classe fournissant des services pour la gestion des capacités des opérateurs
