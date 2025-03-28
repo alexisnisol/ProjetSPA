@@ -4,12 +4,15 @@ import { isFavorite, setupLikeButtons } from "../../../services/handlers/LikeHan
 import { PaginationHandler } from "../../../services/handlers/PaginationHandler.js";
 import PaginationView from "../../../components/PaginationView.js";
 import OperatorsHandler from "../../../services/handlers/OperatorsHandler.js";
+import OperatorSortProvider from "../../../services/providers/OperatorSortProvider.js";
+import SearchHandler from "../../../services/handlers/SearchHandler.js";
 
 export default class OperatorAll extends Views {
     
     constructor() {
         super();
         this.paginationHandler = new PaginationHandler();
+        this.searchHandler = new SearchHandler();
         this.paginationView = new PaginationView(this, this.paginationHandler);
     }
 
@@ -28,8 +31,13 @@ export default class OperatorAll extends Views {
 
     async render() {
         this.operators = await this.paginationHandler.requestPage();
-        const html = this.operators.map(operator => Card.render(operator, true, isFavorite(operator.id))).join('\n ');
-
+        if(this.searchHandler.hasSearch()) {
+            this.operators = (await OperatorSortProvider.fetchAllByDate()).filter(operator => operator.image.toLowerCase().includes(this.searchHandler.getSearch().toLowerCase()));
+        }
+        let html = this.operators.map(operator => Card.render(operator, true, isFavorite(operator.id))).join('\n ');
+        if (this.operators.length === 0) {
+            html = "<p class='btn'>Aucun personnage</p>";
+        }
         const paginationHTML = PaginationView.render(this.paginationHandler.currentPage, this.paginationHandler.totalPages);
         const content = /*html*/`
             <!-- Section Hero avec boutons et barre de recherche -->
@@ -57,7 +65,7 @@ export default class OperatorAll extends Views {
                             Voir les filtres
                         </button>
                         <div class="search-bar">
-                            <input type="text" placeholder="Rechercher un agent...">
+                            <input type="text" id="search-input" placeholder="Rechercher un agent..." value="${this.searchHandler.getSearch()}">
                             <button class="search-btn">
                                 <img src="../../static/img/ui/loupe.png" alt="Rechercher">
                             </button>
@@ -78,7 +86,7 @@ export default class OperatorAll extends Views {
             <!-- Pagination -->
             <nav aria-label="Page navigation">
                 <ul class="pagination justify-content-center mt-4">
-                    ${paginationHTML}
+                    ${this.searchHandler.hasSearch() ? "" : paginationHTML}
                 </ul>
             </nav>
         `;
@@ -90,5 +98,6 @@ export default class OperatorAll extends Views {
         this.paginationView.setupButtons();
         OperatorsHandler.setupButtonHandlers(this);
         setupLikeButtons();
+        this.searchHandler.setup(this);
     }
 }
