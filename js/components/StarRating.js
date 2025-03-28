@@ -44,7 +44,6 @@ export default class StarRating {
         
         ratings.forEach(ratingContainer => {
             const stars = ratingContainer.querySelectorAll('.star');
-            const valueDisplay = ratingContainer.querySelector('.value');
             
             stars.forEach(star => {
                 star.addEventListener('click', async () => {
@@ -54,16 +53,8 @@ export default class StarRating {
                     stars.forEach((s, index) => {
                         s.classList.toggle('active', index < newValue);
                     });
-                    valueDisplay.textContent = newValue;
                     
-                    const success = await StarRating.updateRating(newValue, operatorId);
-                    
-                    if (!success) {
-                        const originalValue = valueDisplay.textContent;
-                        stars.forEach((s, index) => {
-                            s.classList.toggle('active', index < originalValue);
-                        });
-                    }
+                    await StarRating.updateRating(newValue, operatorId);
                 });
             });
         });
