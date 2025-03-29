@@ -23,7 +23,20 @@
     {
       "id": "5",
       "name": "Contrôle des Foules"
+    },
+    {
+      "id": "6",
+      "name": "Contrôle de la carte"
+    },
+    {
+      "id": "7",
+      "name" : "Brèche"
+    },
+    {
+      "id": "8",
+      "name": "Première ligne"
     }
+    
   ],
   "specialite_operateur": [
     {
@@ -163,25 +176,576 @@
     },
     {
       "id": "27",
-      "operateur_id": 0,
-      "specialite_id": 1
+      "operateur_id": 15,
+      "specialite_id": 2
     },
     {
       "id": "28",
-      "operateur_id": 0,
-      "specialite_id": 1
+      "operateur_id": 15,
+      "specialite_id": 3
     },
     {
       "id": "29",
-      "operateur_id": 0,
-      "specialite_id": 1
+      "operateur_id": 16,
+      "specialite_id": 0
     },
     {
       "id": "30",
-      "operateur_id": 0,
+      "operateur_id": 16,
+      "specialite_id": 5
+    },
+    {
+      "id": "31",
+      "operateur_id": 17,
+      "specialite_id": 0
+    },
+    {
+      "id": "32",
+      "operateur_id": 17,
+      "specialite_id": 3
+    },
+    {
+      "id": "33",
+      "operateur_id": 18,
+      "specialite_id": 0
+    },
+    {
+      "id": "34",
+      "operateur_id": 18,
+      "specialite_id": 4
+    },
+    {
+      "id": "35",
+      "operateur_id": 19,
+      "specialite_id": 3
+    },
+    {
+      "id": "36",
+      "operateur_id": 19,
+      "specialite_id": 5
+    },
+    {
+      "id": "37",
+      "operateur_id": 20,
+      "specialite_id": 5
+    },
+    {
+      "id": "37",
+      "operateur_id": 20,
+      "specialite_id": 4
+    },
+    {
+      "id": "38",
+      "operateur_id": 21,
+      "specialite_id": 2
+    },
+    {
+      "id": "39",
+      "operateur_id": 21,
+      "specialite_id": 4
+    },
+    {
+      "id": "41",
+      "operateur_id": 22,
+      "specialite_id": 0
+    },
+    {
+      "id": "42",
+      "operateur_id": 22,
+      "specialite_id": 1
+    },
+    {
+      "id": "43",
+      "operateur_id": 23,
+      "specialite_id": 0
+    },
+    {
+      "id": "44",
+      "operateur_id": 23,
+      "specialite_id": 5
+    },
+    {
+      "id": "45",
+      "operateur_id": 23,
+      "specialite_id": 0
+    },
+    {
+      "id": "46",
+      "operateur_id": 24,
+      "specialite_id": 5
+    },
+    {
+      "id": "47",
+      "operateur_id": 25,
+      "specialite_id": 0
+    },
+    {
+      "id": "48",
+      "operateur_id": 26,
+      "specialite_id": 2
+    },
+    {
+      "id": "49",
+      "operateur_id": 26,
+      "specialite_id": 4
+    },
+    {
+      "id": "50",
+      "operateur_id": 27,
+      "specialite_id": 3
+    },
+    {
+      "id": "51",
+      "operateur_id": 27,
+      "specialite_id": 5
+    },
+    {
+      "id": "52",
+      "operateur_id": 28,
+      "specialite_id": 2
+    },
+    {
+      "id": "53",
+      "operateur_id": 28,
+      "specialite_id": 4
+    },
+    {
+      "id": "54",
+      "operateur_id": 29,
+      "specialite_id": 2
+    },
+    {
+      "id": "55",
+      "operateur_id": 29,
+      "specialite_id": 1
+    },
+    {
+      "id": "56",
+      "operateur_id": 30,
+      "specialite_id": 0
+    },
+    {
+      "id": "57",
+      "operateur_id": 30,
+      "specialite_id": 1
+    },
+    {
+      "id": "58",
+      "operateur_id": 31,
+      "specialite_id": 1
+    },
+    {
+      "id": "59",
+      "operateur_id": 32,
+      "specialite_id": 1
+    },
+    {
+      "id": "60",
+      "operateur_id": 33,
+      "specialite_id": 3
+    },
+    {
+      "id": "61",
+      "operateur_id": 33,
+      "specialite_id": 1
+    },
+    {
+      "id": "62",
+      "operateur_id": 34,
+      "specialite_id": 2
+    },
+    {
+      "id": "63",
+      "operateur_id": 34,
+      "specialite_id": 3
+    },
+    {
+      "id": "64",
+      "operateur_id": 35,
+      "specialite_id": 3
+    },
+    {
+      "id": "65",
+      "operateur_id": 35,
+      "specialite_id": 5
+    },
+    {
+      "id": "66",
+      "operateur_id": 36,
+      "specialite_id": 2
+    },
+    {
+      "id": "67",
+      "operateur_id": 36,
+      "specialite_id": 4
+    },
+    {
+      "id": "68",
+      "operateur_id": 37,
+      "specialite_id": 1
+    },
+    {
+      "id": "69",
+      "operateur_id": 37,
+      "specialite_id": 6
+    },
+    {
+      "id": "70",
+      "operateur_id": 38,
+      "specialite_id": 1
+    },
+    {
+      "id": "71",
+      "operateur_id": 39,
+      "specialite_id": 0
+    },
+    {
+      "id": "72",
+      "operateur_id": 39,
+      "specialite_id": 6
+    },
+    {
+      "id": "73",
+      "operateur_id": 40,
+      "specialite_id": 3
+    },
+    {
+      "id": "74",
+      "operateur_id": 40,
+      "specialite_id": 7
+    },
+    {
+      "id": "75",
+      "operateur_id": 41,
+      "specialite_id": 0
+    },
+    {
+      "id": "76",
+      "operateur_id": 41,
+      "specialite_id": 3
+    },
+    {
+      "id": "77",
+      "operateur_id": 42,
+      "specialite_id": 6
+    },
+    {
+      "id": "78",
+      "operateur_id": 42,
+      "specialite_id": 8
+    },
+    {
+      "id": "79",
+      "operateur_id": 43,
+      "specialite_id": 1
+    },
+    {
+      "id": "80",
+      "operateur_id": 43,
+      "specialite_id": 6
+    },
+    {
+      "id": "81",
+      "operateur_id": 44,
+      "specialite_id": 1
+    },
+    {
+      "id": "81",
+      "operateur_id": 44,
+      "specialite_id": 0
+    },
+    {
+      "id": "82",
+      "operateur_id": 45,
+      "specialite_id": 0
+    },
+    {
+      "id": "83",
+      "operateur_id": 45,
+      "specialite_id": 3
+    },
+    {
+      "id": "84",
+      "operateur_id": 46,
+      "specialite_id": 3
+    },
+    {
+      "id": "85",
+      "operateur_id": 46,
+      "specialite_id": 0
+    },
+    {
+      "id": "86",
+      "operateur_id": 47,
+      "specialite_id": 7
+    },
+    {
+      "id": "87",
+      "operateur_id": 47,
+      "specialite_id": 3
+    },
+    {
+      "id": "88",
+      "operateur_id": 48,
+      "specialite_id": 8
+    },
+    {
+      "id": "89",
+      "operateur_id": 48,
+      "specialite_id": 0
+    },
+    {
+      "id": "90",
+      "operateur_id": 49,
+      "specialite_id": 3
+    },
+    {
+      "id": "91",
+      "operateur_id": 49,
+      "specialite_id": 0
+    },
+    {
+      "id": "92",
+      "operateur_id": 50,
+      "specialite_id": 8
+    },
+    {
+      "id": "93",
+      "operateur_id": 50,
+      "specialite_id": 6
+    },
+    {
+      "id": "94",
+      "operateur_id": 51,
+      "specialite_id": 8
+    },
+    {
+      "id": "95",
+      "operateur_id": 51,
+      "specialite_id": 6
+    },
+    {
+      "id": "96",
+      "operateur_id": 52,
+      "specialite_id": 1
+    },
+    {
+      "id": "97",
+      "operateur_id": 52,
+      "specialite_id": 6
+    },
+    {
+      "id": "98",
+      "operateur_id": 53,
+      "specialite_id": 8
+    },
+    {
+      "id": "99",
+      "operateur_id": 53,
+      "specialite_id": 6
+    },
+    {
+      "id": "100",
+      "operateur_id": 54,
+      "specialite_id": 7
+    },
+    {
+      "id": "101",
+      "operateur_id": 54,
+      "specialite_id": 8
+    },
+    {
+      "id": "102",
+      "operateur_id": 55,
+      "specialite_id": 0
+    },
+    {
+      "id": "103",
+      "operateur_id": 55,
+      "specialite_id": 6
+    },
+    {
+      "id": "104",
+      "operateur_id": 56,
+      "specialite_id": 8
+    },
+    {
+      "id": "105",
+      "operateur_id": 56,
+      "specialite_id": 1
+    },
+    {
+      "id": "106",
+      "operateur_id": 57,
+      "specialite_id": 0
+    },
+    {
+      "id": "106",
+      "operateur_id": 57,
+      "specialite_id": 6
+    },
+    {
+      "id": "107",
+      "operateur_id": 58,
+      "specialite_id": 7
+    },
+    {
+      "id": "108",
+      "operateur_id": 58,
+      "specialite_id": 3
+    },
+    {
+      "id": "109",
+      "operateur_id": 59,
+      "specialite_id": 8
+    },
+    {
+      "id": "109",
+      "operateur_id": 59,
+      "specialite_id": 6
+    },
+    {
+      "id": "110",
+      "operateur_id": 60,
+      "specialite_id": 0
+    },
+    {
+      "id": "111",
+      "operateur_id": 60,
+      "specialite_id": 6
+    },
+    {
+      "id": "112",
+      "operateur_id": 61,
+      "specialite_id": 7
+    },
+    {
+      "id": "113",
+      "operateur_id": 61,
+      "specialite_id": 8
+    },
+    {
+      "id": "114",
+      "operateur_id": 62,
+      "specialite_id": 8
+    },
+    {
+      "id": "115",
+      "operateur_id": 62,
+      "specialite_id": 6
+    },
+    {
+      "id": "116",
+      "operateur_id": 63,
+      "specialite_id": 1
+    },
+    {
+      "id": "117",
+      "operateur_id": 64,
+      "specialite_id": 7
+    },
+    {
+      "id": "118",
+      "operateur_id": 64,
+      "specialite_id": 1
+    },
+    {
+      "id": "119",
+      "operateur_id": 65,
+      "specialite_id": 7
+    },
+    {
+      "id": "120",
+      "operateur_id": 65,
+      "specialite_id": 3
+    },
+    {
+      "id": "121",
+      "operateur_id": 66,
+      "specialite_id": 3
+    },
+    {
+      "id": "122",
+      "operateur_id": 66,
+      "specialite_id": 1
+    },
+    {
+      "id": "123",
+      "operateur_id": 67,
+      "specialite_id": 7
+    },
+    {
+      "id": "124",
+      "operateur_id": 67,
+      "specialite_id": 8
+    },
+    {
+      "id": "125",
+      "operateur_id": 68,
+      "specialite_id": 7
+    },
+    {
+      "id": "126",
+      "operateur_id": 68,
+      "specialite_id": 1
+    },
+    {
+      "id": "127",
+      "operateur_id": 69,
+      "specialite_id": 0
+    },
+    {
+      "id": "128",
+      "operateur_id": 69,
+      "specialite_id": 1
+    },
+    {
+      "id": "129",
+      "operateur_id": 70,
+      "specialite_id": 3
+    },
+    {
+      "id": "130",
+      "operateur_id": 70,
+      "specialite_id": 0
+    },
+    {
+      "id": "131",
+      "operateur_id": 71,
+      "specialite_id": 8
+    },
+    {
+      "id": "132",
+      "operateur_id": 71,
+      "specialite_id": 6
+    },
+    {
+      "id": "133",
+      "operateur_id": 72,
+      "specialite_id": 0
+    },
+    {
+      "id": "133",
+      "operateur_id": 72,
+      "specialite_id": 1
+    },
+    {
+      "id": "134",
+      "operateur_id": 73,
+      "specialite_id": 3
+    },
+    {
+      "id": "135",
+      "operateur_id": 74,
+      "specialite_id": 0
+    },
+    {
+      "id": "136",
+      "operateur_id": 74,
       "specialite_id": 1
     }
   ],
+  
   "classe_arme": [
     {
       "id": "0",
