@@ -24,9 +24,10 @@ export default class OperatorDetail extends Views {
         let sliderHTML = Slider.render(operator);
         let equipmentData = await EquipmentProvider.getOperatorEquipment(operator);
         let equipmentHTML = EquipmentGrid.render(equipmentData);
+        let operatorTypeClass = operator.camps;
 
         return /*html*/`
-            <section class="operator-detail">
+            <section class="operator-detail ${operatorTypeClass}">
                 <div class="main-background">
                     <div class="background-overlay"></div>
                     <button class="back-button" onclick="window.location.href='#/operators'">&#8592; Retour</button>
