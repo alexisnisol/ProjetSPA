@@ -43,7 +43,7 @@
     font-size: 16px;
     z-index: 5;
     display: flex;
-    align-items: center; /* Aligne verticalement la flèche et le texte */
+    align-items: center;
 }
 
 .back-button:hover {
@@ -51,7 +51,7 @@
 }
 
 .back-button span {
-    margin-right: 8px; /* Ajoute de l'espace entre la flèche et le texte */
+    margin-right: 8px;
 }
 
 

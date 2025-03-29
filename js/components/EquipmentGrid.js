@@ -2,7 +2,6 @@ import EquipmentPopup from './EquipmentPopup.js';
 import WeaponProvider from '../services/providers/WeaponProvider.js';
 import GadgetProvider from '../services/providers/GadgetProvider.js';
 import OperatorProvider from '../services/providers/OperatorProvider.js';
-import EquipmentProvider from '../services/providers/EquipmentProvider.js';
 
 export default class EquipmentGrid {
     static popup = new EquipmentPopup();
@@ -13,20 +12,20 @@ export default class EquipmentGrid {
         this.popup.init();
     }
 
-    static async render(equipment, operator) {
+    static render(equipment, operator) {
         this.init(operator);
         
         return /*html*/`
             <div class="equipment-grid">
-                ${await this.renderEquipmentCategory('ARME PRINCIPALE', equipment.primaryWeapons, 'weapons', 'arme_principale')}
-                ${await this.renderEquipmentCategory('ARME SECONDAIRE', equipment.secondaryWeapons, 'weapons', 'arme_secondaire')}
-                ${await this.renderEquipmentCategory('GADGET', [equipment.gadget], 'gadgets', 'gadget')}
-                ${await this.renderEquipmentCategory('CAPACITÉ', [equipment.capacity], 'ability', 'capacity')}
+                ${this.renderEquipmentCategory('ARME PRINCIPALE', equipment.primaryWeapons, 'weapons', 'arme_principale')}
+                ${this.renderEquipmentCategory('ARME SECONDAIRE', equipment.secondaryWeapons, 'weapons', 'arme_secondaire')}
+                ${this.renderEquipmentCategory('GADGET', [equipment.gadget], 'gadgets', 'gadget')}
+                ${this.renderEquipmentCategory('CAPACITÉ', [equipment.capacity], 'ability', 'capacity')}
             </div>
         `;
     }
 
-    static async renderEquipmentCategory(title, items, folder, fieldName) {
+    static renderEquipmentCategory(title, items, folder, fieldName) {
         const validItems = items.filter(item => item?.nom);
         if (validItems.length === 0) return '';
         
@@ -71,28 +70,10 @@ export default class EquipmentGrid {
                 title: this.getPopupTitle(fieldName),
                 items: items,
                 folder: folder,
-                onSelect: async (selectedId) => {
-                    await this.updateEquipment(fieldName, selectedId);
-                    // Rafraîchir uniquement la section équipement
-                    await this.refreshEquipment();
-                }
+                onSelect: (selectedId) => this.updateEquipment(fieldName, selectedId)
             });
         } catch (error) {
             console.error('Error loading equipment:', error);
-            alert("Erreur lors du chargement des équipements");
-        }
-    }
-
-    static async refreshEquipment() {
-        if (!this.currentOperator) return;
-        
-        const updatedOperator = await OperatorProvider.getOperator(this.currentOperator.id);
-        const equipment = await EquipmentProvider.getOperatorEquipment(updatedOperator);
-        const equipmentContainer = document.querySelector('.equipment-grid');
-        
-        if (equipmentContainer) {
-            equipmentContainer.innerHTML = await this.render(equipment, updatedOperator);
-            this.currentOperator = updatedOperator;
         }
     }
 
@@ -107,10 +88,6 @@ export default class EquipmentGrid {
 
     static async updateEquipment(fieldName, newId) {
         try {
-            if (!this.currentOperator) {
-                throw new Error("Aucun opérateur sélectionné");
-            }
-            
             const updateData = {};
             
             if (fieldName === 'arme_principale' || fieldName === 'arme_secondaire') {
@@ -120,10 +97,10 @@ export default class EquipmentGrid {
             }
             
             await OperatorProvider.updateOperator(this.currentOperator.id, updateData);
-            
+            window.location.reload();
         } catch (error) {
             console.error('Error updating equipment:', error);
-            throw error;
+            alert("Erreur lors de la mise à jour");
         }
     }
 }

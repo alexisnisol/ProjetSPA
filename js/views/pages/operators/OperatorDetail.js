@@ -79,25 +79,7 @@ export default class OperatorDetail extends Views {
         Slider.initSliders();
         StarRating.initStarRatings();
         let request = Utils.parseRequestURL();
-        this.operator = await OperatorProvider.getOperator(request.id);
-        
-        EquipmentGrid.init(this.operator);
-        this.setupEquipmentListeners();
-    }
-
-    async setupEquipmentListeners() {
-        document.querySelector('.equipment-grid')?.addEventListener('click', async (e) => {
-            const item = e.target.closest('.equipment-item');
-            if (item) {
-                const fieldName = item.getAttribute('data-field');
-                await EquipmentGrid.handleEquipmentClick(fieldName);
-            }
-        });
-    }
-
-    async refreshOperatorData() {
-        const request = Utils.parseRequestURL();
-        this.operator = await OperatorProvider.getOperator(request.id);
-        return this.operator;
+        let operator = await OperatorProvider.getOperator(request.id);
+        EquipmentGrid.init(operator);
     }
 }
