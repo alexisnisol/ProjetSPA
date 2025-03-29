@@ -1360,25 +1360,10 @@
   ],
   "operateurs": [
     {
-      "id": "0",
-      "capacite_id": 0,
-      "nom": "Skopós",
-      "image": "skopos.png",
-      "camps": "Défense",
-      "bio": "Skopós arrive sur le terrain aux commandes de ses deux Robothéons V10, l'un en tant qu'agent, l'autre en tant qu'outil d'observation équipé d'un bouclier renforcé. Bien qu'elle ne puisse contrôler qu'un seul robot à la fois et que la connexion avec les deux machines sera perdue si l'une d'elles est détruite, sa capacité à passer d'un robot à un autre fait de Skopós une agente aussi efficace pour le renseignement que pour le soutien.",
-      "annee": 9,
-      "saison": 3,
-      "sante": 2,
-      "vitesse": 2,
-      "difficulte": 2,
       "arme_principale": [
-        0
+        "3"
       ],
-      "arme_secondaire": [
-        1
-      ],
-      "gadget": 0,
-      "note": 4
+      "id": "0"
     },
     {
       "id": "1",
@@ -2155,7 +2140,7 @@
         0
       ],
       "gadget": 0,
-      "note": 5
+      "note": 3
     },
     {
       "id": "38",

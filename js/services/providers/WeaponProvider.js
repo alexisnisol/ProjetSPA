@@ -42,4 +42,31 @@ export default class WeaponProvider {
     static async getWeaponClassById(classId) {
         return this.fetchRequest(`${ENDPOINT_CLASSE_ARME}/${classId}`, GET);
     }
+
+    static async getAllWeapons(type = null) {
+        try {
+            const weapons = await this.fetchRequest(ENDPOINT_ARMES, GET);
+            if (!weapons) return [];
+            
+            const weaponsWithClasses = await Promise.all(
+                weapons.map(async weapon => {
+                    const weaponClass = weapon.classe_arme 
+                        ? await this.getWeaponClassById(weapon.classe_arme)
+                        : null;
+                    return { ...weapon, class: weaponClass };
+                })
+            );
+            
+            if (type === 'primary') {
+                return weaponsWithClasses.filter(w => w.class?.principale === true);
+            } else if (type === 'secondary') {
+                return weaponsWithClasses.filter(w => w.class?.principale === false);
+            }
+            
+            return weaponsWithClasses;
+        } catch (error) {
+            console.error('Error in getAllWeapons:', error);
+            return [];
+        }
+    }
 }

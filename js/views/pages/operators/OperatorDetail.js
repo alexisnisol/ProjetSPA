@@ -13,6 +13,7 @@ export default class OperatorDetail extends Views {
             <link href="/static/css/slider.css" rel="stylesheet">
             <link href="/static/css/equipment.css" rel="stylesheet">
             <link href="/static/css/star.css" rel="stylesheet">
+            <link href="/static/css/popup.css" rel="stylesheet">
             <script src="../../../services/CursorSlider.js" defer></script>
         `;
     }
@@ -77,5 +78,26 @@ export default class OperatorDetail extends Views {
     async after_render() {
         Slider.initSliders();
         StarRating.initStarRatings();
+        let request = Utils.parseRequestURL();
+        this.operator = await OperatorProvider.getOperator(request.id);
+        
+        EquipmentGrid.init(this.operator);
+        this.setupEquipmentListeners();
+    }
+
+    async setupEquipmentListeners() {
+        document.querySelector('.equipment-grid')?.addEventListener('click', async (e) => {
+            const item = e.target.closest('.equipment-item');
+            if (item) {
+                const fieldName = item.getAttribute('data-field');
+                await EquipmentGrid.handleEquipmentClick(fieldName);
+            }
+        });
+    }
+
+    async refreshOperatorData() {
+        const request = Utils.parseRequestURL();
+        this.operator = await OperatorProvider.getOperator(request.id);
+        return this.operator;
     }
 }
