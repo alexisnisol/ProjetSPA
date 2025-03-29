@@ -20,30 +20,30 @@ export default class EquipmentGrid {
                 ${this.renderEquipmentCategory('ARME PRINCIPALE', equipment.primaryWeapons, 'weapons', 'arme_principale')}
                 ${this.renderEquipmentCategory('ARME SECONDAIRE', equipment.secondaryWeapons, 'weapons', 'arme_secondaire')}
                 ${this.renderEquipmentCategory('GADGET', [equipment.gadget], 'gadgets', 'gadget')}
-                ${this.renderEquipmentCategory('CAPACITÉ', [equipment.capacity], 'ability', 'capacity')}
+                ${this.renderEquipmentCategory('CAPACITÉ', [equipment.capacity], 'ability', 'capacity', true)}
             </div>
         `;
     }
 
-    static renderEquipmentCategory(title, items, folder, fieldName) {
+    static renderEquipmentCategory(title, items, folder, fieldName, isDisabled = false) {
         const validItems = items.filter(item => item?.nom);
         if (validItems.length === 0) return '';
         
         return /*html*/`
-            <div class="equipment-category">
+            <div class="equipment-category ${isDisabled ? 'disabled-category' : ''}">
                 <h3 class="equipment-title">${title}</h3>
                 <div class="equipment-items">
-                    ${validItems.map(item => this.renderEquipmentItem(item, folder, fieldName)).join('')}
+                    ${validItems.map(item => this.renderEquipmentItem(item, folder, fieldName, isDisabled)).join('')}
                 </div>
             </div>
         `;
     }
 
-    static renderEquipmentItem(item, folder, fieldName) {
+    static renderEquipmentItem(item, folder, fieldName, isDisabled = false) {
         return /*html*/`
-            <div class="equipment-item" 
+            <div class="equipment-item ${isDisabled ? 'disabled-item' : ''}" 
                  data-field="${fieldName}" 
-                 onclick="EquipmentGrid.handleEquipmentClick('${fieldName}')">
+                 onclick="${isDisabled ? '' : `EquipmentGrid.handleEquipmentClick('${fieldName}')`}">
                 <img src="/static/img/${folder}/${item.image}" alt="${item.nom}" class="equipment-image">
                 <div class="equipment-info">
                     <p class="equipment-name">${item.nom}</p>
@@ -55,6 +55,8 @@ export default class EquipmentGrid {
 
     static async handleEquipmentClick(fieldName) {
         try {
+            if (fieldName === 'capacity') return;
+            
             let items = [], folder = 'weapons';
             
             if (fieldName === 'arme_principale') {
@@ -66,24 +68,27 @@ export default class EquipmentGrid {
                 folder = 'gadgets';
             }
             
-            this.popup.show({
-                title: this.getPopupTitle(fieldName),
-                items: items,
-                folder: folder,
-                onSelect: (selectedId) => this.updateEquipment(fieldName, selectedId)
-            });
+            if (items.length > 0) {
+                this.popup.show({
+                    title: this.getPopupTitle(fieldName),
+                    items: items,
+                    folder: folder,
+                    onSelect: (selectedId) => this.updateEquipment(fieldName, selectedId)
+                });
+            }
         } catch (error) {
             console.error('Error loading equipment:', error);
+            alert("Erreur lors du chargement des équipements");
         }
     }
 
     static getPopupTitle(fieldName) {
         const titles = {
-            'arme_principale': 'ARME PRINCIPALE',
-            'arme_secondaire': 'ARME SECONDAIRE', 
-            'gadget': 'GADGET'
+            'arme_principale': 'UNE ARME PRINCIPALE',
+            'arme_secondaire': 'UNE ARME SECONDAIRE', 
+            'gadget': 'UN GADGET'
         };
-        return `Sélectionner ${titles[fieldName]}`;
+        return `SÉLECTIONNER ${titles[fieldName]}`;
     }
 
     static async updateEquipment(fieldName, newId) {
@@ -92,7 +97,7 @@ export default class EquipmentGrid {
             
             if (fieldName === 'arme_principale' || fieldName === 'arme_secondaire') {
                 updateData[fieldName] = [newId];
-            } else {
+            } else if (fieldName === 'gadget') {
                 updateData[fieldName] = newId;
             }
             

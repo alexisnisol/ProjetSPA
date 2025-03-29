@@ -61,10 +61,30 @@
     border: 1px solid rgba(255, 255, 255, 0.05);
 }
 
-.equipment-item:hover {
-    background: rgba(255, 255, 255, 0.25);
+/* Style pour les éléments cliquables (armes et gadgets) */
+.equipment-item[data-field="arme_principale"],
+.equipment-item[data-field="arme_secondaire"],
+.equipment-item[data-field="gadget"] {
     cursor: pointer;
+}
+
+.equipment-item[data-field="arme_principale"]:hover,
+.equipment-item[data-field="arme_secondaire"]:hover,
+.equipment-item[data-field="gadget"]:hover {
+    background: rgba(255, 255, 255, 0.25);
     border-color: #fff;
+}
+
+/* Style spécifique pour la capacité (non cliquable) */
+.equipment-item[data-field="capacity"] {
+    cursor: default;
+    opacity: 0.8;
+    filter: grayscale(20%);
+}
+
+.equipment-item[data-field="capacity"]:hover {
+    background: rgba(255, 255, 255, 0.15); /* Garde la couleur originale au survol */
+    border-color: rgba(255, 255, 255, 0.05); /* Garde la bordure originale */
 }
 
 .equipment-image {
