@@ -1372,7 +1372,7 @@
       "vitesse": 2,
       "difficulte": 2,
       "arme_principale": [
-        0
+        "17"
       ],
       "arme_secondaire": [
         1
@@ -2149,12 +2149,12 @@
       "vitesse": 2,
       "difficulte": 2,
       "arme_principale": [
-        0
+        "6"
       ],
       "arme_secondaire": [
-        0
+        "49"
       ],
-      "gadget": 0,
+      "gadget": "4",
       "note": 3
     },
     {

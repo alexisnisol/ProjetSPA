@@ -93,8 +93,8 @@ export default class EquipmentGrid {
 
     static async updateEquipment(fieldName, newId) {
         try {
-            const updateData = {};
-            
+            const updateData = await OperatorProvider.getOperator(this.currentOperator.id);
+
             if (fieldName === 'arme_principale' || fieldName === 'arme_secondaire') {
                 updateData[fieldName] = [newId];
             } else if (fieldName === 'gadget') {
