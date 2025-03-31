@@ -32,7 +32,7 @@ export default class OperatorAll extends Views {
     async render() {
         this.operators = await this.paginationHandler.requestPage();
         if(this.searchHandler.hasSearch()) {
-            this.operators = (await OperatorSortProvider.fetchAllByDate()).filter(operator => operator.image.toLowerCase().includes(this.searchHandler.getSearch().toLowerCase()));
+            this.operators = this.operators.filter(operator => operator.image.toLowerCase().includes(this.searchHandler.getSearch().toLowerCase()));
         }
         let html = this.operators.map(operator => Card.render(operator, true, isFavorite(operator.id))).join('\n ');
         if (this.operators.length === 0) {
