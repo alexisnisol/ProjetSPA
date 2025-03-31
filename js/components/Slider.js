@@ -62,13 +62,17 @@ export default class Slider {
         const sliders = document.querySelectorAll('.stat-slider');
         
         sliders.forEach(slider => {
-
+            // Mise à jour initiale
+            Slider.updateSliderStyle(slider);
+            
             slider.addEventListener('input', async function() {
                 const value = this.value;
                 const attribute = this.getAttribute('data-attribute');
                 const operatorId = this.getAttribute('data-operator-id');
                 
                 this.nextElementSibling.textContent = value;
+                
+                Slider.updateSliderStyle(this);
                 
                 const success = await Slider.updateSlider(attribute, value, operatorId);
                 
@@ -82,5 +86,13 @@ export default class Slider {
         });
         
         console.log(`[initSliders] ${sliders.length} sliders initialisés`);
+    }
+    
+    static updateSliderStyle(slider) {
+        const min = slider.min ? parseInt(slider.min) : 0;
+        const max = slider.max ? parseInt(slider.max) : 100;
+        const value = parseInt(slider.value);
+        const percent = ((value - min) / (max - min)) * 100;
+        slider.style.setProperty('--fill-percent', `${percent}%`);
     }
 }

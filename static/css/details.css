@@ -3,6 +3,30 @@
     width: 100%;
     color: white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+}
+
+.operator-detail::before {
+    content: ""; 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    width: 650px;
+    height: 650px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.2;
+    z-index: 1;
+}
+
+.Assaillant::before {
+    background-image: url('/static/img/ui/attaque.png');
+}
+
+.Défense::before {
+    background-image: url('/static/img/ui/defense.png');
 }
 
 .main-background {
@@ -43,7 +67,7 @@
     font-size: 16px;
     z-index: 5;
     display: flex;
-    align-items: center; /* Aligne verticalement la flèche et le texte */
+    align-items: center;
 }
 
 .back-button:hover {
@@ -51,7 +75,7 @@
 }
 
 .back-button span {
-    margin-right: 8px; /* Ajoute de l'espace entre la flèche et le texte */
+    margin-right: 8px; 
 }
 
 

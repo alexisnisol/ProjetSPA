@@ -19,7 +19,7 @@ export default class Home extends Views {
                 <div>
                     <h1>TOM CLANCY'S RAINBOW SIX SIEGE</h1>
                     <p>Personalisez votre arsenal selon votre style.</p>
-                    <a href="#en-savoir-plus" class="btn btn-primary">En savoir plus</a>
+                    <a href='#/operators' class="btn btn-primary">En savoir plus</a>
                 </div>
             </div>
             <div class="recent-characters-section">
@@ -36,7 +36,7 @@ export default class Home extends Views {
                 <div class="content-box">
                     <h2>OPÉRATION DEALY OMEN</h2>
                     <p>L'infâme Deimos, un des piliers fondateurs de Rainbow Six et aujourd'hui un de ses plus fervents détracteurs, a été ajouté à la liste des agents cette saison. Originaire des États-Unis, il est équipé de son redoutable traqueur, le DeathMARK.</p>
-                    <a href="#rejoindre" class="btn btn-primary">Détails Deimos</a>
+                    <a href='#/operators/39' class="btn btn-primary">Détails Deimos</a>
                 </div>
             </div>
         `;

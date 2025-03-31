@@ -95,6 +95,7 @@
 .recent-characters-section .card:hover {
     transform: scale(1.08) translateY(-10px);
     box-shadow: 0 10px 20px rgba(0, 195, 173, 0.4 );
+    cursor: pointer;
 }
 
 .recent-characters-section .card-body {

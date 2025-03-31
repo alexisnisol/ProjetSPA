@@ -21,12 +21,15 @@
     border-radius: 4px;
     outline: none;
     margin: 0 10px;
+    --fill-percent: 50%; /* Valeur par défaut */
 }
 
 /* Barre remplie (orange) - Partie gauche */
 .stat-slider::-webkit-slider-runnable-track {
     height: 8px;
-    background: linear-gradient(to right, #ff9800 0%, #ff9800 var(--fill-percent), 
+    background: linear-gradient(to right, 
+                #ff9800 0%, 
+                #ff9800 var(--fill-percent), 
                 rgba(255, 255, 255, 0.2) var(--fill-percent), 
                 rgba(255, 255, 255, 0.2) 100%);
     border-radius: 4px;
@@ -49,7 +52,9 @@
 /* Style pour Firefox */
 .stat-slider::-moz-range-track {
     height: 8px;
-    background: linear-gradient(to right, #ff9800 0%, #ff9800 var(--fill-percent), 
+    background: linear-gradient(to right, 
+              #ff9800 0%, 
+              #ff9800 var(--fill-percent), 
               rgba(255, 255, 255, 0.2) var(--fill-percent), 
               rgba(255, 255, 255, 0.2) 100%);
     border-radius: 4px;

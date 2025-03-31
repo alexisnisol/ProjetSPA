@@ -8,7 +8,7 @@ export default class Card {
                     <div class="operator-logo">
                         <img class="logo_perso" src="/static/img/logos/logo_${operator.nom.toLowerCase().replace(/\s+/g, '_')}.png" alt="Logo de ${operator.nom}">
                     </div>
-                    <img src="/static/img/operators/${operator.image}" alt="${operator.nom}">
+                    <img onclick="window.location.href='#/operators/${operator.id}'" src="/static/img/operators/${operator.image}" alt="${operator.nom}">
                     <div class="card-body">
                         <p class="card-text">${operator.nom ? operator.nom.slice(0, 100) : ''}</p>
                         <div class="btn-group">
@@ -29,4 +29,5 @@ export default class Card {
             </button>
         `;
     }
+
 }
