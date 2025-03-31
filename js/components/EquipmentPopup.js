@@ -33,7 +33,7 @@ export default class EquipmentPopup {
         const list = this.popupElement.querySelector('.equipment-list');
         list.innerHTML = items.map(item => `
             <div class="equipment-option" data-id="${item.id}">
-                <img src="/static/img/${folder}/${item.image}" alt="${item.nom}">
+                <img loading="lazy" src="/static/img/${folder}/${item.image}" alt="${item.nom}">
                 <p>${item.nom}</p>
             </div>
         `).join('');
