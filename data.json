@@ -1,0 +1,3495 @@
+{
+  "specialite": [
+    {
+      "id": "0",
+      "name": "Renseignements"
+    },
+    {
+      "id": "1",
+      "name": "Assistance"
+    },
+    {
+      "id": "2",
+      "name": "Anti-Intrusion"
+    },
+    {
+      "id": "3",
+      "name": "Anti-Gadget"
+    },
+    {
+      "id": "4",
+      "name": "Piégeur"
+    },
+    {
+      "id": "5",
+      "name": "Contrôle des Foules"
+    },
+    {
+      "id": "6",
+      "name": "Contrôle de la carte"
+    },
+    {
+      "id": "7",
+      "name": "Brèche"
+    },
+    {
+      "id": "8",
+      "name": "Première ligne"
+    }
+  ],
+  "specialite_operateur": [
+    {
+      "id": "0",
+      "operateur_id": 0,
+      "specialite_id": 0
+    },
+    {
+      "id": "1",
+      "operateur_id": 0,
+      "specialite_id": 1
+    },
+    {
+      "id": "2",
+      "operateur_id": 1,
+      "specialite_id": 1
+    },
+    {
+      "id": "3",
+      "operateur_id": 2,
+      "specialite_id": 2
+    },
+    {
+      "id": "4",
+      "operateur_id": 2,
+      "specialite_id": 3
+    },
+    {
+      "id": "5",
+      "operateur_id": 3,
+      "specialite_id": 4
+    },
+    {
+      "id": "6",
+      "operateur_id": 3,
+      "specialite_id": 5
+    },
+    {
+      "id": "7",
+      "operateur_id": 4,
+      "specialite_id": 1
+    },
+    {
+      "id": "8",
+      "operateur_id": 4,
+      "specialite_id": 0
+    },
+    {
+      "id": "9",
+      "operateur_id": 5,
+      "specialite_id": 2
+    },
+    {
+      "id": "10",
+      "operateur_id": 5,
+      "specialite_id": 1
+    },
+    {
+      "id": "11",
+      "operateur_id": 6,
+      "specialite_id": 2
+    },
+    {
+      "id": "12",
+      "operateur_id": 6,
+      "specialite_id": 4
+    },
+    {
+      "id": "13",
+      "operateur_id": 7,
+      "specialite_id": 1
+    },
+    {
+      "id": "14",
+      "operateur_id": 8,
+      "specialite_id": 2
+    },
+    {
+      "id": "15",
+      "operateur_id": 8,
+      "specialite_id": 3
+    },
+    {
+      "id": "16",
+      "operateur_id": 9,
+      "specialite_id": 0
+    },
+    {
+      "id": "17",
+      "operateur_id": 9,
+      "specialite_id": 5
+    },
+    {
+      "id": "18",
+      "operateur_id": 10,
+      "specialite_id": 1
+    },
+    {
+      "id": "19",
+      "operateur_id": 11,
+      "specialite_id": 3
+    },
+    {
+      "id": "20",
+      "operateur_id": 11,
+      "specialite_id": 4
+    },
+    {
+      "id": "21",
+      "operateur_id": 12,
+      "specialite_id": 2
+    },
+    {
+      "id": "22",
+      "operateur_id": 12,
+      "specialite_id": 4
+    },
+    {
+      "id": "23",
+      "operateur_id": 13,
+      "specialite_id": 3
+    },
+    {
+      "id": "24",
+      "operateur_id": 13,
+      "specialite_id": 0
+    },
+    {
+      "id": "25",
+      "operateur_id": 14,
+      "specialite_id": 3
+    },
+    {
+      "id": "26",
+      "operateur_id": 14,
+      "specialite_id": 0
+    },
+    {
+      "id": "27",
+      "operateur_id": 15,
+      "specialite_id": 2
+    },
+    {
+      "id": "28",
+      "operateur_id": 15,
+      "specialite_id": 3
+    },
+    {
+      "id": "29",
+      "operateur_id": 16,
+      "specialite_id": 0
+    },
+    {
+      "id": "30",
+      "operateur_id": 16,
+      "specialite_id": 5
+    },
+    {
+      "id": "31",
+      "operateur_id": 17,
+      "specialite_id": 0
+    },
+    {
+      "id": "32",
+      "operateur_id": 17,
+      "specialite_id": 3
+    },
+    {
+      "id": "33",
+      "operateur_id": 18,
+      "specialite_id": 0
+    },
+    {
+      "id": "34",
+      "operateur_id": 18,
+      "specialite_id": 4
+    },
+    {
+      "id": "35",
+      "operateur_id": 19,
+      "specialite_id": 3
+    },
+    {
+      "id": "36",
+      "operateur_id": 19,
+      "specialite_id": 5
+    },
+    {
+      "id": "37",
+      "operateur_id": 20,
+      "specialite_id": 5
+    },
+    {
+      "id": "38",
+      "operateur_id": 20,
+      "specialite_id": 4
+    },
+    {
+      "id": "39",
+      "operateur_id": 21,
+      "specialite_id": 2
+    },
+    {
+      "id": "40",
+      "operateur_id": 21,
+      "specialite_id": 4
+    },
+    {
+      "id": "41",
+      "operateur_id": 22,
+      "specialite_id": 0
+    },
+    {
+      "id": "42",
+      "operateur_id": 22,
+      "specialite_id": 1
+    },
+    {
+      "id": "43",
+      "operateur_id": 23,
+      "specialite_id": 0
+    },
+    {
+      "id": "44",
+      "operateur_id": 23,
+      "specialite_id": 5
+    },
+    {
+      "id": "46",
+      "operateur_id": 24,
+      "specialite_id": 5
+    },
+    {
+      "id": "47",
+      "operateur_id": 25,
+      "specialite_id": 0
+    },
+    {
+      "id": "48",
+      "operateur_id": 26,
+      "specialite_id": 2
+    },
+    {
+      "id": "49",
+      "operateur_id": 26,
+      "specialite_id": 4
+    },
+    {
+      "id": "50",
+      "operateur_id": 27,
+      "specialite_id": 3
+    },
+    {
+      "id": "51",
+      "operateur_id": 27,
+      "specialite_id": 5
+    },
+    {
+      "id": "52",
+      "operateur_id": 28,
+      "specialite_id": 2
+    },
+    {
+      "id": "53",
+      "operateur_id": 28,
+      "specialite_id": 4
+    },
+    {
+      "id": "54",
+      "operateur_id": 29,
+      "specialite_id": 2
+    },
+    {
+      "id": "55",
+      "operateur_id": 29,
+      "specialite_id": 1
+    },
+    {
+      "id": "56",
+      "operateur_id": 30,
+      "specialite_id": 0
+    },
+    {
+      "id": "57",
+      "operateur_id": 30,
+      "specialite_id": 1
+    },
+    {
+      "id": "58",
+      "operateur_id": 31,
+      "specialite_id": 1
+    },
+    {
+      "id": "59",
+      "operateur_id": 32,
+      "specialite_id": 1
+    },
+    {
+      "id": "60",
+      "operateur_id": 33,
+      "specialite_id": 3
+    },
+    {
+      "id": "61",
+      "operateur_id": 33,
+      "specialite_id": 1
+    },
+    {
+      "id": "62",
+      "operateur_id": 34,
+      "specialite_id": 2
+    },
+    {
+      "id": "63",
+      "operateur_id": 34,
+      "specialite_id": 3
+    },
+    {
+      "id": "64",
+      "operateur_id": 35,
+      "specialite_id": 3
+    },
+    {
+      "id": "65",
+      "operateur_id": 35,
+      "specialite_id": 5
+    },
+    {
+      "id": "66",
+      "operateur_id": 36,
+      "specialite_id": 2
+    },
+    {
+      "id": "67",
+      "operateur_id": 36,
+      "specialite_id": 4
+    },
+    {
+      "id": "68",
+      "operateur_id": 37,
+      "specialite_id": 1
+    },
+    {
+      "id": "69",
+      "operateur_id": 37,
+      "specialite_id": 6
+    },
+    {
+      "id": "70",
+      "operateur_id": 38,
+      "specialite_id": 1
+    },
+    {
+      "id": "71",
+      "operateur_id": 39,
+      "specialite_id": 0
+    },
+    {
+      "id": "72",
+      "operateur_id": 39,
+      "specialite_id": 6
+    },
+    {
+      "id": "73",
+      "operateur_id": 40,
+      "specialite_id": 3
+    },
+    {
+      "id": "74",
+      "operateur_id": 40,
+      "specialite_id": 7
+    },
+    {
+      "id": "75",
+      "operateur_id": 41,
+      "specialite_id": 0
+    },
+    {
+      "id": "76",
+      "operateur_id": 41,
+      "specialite_id": 3
+    },
+    {
+      "id": "77",
+      "operateur_id": 42,
+      "specialite_id": 6
+    },
+    {
+      "id": "78",
+      "operateur_id": 42,
+      "specialite_id": 8
+    },
+    {
+      "id": "79",
+      "operateur_id": 43,
+      "specialite_id": 1
+    },
+    {
+      "id": "80",
+      "operateur_id": 43,
+      "specialite_id": 6
+    },
+    {
+      "id": "81",
+      "operateur_id": 44,
+      "specialite_id": 1
+    },
+    {
+      "id": "82",
+      "operateur_id": 44,
+      "specialite_id": 0
+    },
+    {
+      "id": "83",
+      "operateur_id": 45,
+      "specialite_id": 0
+    },
+    {
+      "id": "84",
+      "operateur_id": 45,
+      "specialite_id": 3
+    },
+    {
+      "id": "85",
+      "operateur_id": 46,
+      "specialite_id": 3
+    },
+    {
+      "id": "86",
+      "operateur_id": 46,
+      "specialite_id": 0
+    },
+    {
+      "id": "87",
+      "operateur_id": 47,
+      "specialite_id": 7
+    },
+    {
+      "id": "88",
+      "operateur_id": 47,
+      "specialite_id": 3
+    },
+    {
+      "id": "89",
+      "operateur_id": 48,
+      "specialite_id": 8
+    },
+    {
+      "id": "90",
+      "operateur_id": 48,
+      "specialite_id": 0
+    },
+    {
+      "id": "91",
+      "operateur_id": 49,
+      "specialite_id": 3
+    },
+    {
+      "id": "92",
+      "operateur_id": 49,
+      "specialite_id": 0
+    },
+    {
+      "id": "93",
+      "operateur_id": 50,
+      "specialite_id": 8
+    },
+    {
+      "id": "94",
+      "operateur_id": 50,
+      "specialite_id": 6
+    },
+    {
+      "id": "95",
+      "operateur_id": 51,
+      "specialite_id": 8
+    },
+    {
+      "id": "96",
+      "operateur_id": 51,
+      "specialite_id": 6
+    },
+    {
+      "id": "97",
+      "operateur_id": 52,
+      "specialite_id": 1
+    },
+    {
+      "id": "98",
+      "operateur_id": 52,
+      "specialite_id": 6
+    },
+    {
+      "id": "99",
+      "operateur_id": 53,
+      "specialite_id": 8
+    },
+    {
+      "id": "100",
+      "operateur_id": 53,
+      "specialite_id": 6
+    },
+    {
+      "id": "101",
+      "operateur_id": 54,
+      "specialite_id": 7
+    },
+    {
+      "id": "102",
+      "operateur_id": 54,
+      "specialite_id": 8
+    },
+    {
+      "id": "103",
+      "operateur_id": 55,
+      "specialite_id": 0
+    },
+    {
+      "id": "104",
+      "operateur_id": 55,
+      "specialite_id": 6
+    },
+    {
+      "id": "105",
+      "operateur_id": 56,
+      "specialite_id": 8
+    },
+    {
+      "id": "106",
+      "operateur_id": 56,
+      "specialite_id": 1
+    },
+    {
+      "id": "107",
+      "operateur_id": 57,
+      "specialite_id": 0
+    },
+    {
+      "id": "108",
+      "operateur_id": 57,
+      "specialite_id": 6
+    },
+    {
+      "id": "109",
+      "operateur_id": 58,
+      "specialite_id": 7
+    },
+    {
+      "id": "110",
+      "operateur_id": 58,
+      "specialite_id": 3
+    },
+    {
+      "id": "111",
+      "operateur_id": 59,
+      "specialite_id": 8
+    },
+    {
+      "id": "112",
+      "operateur_id": 59,
+      "specialite_id": 6
+    },
+    {
+      "id": "113",
+      "operateur_id": 60,
+      "specialite_id": 0
+    },
+    {
+      "id": "114",
+      "operateur_id": 60,
+      "specialite_id": 6
+    },
+    {
+      "id": "115",
+      "operateur_id": 61,
+      "specialite_id": 7
+    },
+    {
+      "id": "116",
+      "operateur_id": 61,
+      "specialite_id": 8
+    },
+    {
+      "id": "117",
+      "operateur_id": 62,
+      "specialite_id": 8
+    },
+    {
+      "id": "118",
+      "operateur_id": 62,
+      "specialite_id": 6
+    },
+    {
+      "id": "119",
+      "operateur_id": 63,
+      "specialite_id": 1
+    },
+    {
+      "id": "120",
+      "operateur_id": 64,
+      "specialite_id": 7
+    },
+    {
+      "id": "121",
+      "operateur_id": 64,
+      "specialite_id": 1
+    },
+    {
+      "id": "122",
+      "operateur_id": 65,
+      "specialite_id": 7
+    },
+    {
+      "id": "123",
+      "operateur_id": 65,
+      "specialite_id": 3
+    },
+    {
+      "id": "124",
+      "operateur_id": 66,
+      "specialite_id": 3
+    },
+    {
+      "id": "125",
+      "operateur_id": 66,
+      "specialite_id": 1
+    },
+    {
+      "id": "126",
+      "operateur_id": 67,
+      "specialite_id": 7
+    },
+    {
+      "id": "127",
+      "operateur_id": 67,
+      "specialite_id": 8
+    },
+    {
+      "id": "128",
+      "operateur_id": 68,
+      "specialite_id": 7
+    },
+    {
+      "id": "129",
+      "operateur_id": 68,
+      "specialite_id": 1
+    },
+    {
+      "id": "130",
+      "operateur_id": 69,
+      "specialite_id": 0
+    },
+    {
+      "id": "131",
+      "operateur_id": 69,
+      "specialite_id": 1
+    },
+    {
+      "id": "132",
+      "operateur_id": 70,
+      "specialite_id": 3
+    },
+    {
+      "id": "133",
+      "operateur_id": 70,
+      "specialite_id": 0
+    },
+    {
+      "id": "134",
+      "operateur_id": 71,
+      "specialite_id": 8
+    },
+    {
+      "id": "135",
+      "operateur_id": 71,
+      "specialite_id": 6
+    },
+    {
+      "id": "136",
+      "operateur_id": 72,
+      "specialite_id": 0
+    },
+    {
+      "id": "137",
+      "operateur_id": 72,
+      "specialite_id": 1
+    },
+    {
+      "id": "138",
+      "operateur_id": 73,
+      "specialite_id": 3
+    },
+    {
+      "id": "139",
+      "operateur_id": 74,
+      "specialite_id": 0
+    },
+    {
+      "id": "140",
+      "operateur_id": 74,
+      "specialite_id": 1
+    }
+  ],
+  "classe_arme": [
+    {
+      "id": "0",
+      "nom": "Fusil d'assaut",
+      "principale": true
+    },
+    {
+      "id": "1",
+      "nom": "Fusil à pompe",
+      "principale": true
+    },
+    {
+      "id": "2",
+      "nom": "Mitraillette",
+      "principale": true
+    },
+    {
+      "id": "3",
+      "nom": "Fusil de Sniper",
+      "principale": true
+    },
+    {
+      "id": "4",
+      "nom": "Bouclier",
+      "principale": true
+    },
+    {
+      "id": "5",
+      "nom": "Fusil-Mitrailleur",
+      "principale": true
+    },
+    {
+      "id": "50",
+      "nom": "Pistolet",
+      "principale": false
+    },
+    {
+      "id": "51",
+      "nom": "Pistolet-Mitrailleur",
+      "principale": false
+    },
+    {
+      "id": "52",
+      "nom": "Fusil à pompe",
+      "principale": false
+    }
+  ],
+  "armes": [
+    {
+      "id": "0",
+      "nom": "PCX-33",
+      "classe_arme": 0,
+      "image": "pcx-33.png"
+    },
+    {
+      "id": "1",
+      "nom": "P229",
+      "classe_arme": 50,
+      "image": "p229.png"
+    },
+    {
+      "id": "2",
+      "nom": "Commando 9",
+      "classe_arme": 0,
+      "image": "commando9.png"
+    },
+    {
+      "id": "3",
+      "nom": "M870",
+      "classe_arme": 1,
+      "image": "m870.png"
+    },
+    {
+      "id": "4",
+      "nom": "C75 Auto",
+      "classe_arme": 51,
+      "image": "c75-auto.png"
+    },
+    {
+      "id": "5",
+      "nom": "Super Shorty",
+      "classe_arme": 52,
+      "image": "super-shorty.png"
+    },
+    {
+      "id": "6",
+      "nom": "MPX",
+      "classe_arme": 2,
+      "image": "mpx.png"
+    },
+    {
+      "id": "7",
+      "nom": "AR-15.50",
+      "classe_arme": 0,
+      "image": "ar-15-50.png"
+    },
+    {
+      "id": "8",
+      "nom": "P226 MK 25",
+      "classe_arme": 50,
+      "image": "p226-mk-25.png"
+    },
+    {
+      "id": "9",
+      "nom": "MP7",
+      "classe_arme": 2,
+      "image": "mp7.png"
+    },
+    {
+      "id": "10",
+      "nom": "SASG-12",
+      "classe_arme": 1,
+      "image": "sasg-12.png"
+    },
+    {
+      "id": "11",
+      "nom": "5.7 USG",
+      "classe_arme": 50,
+      "image": "5-7-usg.png"
+    },
+    {
+      "id": "12",
+      "nom": "Bailiff 410",
+      "classe_arme": 50,
+      "image": "bailiff-410.png"
+    },
+    {
+      "id": "13",
+      "nom": "ITA12L",
+      "classe_arme": 1,
+      "image": "ita12l.png"
+    },
+    {
+      "id": "14",
+      "nom": "P90",
+      "classe_arme": 2,
+      "image": "p90.png"
+    },
+    {
+      "id": "15",
+      "nom": "SMG-11",
+      "classe_arme": 51,
+      "image": "smg-11.png"
+    },
+    {
+      "id": "16",
+      "nom": "9X19SVN",
+      "classe_arme": 2,
+      "image": "9x19svn.png"
+    },
+    {
+      "id": "17",
+      "nom": "ACS12",
+      "classe_arme": 1,
+      "image": "acs12.png"
+    },
+    {
+      "id": "18",
+      "nom": "D-50",
+      "classe_arme": 50,
+      "image": "d-50.png"
+    },
+    {
+      "id": "19",
+      "nom": "UZK50GI",
+      "classe_arme": 2,
+      "image": "uzk50gi.png"
+    },
+    {
+      "id": "20",
+      "nom": "1911 TACOPS",
+      "classe_arme": 50,
+      "image": "1911-tacops.png"
+    },
+    {
+      "id": "21",
+      "nom": "SPAS-15",
+      "classe_arme": 1,
+      "image": "spas-15.png"
+    },
+    {
+      "id": "22",
+      "nom": "SPEAR .308",
+      "classe_arme": 0,
+      "image": "spear-308.png"
+    },
+    {
+      "id": "23",
+      "nom": "BEARING 9",
+      "classe_arme": 51,
+      "image": "bearing-9.png"
+    },
+    {
+      "id": "24",
+      "nom": "Q-929",
+      "classe_arme": 50,
+      "image": "q-929.png"
+    },
+    {
+      "id": "25",
+      "nom": "ITA12S",
+      "classe_arme": 52,
+      "image": "ita12s.png"
+    },
+    {
+      "id": "26",
+      "nom": "P10 RONI",
+      "classe_arme": 2,
+      "image": "p10-roni.png"
+    },
+    {
+      "id": "27",
+      "nom": "MK 14 EBR",
+      "classe_arme": 3,
+      "image": "mk-14-ebr.png"
+    },
+    {
+      "id": "28",
+      "nom": "PRB92",
+      "classe_arme": 50,
+      "image": "prb92.png"
+    },
+    {
+      "id": "29",
+      "nom": "SUPER 90",
+      "classe_arme": 1,
+      "image": "super-90.png"
+    },
+    {
+      "id": "30",
+      "nom": "RG15",
+      "classe_arme": 50,
+      "image": "rg15.png"
+    },
+    {
+      "id": "31",
+      "nom": "SPAS-12",
+      "classe_arme": 1,
+      "image": "spas-12.png"
+    },
+    {
+      "id": "32",
+      "nom": "T-5 SMG",
+      "classe_arme": 2,
+      "image": "t-5-smg.png"
+    },
+    {
+      "id": "33",
+      "nom": "USP40",
+      "classe_arme": 50,
+      "image": "usp40.png"
+    },
+    {
+      "id": "34",
+      "nom": "AUG A2",
+      "classe_arme": 0,
+      "image": "aug-a2.png"
+    },
+    {
+      "id": "35",
+      "nom": "MP5K",
+      "classe_arme": 2,
+      "image": "mp5k.png"
+    },
+    {
+      "id": "36",
+      "nom": "P12",
+      "classe_arme": 50,
+      "image": "p12.png"
+    },
+    {
+      "id": "37",
+      "nom": "KERATOS .357",
+      "classe_arme": 50,
+      "image": "keratos-357.png"
+    },
+    {
+      "id": "38",
+      "nom": "Vector .45 ACP",
+      "classe_arme": 2,
+      "image": "vector-45-acp.png"
+    },
+    {
+      "id": "39",
+      "nom": "TCSG12",
+      "classe_arme": 1,
+      "image": "tcsg12.png"
+    },
+    {
+      "id": "40",
+      "nom": "M590A1",
+      "classe_arme": 1,
+      "image": "m590a1.png"
+    },
+    {
+      "id": "41",
+      "nom": "P-10C",
+      "classe_arme": 50,
+      "image": "p-10c.png"
+    },
+    {
+      "id": "42",
+      "nom": "SMG-12",
+      "classe_arme": 51,
+      "image": "smg-12.png"
+    },
+    {
+      "id": "43",
+      "nom": "SDP 9mm",
+      "classe_arme": 50,
+      "image": "sdp-9mm.png"
+    },
+    {
+      "id": "44",
+      "nom": "MP5",
+      "classe_arme": 2,
+      "image": "mp5.png"
+    },
+    {
+      "id": "45",
+      "nom": "AUG A3",
+      "classe_arme": 2,
+      "image": "aug-a3.png"
+    },
+    {
+      "id": "46",
+      "nom": ".44 MAG Semi-Auto",
+      "classe_arme": 50,
+      "image": "44-mag-semi-auto.png"
+    },
+    {
+      "id": "47",
+      "nom": "LFP586",
+      "classe_arme": 0,
+      "image": "lfp586.png"
+    },
+    {
+      "id": "48",
+      "nom": "Bouclier AEE",
+      "classe_arme": 4,
+      "image": "bouclier-aee.png"
+    },
+    {
+      "id": "49",
+      "nom": "SPSMG9",
+      "classe_arme": 51,
+      "image": "spsmg9.png"
+    },
+    {
+      "id": "50",
+      "nom": "ALDA 5.56",
+      "classe_arme": 5,
+      "image": "alda-5-56.png"
+    },
+    {
+      "id": "51",
+      "nom": "MX4 Storm",
+      "classe_arme": 2,
+      "image": "mx4-storm.png"
+    },
+    {
+      "id": "52",
+      "nom": "K1A",
+      "classe_arme": 2,
+      "image": "k1a.png"
+    },
+    {
+      "id": "53",
+      "nom": "BOSG.12.2",
+      "classe_arme": 1,
+      "image": "bosg-12-2.png"
+    },
+    {
+      "id": "54",
+      "nom": "Scorpion EVO 3 A1",
+      "classe_arme": 2,
+      "image": "scorpion-evo-3-a1.png"
+    },
+    {
+      "id": "55",
+      "nom": "FO-12",
+      "classe_arme": 1,
+      "image": "fo-12.png"
+    },
+    {
+      "id": "56",
+      "nom": "SIX12 SD",
+      "classe_arme": 1,
+      "image": "six12-sd.png"
+    },
+    {
+      "id": "57",
+      "nom": "MP5SD",
+      "classe_arme": 2,
+      "image": "mp5sd.png"
+    },
+    {
+      "id": "58",
+      "nom": "SuperNova",
+      "classe_arme": 1,
+      "image": "supernova.png"
+    },
+    {
+      "id": "59",
+      "nom": "M12",
+      "classe_arme": 50,
+      "image": "p12.png"
+    },
+    {
+      "id": "60",
+      "nom": "Luison",
+      "classe_arme": 50,
+      "image": "luison.png"
+    },
+    {
+      "id": "61",
+      "nom": "9mm C1",
+      "classe_arme": 2,
+      "image": "9mm-c1.png"
+    },
+    {
+      "id": "62",
+      "nom": "MK1 9mm",
+      "classe_arme": 50,
+      "image": "mk1-9mm.png"
+    },
+    {
+      "id": "63",
+      "nom": "FMG-9",
+      "classe_arme": 2,
+      "image": "fmg-9.png"
+    },
+    {
+      "id": "64",
+      "nom": "UMP45",
+      "classe_arme": 2,
+      "image": "ump45.png"
+    },
+    {
+      "id": "65",
+      "nom": "M1014",
+      "classe_arme": 1,
+      "image": "m1014.png"
+    },
+    {
+      "id": "66",
+      "nom": "M45 MEUSOC",
+      "classe_arme": 50,
+      "image": "m45-meusoc.png"
+    },
+    {
+      "id": "67",
+      "nom": "SG-CQB",
+      "classe_arme": 1,
+      "image": "sg-cqb.png"
+    },
+    {
+      "id": "68",
+      "nom": "P9",
+      "classe_arme": 50,
+      "image": "p9.png"
+    },
+    {
+      "id": "69",
+      "nom": "416-C Carbine",
+      "classe_arme": 0,
+      "image": "416-c-carbine.png"
+    },
+    {
+      "id": "70",
+      "nom": "DP27",
+      "classe_arme": 5,
+      "image": "dp27.png"
+    },
+    {
+      "id": "71",
+      "nom": "PMM",
+      "classe_arme": 50,
+      "image": "pmm.png"
+    },
+    {
+      "id": "72",
+      "nom": "GSH-18",
+      "classe_arme": 50,
+      "image": "gsh-18.png"
+    },
+    {
+      "id": "73",
+      "nom": "417",
+      "classe_arme": 3,
+      "image": "417.png"
+    },
+    {
+      "id": "74",
+      "nom": "M249",
+      "classe_arme": 5,
+      "image": "m249.png"
+    },
+    {
+      "id": "75",
+      "nom": "Reaper MK2",
+      "classe_arme": 0,
+      "image": "reaper-mk2.png"
+    },
+    {
+      "id": "76",
+      "nom": "M4",
+      "classe_arme": 0,
+      "image": "m4.png"
+    },
+    {
+      "id": "77",
+      "nom": "AK-74M",
+      "classe_arme": 0,
+      "image": "ak-74m.png"
+    },
+    {
+      "id": "78",
+      "nom": ".44 VENDETTA",
+      "classe_arme": 50,
+      "image": "44-vendetta.png"
+    },
+    {
+      "id": "79",
+      "nom": "LMG-E",
+      "classe_arme": 5,
+      "image": "lmg-e.png"
+    },
+    {
+      "id": "80",
+      "nom": "R4-C",
+      "classe_arme": 0,
+      "image": "r4-c.png"
+    },
+    {
+      "id": "81",
+      "nom": "PARA-308",
+      "classe_arme": 0,
+      "image": "para-308.png"
+    },
+    {
+      "id": "82",
+      "nom": "CAMRS",
+      "classe_arme": 3,
+      "image": "camrs.png"
+    },
+    {
+      "id": "83",
+      "nom": "552 Commando",
+      "classe_arme": 0,
+      "image": "552-commando.png"
+    },
+    {
+      "id": "84",
+      "nom": "POF9",
+      "classe_arme": 0,
+      "image": "pof9.png"
+    },
+    {
+      "id": "85",
+      "nom": "556XI",
+      "classe_arme": 0,
+      "image": "556xi.png"
+    },
+    {
+      "id": "86",
+      "nom": "PDW9",
+      "classe_arme": 2,
+      "image": "pdw9.png"
+    },
+    {
+      "id": "87",
+      "nom": "AR33",
+      "classe_arme": 0,
+      "image": "ar33.png"
+    },
+    {
+      "id": "88",
+      "nom": "SR-25",
+      "classe_arme": 3,
+      "image": "sr-25.png"
+    },
+    {
+      "id": "89",
+      "nom": "Gonne-6",
+      "classe_arme": 50,
+      "image": "gonne-6.png"
+    },
+    {
+      "id": "90",
+      "nom": "SC3000K",
+      "classe_arme": 0,
+      "image": "sc3000k.png"
+    },
+    {
+      "id": "91",
+      "nom": "AK-12",
+      "classe_arme": 0,
+      "image": "ak-12.png"
+    },
+    {
+      "id": "92",
+      "nom": "ARX200",
+      "classe_arme": 0,
+      "image": "arx200.png"
+    },
+    {
+      "id": "93",
+      "nom": "G36C",
+      "classe_arme": 0,
+      "image": "g36c.png"
+    },
+    {
+      "id": "94",
+      "nom": "CSRX 300",
+      "classe_arme": 3,
+      "image": "csrx-300.png"
+    },
+    {
+      "id": "95",
+      "nom": "G8A1",
+      "classe_arme": 5,
+      "image": "g8a1.png"
+    },
+    {
+      "id": "96",
+      "nom": "F90",
+      "classe_arme": 0,
+      "image": "f90.png"
+    },
+    {
+      "id": "97",
+      "nom": "M249 SAW",
+      "classe_arme": 0,
+      "image": "m249-saw.png"
+    },
+    {
+      "id": "98",
+      "nom": "V308",
+      "classe_arme": 0,
+      "image": "v308.png"
+    },
+    {
+      "id": "99",
+      "nom": "6P41",
+      "classe_arme": 5,
+      "image": "6p41.png"
+    },
+    {
+      "id": "100",
+      "nom": "M762",
+      "classe_arme": 0,
+      "image": "m762.png"
+    },
+    {
+      "id": "101",
+      "nom": "T-95 LSW",
+      "classe_arme": 5,
+      "image": "t-95-lsw.png"
+    },
+    {
+      "id": "102",
+      "nom": "SIX12",
+      "classe_arme": 1,
+      "image": "six12.png"
+    },
+    {
+      "id": "103",
+      "nom": "C7E",
+      "classe_arme": 0,
+      "image": "c7e.png"
+    },
+    {
+      "id": "104",
+      "nom": "Type-89",
+      "classe_arme": 0,
+      "image": "type-89.png"
+    },
+    {
+      "id": "105",
+      "nom": "MK17 CQB",
+      "classe_arme": 0,
+      "image": "mk17-cqb.png"
+    },
+    {
+      "id": "106",
+      "nom": "C8-SFW",
+      "classe_arme": 0,
+      "image": "c8-sfw.png"
+    },
+    {
+      "id": "107",
+      "nom": "L85A2",
+      "classe_arme": 0,
+      "image": "l85a2.png"
+    },
+    {
+      "id": "108",
+      "nom": "Bouclier Le Roc",
+      "classe_arme": 4,
+      "image": "bouclier-roc.png"
+    },
+    {
+      "id": "109",
+      "nom": "F2",
+      "classe_arme": 0,
+      "image": "f2.png"
+    },
+    {
+      "id": "110",
+      "nom": "G52-Tactical Shield",
+      "classe_arme": 4,
+      "image": "g52-shield.png"
+    },
+    {
+      "id": "111",
+      "nom": "Bouclier Balistique",
+      "classe_arme": 4,
+      "image": "shield.png"
+    },
+    {
+      "id": "112",
+      "nom": "OTS-03",
+      "classe_arme": 3,
+      "image": "ots-03.png"
+    }
+  ],
+  "gadgets": [
+    {
+      "id": "0",
+      "nom": "Grenade à Percussion",
+      "image": "impact_grenade.png"
+    },
+    {
+      "id": "1",
+      "nom": "Alarme de proximité",
+      "image": "alarme_proximite.png"
+    },
+    {
+      "id": "2",
+      "nom": "Fil barbelé",
+      "image": "barbed_wire.png"
+    },
+    {
+      "id": "3",
+      "nom": "Caméra blindée",
+      "image": "bulletproof_camera.png"
+    },
+    {
+      "id": "4",
+      "nom": "Bouclier déployable",
+      "image": "deployable_shield.png"
+    },
+    {
+      "id": "5",
+      "nom": "Bloqueur d'observation",
+      "image": "observation_blocker.png"
+    },
+    {
+      "id": "6",
+      "nom": "Nitro",
+      "image": "nitro_cell.png"
+    },
+    {
+      "id": "7",
+      "nom": "Grenade Fumigène",
+      "image": "smoke_grenade.png"
+    },
+    {
+      "id": "8",
+      "nom": "Explosifs",
+      "image": "breach_charge.png"
+    },
+    {
+      "id": "9",
+      "nom": "Claymore",
+      "image": "claymore.png"
+    },
+    {
+      "id": "10",
+      "nom": "Grenade Frag",
+      "image": "frag_grenade.png"
+    },
+    {
+      "id": "11",
+      "nom": "Charge de brèche lourde",
+      "image": "secondary_breacher.png"
+    },
+    {
+      "id": "12",
+      "nom": "Grenade Flash",
+      "image": "stun_grenade.png"
+    },
+    {
+      "id": "13",
+      "nom": "Grenade IEM à Percussion",
+      "image": "emp_impact_grenade.png"
+    }
+  ],
+  "capacite": [
+    {
+      "id": "0",
+      "nom": "ROBOTHÉONS V10",
+      "image": "skopos.png"
+    },
+    {
+      "id": "1",
+      "nom": "Kit de Gadget",
+      "image": "sentry.png"
+    },
+    {
+      "id": "2",
+      "nom": "Capsule d'azote",
+      "image": "tubarao.png"
+    },
+    {
+      "id": "3",
+      "nom": "Mine d'effroi F-NATT",
+      "image": "fenrir.png"
+    },
+    {
+      "id": "4",
+      "nom": "Capteur électrique SPEC-IO",
+      "image": "solis.png"
+    },
+    {
+      "id": "5",
+      "nom": "Barrière KIBA",
+      "image": "azami.png"
+    },
+    {
+      "id": "6",
+      "nom": "Rasopulseur",
+      "image": "thorn.png"
+    },
+    {
+      "id": "7",
+      "nom": "Station Kona",
+      "image": "thunderbird.png"
+    },
+    {
+      "id": "8",
+      "nom": "Portail Surya",
+      "image": "aruni.png"
+    },
+    {
+      "id": "9",
+      "nom": "Défense Sonique Banshee",
+      "image": "melusi.png"
+    },
+    {
+      "id": "10",
+      "nom": "Remah Dash",
+      "image": "oryx.png"
+    },
+    {
+      "id": "11",
+      "nom": "Système MAG-NET",
+      "image": "wamai.png"
+    },
+    {
+      "id": "12",
+      "nom": "Bombe Toxique Volcan",
+      "image": "goyo.png"
+    },
+    {
+      "id": "13",
+      "nom": "Lunettes Intelligentes - Regard",
+      "image": "warden.png"
+    },
+    {
+      "id": "14",
+      "nom": "Lance-parasite",
+      "image": "mozzie.png"
+    },
+    {
+      "id": "15",
+      "nom": "Electrogriffe Rtila",
+      "image": "kaid.png"
+    },
+    {
+      "id": "16",
+      "nom": "Bouclier AEE",
+      "image": "clash.png"
+    },
+    {
+      "id": "17",
+      "nom": "Evil Eye",
+      "image": "maestro.png"
+    },
+    {
+      "id": "18",
+      "nom": "Prisme",
+      "image": "alibi.png"
+    },
+    {
+      "id": "19",
+      "nom": "ERC-7",
+      "image": "vigil.png"
+    },
+    {
+      "id": "20",
+      "nom": "Mine Grzmot",
+      "image": "ela.png"
+    },
+    {
+      "id": "21",
+      "nom": "Gu",
+      "image": "lesion.png"
+    },
+    {
+      "id": "22",
+      "nom": "Miroir noir",
+      "image": "mira.png"
+    },
+    {
+      "id": "23",
+      "nom": "Yokai",
+      "image": "echo.png"
+    },
+    {
+      "id": "24",
+      "nom": "Pas de velours",
+      "image": "caveira.png"
+    },
+    {
+      "id": "25",
+      "nom": "Black Eye",
+      "image": "valkyrie.png"
+    },
+    {
+      "id": "26",
+      "nom": "Tapis Rouge",
+      "image": "frost.png"
+    },
+    {
+      "id": "27",
+      "nom": "Brouilleur de Signaux",
+      "image": "mute.png"
+    },
+    {
+      "id": "28",
+      "nom": "Grenade à Gaz Télécommandée",
+      "image": "smoke.png"
+    },
+    {
+      "id": "29",
+      "nom": "Panneau de Blindage",
+      "image": "castle.png"
+    },
+    {
+      "id": "30",
+      "nom": "Capteur Cardiaque",
+      "image": "pulse.png"
+    },
+    {
+      "id": "31",
+      "nom": "Pistolet Stim",
+      "image": "doc.png"
+    },
+    {
+      "id": "32",
+      "nom": "Sac de Plaques de Protection",
+      "image": "rook.png"
+    },
+    {
+      "id": "33",
+      "nom": "Défense Active",
+      "image": "jager.png"
+    },
+    {
+      "id": "34",
+      "nom": "Fil électrifié",
+      "image": "bandit.png"
+    },
+    {
+      "id": "35",
+      "nom": "Lance-Grenades Shumikha",
+      "image": "tachanka.png"
+    },
+    {
+      "id": "36",
+      "nom": "Dispositif de Blocage d'Accès",
+      "image": "kapkan.png"
+    },
+    {
+      "id": "37",
+      "nom": "Lanceur de Panneaux D.O.M.",
+      "image": "rauora.png"
+    },
+    {
+      "id": "38",
+      "nom": "Kit de Gadget",
+      "image": "striker.png"
+    },
+    {
+      "id": "39",
+      "nom": "Traqueur Deathmark",
+      "image": "deimos.png"
+    },
+    {
+      "id": "40",
+      "nom": "Brèche Automatique Bateau Tortue",
+      "image": "ram.png"
+    },
+    {
+      "id": "41",
+      "nom": "Drone Kludge",
+      "image": "brava.png"
+    },
+    {
+      "id": "42",
+      "nom": "Lanceur de Ruches Kawan",
+      "image": "grim.png"
+    },
+    {
+      "id": "43",
+      "nom": "Système de Projection R.O.U.",
+      "image": "sens.png"
+    },
+    {
+      "id": "44",
+      "nom": "Bouclier Transparent Talon-8",
+      "image": "osa.png"
+    },
+    {
+      "id": "45",
+      "nom": "Charge RCE-RATERO",
+      "image": "flores.png"
+    },
+    {
+      "id": "46",
+      "nom": "Lanceur Argus",
+      "image": "zero.png"
+    },
+    {
+      "id": "47",
+      "nom": "Aqua-Sapeur S.E.L.M.A.",
+      "image": "ace.png"
+    },
+    {
+      "id": "48",
+      "nom": "Gemini Replicator",
+      "image": "iana.png"
+    },
+    {
+      "id": "49",
+      "nom": "Lance Explosive LV",
+      "image": "kali.png"
+    },
+    {
+      "id": "50",
+      "nom": "Crochet Garra",
+      "image": "amaru.png"
+    },
+    {
+      "id": "51",
+      "nom": "Réduction de présence HEL",
+      "image": "nokk.png"
+    },
+    {
+      "id": "52",
+      "nom": "Dards Trax",
+      "image": "gridlock.png"
+    },
+    {
+      "id": "53",
+      "nom": "Lance Airjab",
+      "image": "nomad.png"
+    },
+    {
+      "id": "54",
+      "nom": "Chalumeau d'Infiltration",
+      "image": "maverick.png"
+    },
+    {
+      "id": "55",
+      "nom": "EE-ONE-D",
+      "image": "lion.png"
+    },
+    {
+      "id": "56",
+      "nom": "Shoot d'Adrénaline",
+      "image": "finka.png"
+    },
+    {
+      "id": "57",
+      "nom": "Bombe logique",
+      "image": "dokkaebi.png"
+    },
+    {
+      "id": "58",
+      "nom": "KS79 Lifeline",
+      "image": "zofia.png"
+    },
+    {
+      "id": "59",
+      "nom": "Candela",
+      "image": "ying.png"
+    },
+    {
+      "id": "60",
+      "nom": "Eyenox Modèle III",
+      "image": "jackal.png"
+    },
+    {
+      "id": "61",
+      "nom": "X-Kairos",
+      "image": "hibana.png"
+    },
+    {
+      "id": "62",
+      "nom": "Arbalète Tactique",
+      "image": "capitao.png"
+    },
+    {
+      "id": "63",
+      "nom": "Bouclier Adaptable H.U.L.L.",
+      "image": "blackbeard.png"
+    },
+    {
+      "id": "64",
+      "nom": "Passe-Partout",
+      "image": "buck.png"
+    },
+    {
+      "id": "65",
+      "nom": "Masse",
+      "image": "sledge.png"
+    },
+    {
+      "id": "66",
+      "nom": "Grenade IEM",
+      "image": "thatcher.png"
+    },
+    {
+      "id": "67",
+      "nom": "Munition d'Infiltration",
+      "image": "ash.png"
+    },
+    {
+      "id": "68",
+      "nom": "Charge Exothermique",
+      "image": "thermite.png"
+    },
+    {
+      "id": "69",
+      "nom": "Bouclier Le Roc",
+      "image": "montagne.png"
+    },
+    {
+      "id": "70",
+      "nom": "Drone à électrocution",
+      "image": "twitch.png"
+    },
+    {
+      "id": "71",
+      "nom": "Bouclier Tactique G52",
+      "image": "blitz.png"
+    },
+    {
+      "id": "72",
+      "nom": "Détecteur électronique",
+      "image": "iq.png"
+    },
+    {
+      "id": "73",
+      "nom": "Charge à Sous-Munitions",
+      "image": "fuze.png"
+    },
+    {
+      "id": "74",
+      "nom": "Visée auxiliaire",
+      "image": "glaz.png"
+    }
+  ],
+  "operateurs": [
+    {
+      "id": "0",
+      "capacite_id": 0,
+      "nom": "Skopós",
+      "image": "skopos.png",
+      "camps": "Défense",
+      "bio": "Skopós arrive sur le terrain aux commandes de ses deux Robothéons V10, l'un en tant qu'agent, l'autre en tant qu'outil d'observation équipé d'un bouclier renforcé. Bien qu'elle ne puisse contrôler qu'un seul robot à la fois et que la connexion avec les deux machines sera perdue si l'une d'elles est détruite, sa capacité à passer d'un robot à un autre fait de Skopós une agente aussi efficace pour le renseignement que pour le soutien.",
+      "annee": 3,
+      "saison": 9,
+      "sante": 2,
+      "vitesse": 2,
+      "difficulte": 2,
+      "arme_principale": [
+        "17"
+      ],
+      "arme_secondaire": [
+        1
+      ],
+      "gadget": 0,
+      "note": 2
+    },
+    {
+      "id": "1",
+      "capacite_id": 1,
+      "nom": "Sentry",
+      "image": "sentry.png",
+      "camps": "Défense",
+      "bio": "Sentry est l'agent Défenseur ayant accès à tous les gadgets secondaires pour les agents Défenseurs. Sentry a accès en arme principale au Commando 9 et au M870, et au C75 Auto et Super Shorty en arme secondaire.",
+      "annee": 0,
+      "saison": 0,
+      "sante": 2,
+      "vitesse": 2,
+      "difficulte": 1,
+      "arme_principale": [
+        2
+      ],
+      "arme_secondaire": [
+        4
+      ],
+      "gadget": 2,
+      "note": 2
+    },
+    {
+      "id": "2",
+      "capacite_id": 2,
+      "nom": "Tubarão",
+      "image": "tubarao.png",
+      "camps": "Défense",
+      "bio": "La nouvelle Capsule d'azote fait froid dans le dos. La Capsule d'azote est un dispositif à lancer qui peut ralentir les ennemis, geler les dispositifs pour interrompre leur déploiement et empêcher leur utilisation, et même laisser des empreintes de pas dans la zone gelée.",
+      "annee": 8,
+      "saison": 4,
+      "sante": 2,
+      "vitesse": 2,
+      "difficulte": 2,
+      "arme_principale": [
+        6
+      ],
+      "arme_secondaire": [
+        8
+      ],
+      "gadget": 6,
+      "note": 2
+    },
+    {
+      "id": "3",
+      "capacite_id": 3,
+      "nom": "Fenrir",
+      "image": "fenrir.png",
+      "camps": "Défense",
+      "bio": "La mine d'effroi F-NATT est un dispositif jetable qui s'accroche aux murs pour pouvoir être caché là où la peur suppure. Fenrir dispose de 5 mines et peut en activer jusqu'à 3 en même temps n'importe où sur la carte.",
+      "annee": 8,
+      "saison": 2,
+      "sante": 2,
+      "vitesse": 2,
+      "difficulte": 3,
+      "arme_principale": [
+        9
+      ],
+      "arme_secondaire": [
+        11
+      ],
+      "gadget": 3,
+      "note": 2
+    },
+    {
+      "id": "4",
+      "capacite_id": 4,
+      "nom": "Solis",
+      "image": "solis.png",
+      "camps": "Défense",
+      "bio": "La vérité éclate au grand jour grâce au capteur électrique SPEC-IO de Solis, un nouveau dispositif de détection de gadgets pour les défenseurs. Avec la possibilité de marquer ou pinger les appareils électroniques de ses adversaires, personne ne pourra se cacher.",
+      "annee": 7,
+      "saison": 4,
+      "sante": 2,
+      "vitesse": 2,
+      "difficulte": 3,
+      "arme_principale": [
+        13
+      ],
+      "arme_secondaire": [
+        15
+      ],
+      "gadget": 3,
+      "note": 2
+    },
+    {
+      "id": "5",
+      "capacite_id": 5,
+      "nom": "Azami",
+      "image": "azami.png",
+      "camps": "Défense",
+      "bio": "La Barrière Kiba est un kunai modifié qui s'accroche aux surfaces une fois lancé et génère un matériau qui se diffuse et se transforme en barrière blindée pour combler les trous de votre défense.",
+      "annee": 7,
+      "saison": 1,
+      "sante": 2,
+      "vitesse": 2,
+      "difficulte": 3,
+      "arme_principale": [
+        "17"
+      ],
+      "arme_secondaire": [
+        "18"
+      ],
+      "gadget": 0,
+      "note": 2
+    },
+    {
+      "id": "6",
+      "capacite_id": 6,
+      "nom": "Thorn",
+      "image": "thorn.png",
+      "camps": "Défense",
+      "bio": "Après avoir été lancé, le Rasopulseur s'accroche à une surface. Peu après avoir détecté un adversaire à proximité, il propulse automatiquement plusieurs lames tranchantes dans toutes les directions, ce qui en fait un gadget des plus mortels.",
+      "annee": 6,
+      "saison": 4,
+      "sante": 2,
+      "vitesse": 2,
+      "difficulte": 1,
+      "arme_principale": [
+        19
+      ],
+      "arme_secondaire": [
+        20
+      ],
+      "gadget": 4,
+      "note": 2
+    },
+    {
+      "id": "7",
+      "capacite_id": 7,
+      "nom": "Thunderbird",
+      "image": "thunderbird.png",
+      "camps": "Défense",
+      "bio": "Lorsqu'elle est déployée au sol, la Station Kóna devient un endroit sûr pour les agents blessés ou mis à terre. Ils n'ont qu'à s'approcher du gadget, et la Station Kóna augmentera naturellement les PV de l'agent ou le ranimera.",
+      "annee": 6,
+      "saison": 2,
+      "sante": 2,
+      "vitesse": 2,
+      "difficulte": 1,
+      "arme_principale": [
+        21
+      ],
+      "arme_secondaire": [
+        23
+      ],
+      "gadget": 2,
+      "note": 2
+    },
+    {
+      "id": "8",
+      "capacite_id": 8,
+      "nom": "Aruni",
+      "image": "aruni.png",
+      "camps": "Défense",
+      "bio": "Une fois en place, le portail projette un rayon laser capable de détecter le moindre mouvement qui le traverse. Lorsqu'un intru est détecté, l'énergie émise par le laser augmente drastiquement, causant des brûlures au second et au troisième degré. Nous avons passé près d'une heure à jeter divers objets à travers le portail, que ce soit des liasses de papier ou des morceaux des fruits, pour enfin trouver le paramétrage qui causerait le plus de dégâts tout en consommant le moins d'énergie.",
+      "annee": 5,
+      "saison": 4,
+      "sante": 2,
+      "vitesse": 2,
+      "difficulte": 2,
+      "arme_principale": [
+        "27"
+      ],
+      "arme_secondaire": [
+        "28"
+      ],
+      "gadget": 3,
+      "note": 2
+    },
+    {
+      "id": "9",
+      "capacite_id": 9,
+      "nom": "Melusi",
+      "image": "melusi.png",
+      "camps": "Défense",
+      "bio": "Le gadget Banshee peut être déployé sur n'importe quelle surface, à l'instar de l'Evil Eye de Maestro, mais il opère de façon totalement autonome. Dès qu'un ennemi entre dans son rayon d'action, il émet un son et ralentit sa progression. Il peut être détruit, bien sûr, mais comme il résiste aux balles, les assaillants devront faire appel à des utilitaires ou s'approcher pour le frapper.",
+      "annee": 5,
+      "saison": 2,
+      "sante": 3,
+      "vitesse": 1,
+      "difficulte": 1,
+      "arme_principale": [
+        44
+      ],
+      "arme_secondaire": [
+        25
+      ],
+      "gadget": 3,
+      "note": 2
+    },
+    {
+      "id": "10",
+      "capacite_id": 10,
+      "nom": "Oryx",
+      "image": "oryx.png",
+      "camps": "Défense",
+      "bio": "Le Sprint Remah lui permet de patrouiller efficacement et de couvrir de courtes distances avec une rapidité sans égale. Il peut également être utilisé pour étourdir les adversaires et sprinter à traverser les murs destructibles, ce qui crée une ouverture. Attention toutefois, car il perd de la santé à chaque fois que le Sprint Remah est utilisé pour détruire un mur. En outre, Oryx dispose de la capacité unique d'interagir avec les trappes cassées. Il peut passer à travers pour remonter pour une rotation rapide ou se suspendre au bord pour jeter un coup d'oeil ou attendre le parfait moment pour monter. Tant qu'il est suspendu, il peut également choisir de redescendre si l'ascension semble trop dangereuse.",
+      "annee": 5,
+      "saison": 1,
+      "sante": 2,
+      "vitesse": 2,
+      "difficulte": 2,
+      "arme_principale": [
+        31
+      ],
+      "arme_secondaire": [
+        12
+      ],
+      "gadget": 2,
+      "note": 2
+    },
+    {
+      "id": "11",
+      "capacite_id": 11,
+      "nom": "Wamai",
+      "image": "wamai.png",
+      "camps": "Défense",
+      "bio": "Le système Mag-NET est un gadget adhésif à lancer. Il adhère aux surfaces et attend. Sa fonction est d'attirer le projectile d'un ennemi vers sa position, puis de s'autodétruire en faisant exploser ce projectile. De cette manière, Wamai peut non seulement neutraliser les grenades et projectiles des assaillants, mais aussi se servir d'un placement stratégique pour retourner ces projectiles contre eux.",
+      "annee": 4,
+      "saison": 4,
+      "sante": 2,
+      "vitesse": 2,
+      "difficulte": 2,
+      "arme_principale": [
+        34
+      ],
+      "arme_secondaire": [
+        36
+      ],
+      "gadget": 1,
+      "note": 2
+    },
+    {
+      "id": "12",
+      "capacite_id": 12,
+      "nom": "Goyo",
+      "image": "goyo.png",
+      "camps": "Défense",
+      "bio": "Tout comme les boucliers déployables ordinaires, le bouclier Volcán procure une couverture et permet aux défenseurs de bloquer le passage, mais Goyo pimente les choses avec une bombe incendiaire qui y est fixée. Vu de devant, pourtant, impossible de dire de quel type de bouclier il s'agit. Jusqu'à ce que quelqu'un tire sur la bombe pour la faire exploser, le bouclier fait obstacle aux assaillants.",
+      "annee": 4,
+      "saison": 3,
+      "sante": 2,
+      "vitesse": 2,
+      "difficulte": 2,
+      "arme_principale": [
+        38
+      ],
+      "arme_secondaire": [
+        1
+      ],
+      "gadget": 1,
+      "note": 2
+    },
+    {
+      "id": "13",
+      "capacite_id": 13,
+      "nom": "Warden",
+      "image": "warden.png",
+      "camps": "Défense",
+      "bio": "La fonction que remplit le Regard était quasiment inexistante chez les défenseurs. Tant qu’il est actif, Warden peut voir à travers la fumée et renverser le manque de renseignements infligé à son équipe. En activant ses Lunettes intelligentes, Warden peut également se protéger des effets aveuglants, ou recouvrer la vue pendant un aveuglement : cela lui permet de reprendre en main ces quelques secondes de danger. Toutefois, la vision thermique du Regard ne fonctionne que si Warden reste immobile. S'il bouge, il sera affecté par la fumée, comme les autres agents. Le Regard est un effet déclenché, il nécessite donc un temps de rechargement après chaque utilisation.",
+      "annee": 4,
+      "saison": 2,
+      "sante": 3,
+      "vitesse": 1,
+      "difficulte": 2,
+      "arme_principale": [
+        40
+      ],
+      "arme_secondaire": [
+        41
+      ],
+      "gadget": 4,
+      "note": 2
+    },
+    {
+      "id": "14",
+      "capacite_id": 14,
+      "nom": "Mozzie",
+      "image": "mozzie.png",
+      "camps": "Défense",
+      "bio": "L'arme de Mozzie, les « nuisibles », sont de minuscules robots quadrupèdes qui peuvent être utilisés pour cibler un drone, ou déployés dans une zone pour empêcher ce dernier d'y accéder. Une fois déployé, le nuisible s'accroche au drone ennemi le plus proche et entrave sa vision. Il initie ensuite une séquence de déblocage pour pirater le drone et permettre à Mozzie de le contrôler. Il peut ainsi recueillir des renseignements sur l'ennemi sans risquer de se faire pirater à son tour. Un nuisible ne peut être utilisé qu'une seule fois : une fois le drone ennemi piraté et contrôlé par Mozzie, le robot s'autodétruit et ne laisse aucune trace.",
+      "annee": 4,
+      "saison": 1,
+      "sante": 2,
+      "vitesse": 2,
+      "difficulte": 2,
+      "arme_principale": [
+        2
+      ],
+      "arme_secondaire": [
+        43
+      ],
+      "gadget": 2,
+      "note": 2
+    },
+    {
+      "id": "15",
+      "capacite_id": 15,
+      "nom": "Kaid",
+      "image": "kaid.png",
+      "camps": "Défense",
+      "bio": "L'électrogriffe 'Rtila' de Kaid peut électrifier les trappes et murs renforcés, les fils barbelés et les boucliers déployables, afin d'empêcher les ennemis de faire une brèche dans la Kasbah et de tous les bâtiments qu'il est chargé de protéger. Il arrive sur le champ de bataille équipé de deux exemplaires de ce gadget. Une fois accrochés à une surface, ils peuvent électrifier les objets métalliques situés dans un rayon de 0,75 mètre.",
+      "annee": 3,
+      "saison": 4,
+      "sante": 2,
+      "vitesse": 2,
+      "difficulte": 2,
+      "arme_principale": [
+        "39"
+      ],
+      "arme_secondaire": [
+        "46"
+      ],
+      "gadget": "6",
+      "note": 3
+    },
+    {
+      "id": "16",
+      "capacite_id": 16,
+      "nom": "Clash",
+      "image": "clash.png",
+      "camps": "Défense",
+      "bio": "Clash est le premier défenseur équipé d'un bouclier. Le bouclier AEE est son arme principale ; elle peut prendre son arme secondaire à tout instant, mais elle doit tout d'abord ranger son bouclier. Son bouclier blindé extensible peut ralentir les ennemis grâce à un générateur de champ chargé (GCC), qui émane directement du bouclier sous une forme cylindrique. Les adversaires pris dans le GCC peuvent également subir de faibles dégâts sur la durée. Un usage efficace du bouclier permet à Clash de bloquer les points d'entrée et de prévenir ou de ralentir les assauts ennemis.",
+      "annee": 3,
+      "saison": 3,
+      "sante": 2,
+      "vitesse": 2,
+      "difficulte": 2,
+      "arme_principale": [
+        "48"
+      ],
+      "arme_secondaire": [
+        "49"
+      ],
+      "gadget": 0,
+      "note": 2
+    },
+    {
+      "id": "17",
+      "capacite_id": 17,
+      "nom": "Maestro",
+      "image": "maestro.png",
+      "camps": "Défense",
+      "bio": "Maestro utilise une tourelle télécommandée pour tirer de puissants rayons laser. Une fois qu'elle est fixée au sol ou à un mur, Maestro peut effectuer une surveillance à distance par le biais de sa caméra. Lorsque celle-ci s'ouvre pour tirer, son cœur devient vulnérable, mais le reste du temps, la tourelle est insensible aux balles et aux coups. Il est aussi à noter que l'Evil Eye permet de voir à travers la fumée.",
+      "annee": 3,
+      "saison": 2,
+      "sante": 2,
+      "vitesse": 2,
+      "difficulte": 2,
+      "arme_principale": [
+        "50"
+      ],
+      "arme_secondaire": [
+        "37"
+      ],
+      "gadget": "4",
+      "note": 3
+    },
+    {
+      "id": "18",
+      "capacite_id": 18,
+      "nom": "Alibi",
+      "image": "alibi.png",
+      "camps": "Défense",
+      "bio": "Le Prisme projette des hologrammes d'Alibi pour donner l'illusion qu'elle est inactive. Si vous tirez sur un hologramme ou que vous le touchez, vous serez marqué pendant quelques secondes. Si le Prisme est déployé à l'extérieur, un faux message 'Ennemi détecté à l'extérieur' apparaît chez les assaillants. Pour ajouter un élément de surprise, le Prisme dissimule l'identité des défenseurs s'aventurant eux-mêmes à l'extérieur. Les balles, les coups et les explosifs peuvent endommager le Prisme, mais traverseront l'hologramme. Attention de ne pas vous tenir trop près.",
+      "annee": 3,
+      "saison": 2,
+      "sante": 2,
+      "vitesse": 2,
+      "difficulte": 2,
+      "arme_principale": [
+        0
+      ],
+      "arme_secondaire": [
+        0
+      ],
+      "gadget": 0,
+      "note": 2
+    },
+    {
+      "id": "19",
+      "capacite_id": 19,
+      "nom": "Vigil",
+      "image": "vigil.png",
+      "camps": "Défense",
+      "bio": "Le calme mortel de Chul Kyung sur le terrain lui permet de compter sur son dispositif de dissimulation à rendu électronique (ERC-7) afin de ne pas se faire détecter. L'ERC-7 utilise une technologie de réalité diminuée pour retirer les stimuli perceptibles de son environnement direct. Vigil possède un prototype dans son sac à dos, qui lui permet d'analyser les appareils électroniques proches et de supprimer sa propre image sur les caméras alentour.",
+      "annee": 4,
+      "saison": 2,
+      "sante": 2,
+      "vitesse": 2,
+      "difficulte": 2,
+      "arme_principale": [
+        "52"
+      ],
+      "arme_secondaire": [
+        "42"
+      ],
+      "gadget": 0,
+      "note": 2
+    },
+    {
+      "id": "20",
+      "capacite_id": 20,
+      "nom": "Ela",
+      "image": "ela.png",
+      "camps": "Défense",
+      "bio": "Inspirées des grenades antichars polonaises de 1939, utilisées par les célèbres Cichociemni lors de la Seconde Guerre mondiale, les mines Grzmot peuvent être collées sur des surfaces et leur déclenchement assourdit et étourdit la cible. Ces mines offensives de proximité affectent tout le monde dans leur rayon d'effet.",
+      "annee": 3,
+      "saison": 2,
+      "sante": 2,
+      "vitesse": 2,
+      "difficulte": 2,
+      "arme_principale": [
+        "54"
+      ],
+      "arme_secondaire": [
+        "30"
+      ],
+      "gadget": "4",
+      "note": 3
+    },
+    {
+      "id": "21",
+      "capacite_id": 21,
+      "nom": "Lesion",
+      "image": "lesion.png",
+      "camps": "Défense",
+      "bio": "Les mines Gu sont inspirées des pièges punji, utilisés lors de la guerre du Viêt Nam. Frottés avec des plantes toxiques ou des selles, les pieux servent à ralentir les troupes ennemies en leur causant de sévères infections. De même, les mines Gu injectent une toxine qui blesse vos adversaires et limite leur vitesse.",
+      "annee": 3,
+      "saison": 2,
+      "sante": 2,
+      "vitesse": 2,
+      "difficulte": 2,
+      "arme_principale": [
+        0
+      ],
+      "arme_secondaire": [
+        0
+      ],
+      "gadget": 0,
+      "note": 2
+    },
+    {
+      "id": "22",
+      "capacite_id": 22,
+      "nom": "Mira",
+      "image": "mira.png",
+      "camps": "Défense",
+      "bio": "Un verre feuilleté spécialisé qui, lorsqu’il est déployé avec de l’oxyacétylène, peut créer un miroir d’observation sur n’importe quel mur. Toutefois, si la bonbonne d'air comprimé est détruite, le verre est éjecté et crée une ouverture audacieuse pour les défenseurs et les attaquants.",
+      "annee": 1,
+      "saison": 2,
+      "sante": 2,
+      "vitesse": 2,
+      "difficulte": 2,
+      "arme_principale": [
+        "38"
+      ],
+      "arme_secondaire": [
+        "25"
+      ],
+      "gadget": "6",
+      "note": 3
+    },
+    {
+      "id": "23",
+      "capacite_id": 23,
+      "nom": "Echo",
+      "image": "echo.png",
+      "camps": "Défense",
+      "bio": "Ce drone volant émet des décharges soniques étourdissant toutes les cibles d'un périmètre donné. Yokai transmet également un flux vidéo en temps réel permettant à Echo de sécuriser ses environs. Profitez de la puissance de la technologie avec un défenseur capable aussi bien de soutenir le siège que les patrouilleurs !",
+      "annee": 1,
+      "saison": 4,
+      "sante": 2,
+      "vitesse": 2,
+      "difficulte": 2,
+      "arme_principale": [
+        "57"
+      ],
+      "arme_secondaire": [
+        "42"
+      ],
+      "gadget": "4",
+      "note": 3
+    },
+    {
+      "id": "24",
+      "capacite_id": 24,
+      "nom": "Caveira",
+      "image": "caveira.png",
+      "camps": "Défense",
+      "bio": "Le 'Luison' est recouvert d'une fibre composite partiellement minérale qui protège le silencieux et renforce ses effets insonorisants, ce qui permet à Caveira d'immobiliser sa cible discrètement et de l'interroger. Non seulement le 'Luison' brille dans la neutralisation furtive, mais il permet aussi de s'assurer que personne ne prend la fuite.",
+      "annee": 1,
+      "saison": 3,
+      "sante": 2,
+      "vitesse": 2,
+      "difficulte": 2,
+      "arme_principale": [
+        "21"
+      ],
+      "arme_secondaire": [
+        "60"
+      ],
+      "gadget": 0,
+      "note": 2
+    },
+    {
+      "id": "25",
+      "capacite_id": 25,
+      "nom": "Valkyrie",
+      "image": "valkyrie.png",
+      "camps": "Défense",
+      "bio": "Encastrée dans une balle en silicone teintée et dotée de micro-ventouses, cette caméra à déploiement rapide permet de disposer d'une vision claire, grâce au gyroscope inclus et contrôlant l'angle de la lentille. Les ventouses permettent à la caméra de se fixer à n'importe quelle surface tandis que le gyroscope de la lentille permet de stabiliser son angle et sa mise au point. Le flux vidéo est accessible à tous les Agents de l'équipe.",
+      "annee": 1,
+      "saison": 2,
+      "sante": 2,
+      "vitesse": 2,
+      "difficulte": 2,
+      "arme_principale": [
+        "6"
+      ],
+      "arme_secondaire": [
+        "18"
+      ],
+      "gadget": "6",
+      "note": 3
+    },
+    {
+      "id": "26",
+      "capacite_id": 26,
+      "nom": "Frost",
+      "image": "frost.png",
+      "camps": "Défense",
+      "bio": "Composé d’un socle et de mâchoires métalliques, ce piège se déclenche, lorsqu'un ennemi pose le pied sur la plaque, deux séries de mâchoires se déploient à hauteur des chevilles et tibias, empêchant l'individu de s'échapper. Les agents qui tombent sur un Tapis rouge pourront le dégager de leurs jambes eux-mêmes ou avec l'aide d'un coéquipier.",
+      "annee": 1,
+      "saison": 1,
+      "sante": 2,
+      "vitesse": 2,
+      "difficulte": 2,
+      "arme_principale": [
+        "61"
+      ],
+      "arme_secondaire": [
+        "8"
+      ],
+      "gadget": "2",
+      "note": 3
+    },
+    {
+      "id": "27",
+      "capacite_id": 27,
+      "nom": "Mute",
+      "image": "mute.png",
+      "camps": "Défense",
+      "bio": "ixé solidement au sol, l’appareil de Mute déploie ses antennes rétractables pour brouiller les communications ennemies. Son écran numérique affiche les interférences en temps réel, tandis que ses leviers d’activation permettent un déploiement rapide et précis. Conçu pour neutraliser les dispositifs électroniques adverses, il offre un contrôle efficace des zones stratégiques, perturbant drones et gadgets hostiles dans un rayon défini.",
+      "annee": 0,
+      "saison": 0,
+      "sante": 2,
+      "vitesse": 2,
+      "difficulte": 2,
+      "arme_principale": [
+        "35"
+      ],
+      "arme_secondaire": [
+        "15"
+      ],
+      "gadget": "4",
+      "note": 3
+    },
+    {
+      "id": "28",
+      "capacite_id": 28,
+      "nom": "Smoke",
+      "image": "smoke.png",
+      "camps": "Défense",
+      "bio": "Équipé d’un détonateur et d’un récepteur à distance, le dispositif de Smoke diffuse un gaz toxique dès son activation. Grâce à son adhésif double face, il peut être fixé aussi bien sur des surfaces horizontales que verticales, offrant une grande flexibilité de placement. Contrôlé à distance, il permet de bloquer l’accès aux zones clés et de piéger les assaillants en les forçant à reculer sous peine d’asphyxie.",
+      "annee": 0,
+      "saison": 0,
+      "sante": 2,
+      "vitesse": 2,
+      "difficulte": 2,
+      "arme_principale": [
+        "63"
+      ],
+      "arme_secondaire": [
+        "42"
+      ],
+      "gadget": "1",
+      "note": 3
+    },
+    {
+      "id": "29",
+      "capacite_id": 29,
+      "nom": "Castle",
+      "image": "castle.png",
+      "camps": "Défense",
+      "bio": "Castle est un agent de sécurisation pouvant servir d'ancre, et capable de créer des forteresses défensives autour de l'objectif, afin de ralentir les assaillants. L'aptitude unique de Castle permet de créer des barricades renforcées en utilisant le panneau tactique universel UTP1.",
+      "annee": 0,
+      "saison": 0,
+      "sante": 2,
+      "vitesse": 2,
+      "difficulte": 2,
+      "arme_principale": [
+        "64"
+      ],
+      "arme_secondaire": [
+        "1"
+      ],
+      "gadget": "1",
+      "note": 3
+    },
+    {
+      "id": "30",
+      "capacite_id": 30,
+      "nom": "Pulse",
+      "image": "pulse.png",
+      "camps": "Défense",
+      "bio": "Pulse est un patrouilleur et un agent de renseignements au service des défenseurs. Il peut traquer les assaillants à travers les murs grâce à son capteur cardiaque HB-5 et obtenir de précieuses informations sur leur position.",
+      "annee": 0,
+      "saison": 0,
+      "sante": 2,
+      "vitesse": 2,
+      "difficulte": 2,
+      "arme_principale": [
+        "64"
+      ],
+      "arme_secondaire": [
+        "11"
+      ],
+      "gadget": "6",
+      "note": 3
+    },
+    {
+      "id": "31",
+      "capacite_id": 31,
+      "nom": "Doc",
+      "image": "doc.png",
+      "camps": "Défense",
+      "bio": "Le pistolet hypodermique de Doc, alimenté par une cartouche de CO₂ pressurisé, administre une dose précise d’1 mg d’adrénaline dans une solution physiologique. Son mécanisme à gâchette permet une injection rapide, stabilisant les coéquipiers blessés à distance ou en contact direct. Conçu pour des interventions d’urgence, il redonne un second souffle aux alliés et peut même être utilisé pour s’auto-administrer un soin en plein combat.",
+      "annee": 0,
+      "saison": 0,
+      "sante": 2,
+      "vitesse": 2,
+      "difficulte": 2,
+      "arme_principale": [
+        "14"
+      ],
+      "arme_secondaire": [
+        "1"
+      ],
+      "gadget": "3",
+      "note": 3
+    },
+    {
+      "id": "32",
+      "capacite_id": 32,
+      "nom": "Rook",
+      "image": "rook.png",
+      "camps": "Défense",
+      "bio": "Rook est un agent de soutien qui excelle en défense. Il peut octroyer une protection supplémentaire aux défenseurs, ce qui leur confère un avantage non négligeable lors des échanges de tirs. Il peut se protéger et augmenter les chances de survie de ses coéquipiers à l'aide de sa capacité spéciale : l'armure R1N « Rhino ».",
+      "annee": 0,
+      "saison": 0,
+      "sante": 2,
+      "vitesse": 2,
+      "difficulte": 2,
+      "arme_principale": [
+        "44"
+      ],
+      "arme_secondaire": [
+        "11"
+      ],
+      "gadget": "2",
+      "note": 3
+    },
+    {
+      "id": "33",
+      "capacite_id": 33,
+      "nom": "Jäger",
+      "image": "jager.png",
+      "camps": "Défense",
+      "bio": "Jäger peut aider son équipe à créer une forte position défensive avant de patrouiller sur la carte pour intercepter les assaillants spécialisés dans la prise en tenaille. Il est capable de détruire les projectiles en approche grâce à son gadget déployable unique : le système de défense active, ou ADS.",
+      "annee": 0,
+      "saison": 0,
+      "sante": 2,
+      "vitesse": 2,
+      "difficulte": 2,
+      "arme_principale": [
+        "3"
+      ],
+      "arme_secondaire": [
+        "36"
+      ],
+      "gadget": "3",
+      "note": 3
+    },
+    {
+      "id": "34",
+      "capacite_id": 34,
+      "nom": "Bandit",
+      "image": "bandit.png",
+      "camps": "Défense",
+      "bio": "Efficace en anti-brèche lourde, patrouille et sécurisation, Bandit est capable d'empêcher les assaillants de franchir des points stratégiques et de défendre l'objectif tout en se déplaçant. Bandit peut électrifier différentes surfaces grâce à son aptitude spéciale : le Dispositif électrique rustique ou fil électrifié CED-1.",
+      "annee": 0,
+      "saison": 0,
+      "sante": 2,
+      "vitesse": 2,
+      "difficulte": 2,
+      "arme_principale": [
+        "9"
+      ],
+      "arme_secondaire": [
+        "1"
+      ],
+      "gadget": "6",
+      "note": 3
+    },
+    {
+      "id": "35",
+      "capacite_id": 35,
+      "nom": "Tachanka",
+      "image": "tachanka.png",
+      "camps": "Défense",
+      "bio": "Le nouveau gadget de Tachanka, le lance-grenade Shumikha, est parfait pour bloquer les accès et pour couvrir les angles morts. Ses grenades incendiaires rebondissent plusieurs fois et leur détonateur ne s'active qu'après le premier rebond, ce qui les rend très polyvalentes. Tachanka possède 10 grenades en début de match et le lance-grenade a une capacité de 7 grenades maximum. Pour une plus grande efficacité, utilisez plusieurs grenades d'un coup pour couvrir une zone plus large et pour toucher un adversaire à coup sûr. Le rechargement se fait une grenade à la fois.",
+      "annee": 0,
+      "saison": 0,
+      "sante": 2,
+      "vitesse": 2,
+      "difficulte": 2,
+      "arme_principale": [
+        "70"
+      ],
+      "arme_secondaire": [
+        "43"
+      ],
+      "gadget": "2",
+      "note": 3
+    },
+    {
+      "id": "36",
+      "capacite_id": 36,
+      "nom": "Kapkan",
+      "image": "kapkan.png",
+      "camps": "Défense",
+      "bio": "Kapkan est un agent spécialisé dans les pièges, un atout mortel pour toute équipe de défenseurs. Kapkan est équipé d'un dispositif de blocage (EDD-MK II). Ce piège est en réalité une charge remplie de C4 qui s'active grâce à un système de détection de mouvements. Il peut être placé sur l'encadrement d'une porte ou d'une fenêtre afin de bloquer les points d'entrée des assaillants.",
+      "annee": 0,
+      "saison": 0,
+      "sante": 2,
+      "vitesse": 2,
+      "difficulte": 2,
+      "arme_principale": [
+        "16"
+      ],
+      "arme_secondaire": [
+        "33"
+      ],
+      "gadget": "6",
+      "note": 3
+    },
+    {
+      "id": "37",
+      "capacite_id": 37,
+      "nom": "Rauora",
+      "image": "rauora.png",
+      "camps": "Assaillant",
+      "bio": "Prenez le contrôle de la carte avec le lanceur de panneaux D.O.M de Rauora. Déployez des panneaux pare-balles à distance et contrôlez stratégiquement le cours de la bataille. Avec un mécanisme d'activation en haut de la porte, ouvrez ou fermez le panneau pour créer des occasions tactiques.",
+      "annee": 10,
+      "saison": 1,
+      "sante": 2,
+      "vitesse": 2,
+      "difficulte": 2,
+      "arme_principale": [
+        "35"
+      ],
+      "arme_secondaire": [
+        "49"
+      ],
+      "gadget": 0,
+      "note": 5
+    },
+    {
+      "id": "38",
+      "capacite_id": 38,
+      "nom": "Striker",
+      "image": "striker.png",
+      "camps": "Assaillant",
+      "bio": "Striker est l'agent Assaillant ayant accès à tous les gadgets secondaires pour les agents Assaillants. Striker a accès au M4 et au M249 en arme principale, et au 5.7 USG et ITA 12S en arme secondaire.",
+      "annee": 0,
+      "saison": 0,
+      "sante": 2,
+      "vitesse": 2,
+      "difficulte": 2,
+      "arme_principale": [
+        "19"
+      ],
+      "arme_secondaire": [
+        "62"
+      ],
+      "gadget": "12",
+      "note": 3
+    },
+    {
+      "id": "39",
+      "capacite_id": 39,
+      "nom": "Deimos",
+      "image": "deimos.png",
+      "camps": "Assaillant",
+      "bio": "La sonde volante miniature recherche la cible choisie et révèle son emplacement à Deimos tout en révélant celle de l'agent. Avec son .44 Vendetta personnalisé comme seule arme disponible pendant la traque, tout devient une affaire personnelle pour Deimos.",
+      "annee": 9,
+      "saison": 1,
+      "sante": 2,
+      "vitesse": 2,
+      "difficulte": 2,
+      "arme_principale": [
+        "82"
+      ],
+      "arme_secondaire": [
+        "78"
+      ],
+      "gadget": "12",
+      "note": 3
+    },
+    {
+      "id": "40",
+      "capacite_id": 40,
+      "nom": "Ram",
+      "image": "ram.png",
+      "camps": "Assaillant",
+      "bio": "Très peu de choses peuvent résister au nouveau Sapeur automatique BU-GI. Ce mini-tank déployable détruit toutes les surfaces et tous les dispositifs cassables qui se trouvent sur son chemin, ne laissant dans son sillage qu'un champ de ruines.",
+      "annee": 8,
+      "saison": 3,
+      "sante": 2,
+      "vitesse": 2,
+      "difficulte": 2,
+      "arme_principale": [
+        0
+      ],
+      "arme_secondaire": [
+        0
+      ],
+      "gadget": 0,
+      "note": 2
+    },
+    {
+      "id": "41",
+      "capacite_id": 41,
+      "nom": "Brava",
+      "image": "brava.png",
+      "camps": "Assaillant",
+      "bio": "Le drone Kludge de Brava est un outil de sabotage. Il lui permet de prendre le contrôle des dispositifs ennemis. Si le dispositif ne peut pas être contrôlé, il est détruit.",
+      "annee": 8,
+      "saison": 1,
+      "sante": 2,
+      "vitesse": 2,
+      "difficulte": 2,
+      "arme_principale": [
+        "82"
+      ],
+      "arme_secondaire": [
+        "11"
+      ],
+      "gadget": "12",
+      "note": 3
+    },
+    {
+      "id": "42",
+      "capacite_id": 42,
+      "nom": "Grim",
+      "image": "grim.png",
+      "camps": "Assaillant",
+      "bio": "Vous l'attendiez et le voilà : le lanceur de ruches Kawan ! Chaque projectile libère une nuée de bots qui tracent la localisation des adversaires qui la traversent. Évitez tout contact avec les yeux.",
+      "annee": 7,
+      "saison": 3,
+      "sante": 2,
+      "vitesse": 2,
+      "difficulte": 2,
+      "arme_principale": [
+        0
+      ],
+      "arme_secondaire": [
+        0
+      ],
+      "gadget": 0,
+      "note": 2
+    },
+    {
+      "id": "43",
+      "capacite_id": 43,
+      "nom": "Sens",
+      "image": "sens.png",
+      "camps": "Assaillant",
+      "bio": "Le système de projection R.O.U roule après avoir été lancé par Sens et envoie de petits projecteurs pour créer un écran suivant ses pas. Si les objets physiques peuvent quand même traverser l'écran, il est très adaptable et peut bloquer plusieurs lignes de mire à la fois.",
+      "annee": 7,
+      "saison": 2,
+      "sante": 2,
+      "vitesse": 2,
+      "difficulte": 2,
+      "arme_principale": [
+        "86"
+      ],
+      "arme_secondaire": [
+        "28"
+      ],
+      "gadget": "7",
+      "note": 3
+    },
+    {
+      "id": "44",
+      "capacite_id": 44,
+      "nom": "Osa",
+      "image": "osa.png",
+      "camps": "Assaillant",
+      "bio": "Le bouclier transparent et blindé Talon-8 peut être transporté par Osa ou déployé au sol et sur les cadres de fenêtre, lui offrant ainsi une ligne de mire protégée tandis qu'elle établit une stratégie d'attaque.",
+      "annee": 6,
+      "saison": 3,
+      "sante": 2,
+      "vitesse": 2,
+      "difficulte": 2,
+      "arme_principale": [
+        0
+      ],
+      "arme_secondaire": [
+        0
+      ],
+      "gadget": 0,
+      "note": 2
+    },
+    {
+      "id": "45",
+      "capacite_id": 45,
+      "nom": "Flores",
+      "image": "flores.png",
+      "camps": "Assaillant",
+      "bio": "Commandée à distance, la charge RCE-Ratero part en avant tandis que Flores cherche un emplacement pour la faire exploser. Une fois déclenchée, la charge RCE-Ratero s'accroche à la surface la plus proche, se couvre d'une carapace blindée et explose, détruisant ainsi les gadgets et les murs destructibles à proximité.",
+      "annee": 6,
+      "saison": 1,
+      "sante": 2,
+      "vitesse": 2,
+      "difficulte": 2,
+      "arme_principale": [
+        "88"
+      ],
+      "arme_secondaire": [
+        "72"
+      ],
+      "gadget": "9",
+      "note": 3
+    },
+    {
+      "id": "46",
+      "capacite_id": 46,
+      "nom": "Zero",
+      "image": "zero.png",
+      "camps": "Assaillant",
+      "bio": "Les renseignements sont la base de toute attaque réussie, et Zero en est pleinement conscient. Son lanceur Argus est équipé d'un type spécial de caméras qui peuvent percer les surfaces destructibles et renforcées pour surveiller les deux côtés. Oui, ces caméras peuvent couvrir deux angles à la fois et vous permettent donc d'espionner l'équipe adverse. Les caméras Argus ont une autre fonctionnalité : un rayon laser à usage unique, parfait pour détruire des éléments clés des défenses de l'ennemi ou pour attirer l'attention en dehors des goulots d'étranglement.",
+      "annee": 5,
+      "saison": 3,
+      "sante": 2,
+      "vitesse": 2,
+      "difficulte": 2,
+      "arme_principale": [
+        "9"
+      ],
+      "arme_secondaire": [
+        "36"
+      ],
+      "gadget": "10",
+      "note": 3
+    },
+    {
+      "id": "47",
+      "capacite_id": 47,
+      "nom": "Ace",
+      "image": "ace.png",
+      "camps": "Assaillant",
+      "bio": "Avec l'Aqua-Sapeur S.E.L.M.A., c'est l'eau qui prend le pouvoir. Ce gadget utilise la pression hydraulique pour briser les surfaces renforcées et destructibles. Le cylindre se colle là où Ace l'envoie et il se déploie. Il n'entraîne qu'une seule explosion au sol, au plafond ou sur une trappe, mais s'il se colle à un mur et qu'il dispose d'assez d'espace, le S.E.L.M.A. enchaîne jusqu'à deux séquences explosives. Chacune de ses explosions laisse un trou béant dans le mur, pour au final obtenir une brèche suffisamment grande pour qu'un agent puisse s'y engouffrer.",
+      "annee": 5,
+      "saison": 2,
+      "sante": 2,
+      "vitesse": 2,
+      "difficulte": 2,
+      "arme_principale": [
+        "65"
+      ],
+      "arme_secondaire": [
+        "68"
+      ],
+      "gadget": "9",
+      "note": 3
+    },
+    {
+      "id": "48",
+      "capacite_id": 48,
+      "nom": "Iana",
+      "image": "iana.png",
+      "camps": "Assaillant",
+      "bio": "Le Réplicateur Gemini est une copie holographique de Iana, contrôlée à distance. Elle peut se déplacer et émet des bruits comme elle le ferait, mais la copie ne peut tirer, attaquer au corps à corps ou utiliser de gadget. Sa durée est limitée et elle peut être désactivée à tout instant. Il y a toujours un temps de recharge entre deux utilisations, qui est plus long si la copie est détruite. Le Réplicateur sert principalement à leurrer les adversaires de Iana et à collecter des informations. Lors de son déploiement, elle peut trouver ses adversaires et instiller la confusion dans leur esprit. Si le Gemini est repéré et détruit, cela peut aider Iana à déterminer où se trouve la menace, mais son adversaire bénéficiera de précieuses secondes pour se repositionner.",
+      "annee": 5,
+      "saison": 1,
+      "sante": 2,
+      "vitesse": 2,
+      "difficulte": 2,
+      "arme_principale": [
+        0
+      ],
+      "arme_secondaire": [
+        0
+      ],
+      "gadget": 0,
+      "note": 2
+    },
+    {
+      "id": "49",
+      "capacite_id": 49,
+      "nom": "Kali",
+      "image": "kali.png",
+      "camps": "Assaillant",
+      "bio": "Pour parler de la lance explosive LV, il faut mentionner le fusil CSRX 300 de Kali. C'est une arme dangereuse qui peut percer les barricades et les trappes en un tir, et créer de gros trous dans les murs destructibles. La LV est montée sous le canon et peut être utilisée en même temps que la lunette du CSRX 300. Son rôle est de détruire les gadgets avec une explosion légère dans un périmètre défini. Lorsqu'elle est utilisée sur un mur destructible, elle crée un trou légèrement plus petit qu'un tir du fusil. Lorsqu'elle est tirée sur un mur renforcé en revanche, elle se loge simplement à sa surface.",
+      "annee": 4,
+      "saison": 4,
+      "sante": 2,
+      "vitesse": 2,
+      "difficulte": 2,
+      "arme_principale": [
+        "94"
+      ],
+      "arme_secondaire": [
+        "15"
+      ],
+      "gadget": "12",
+      "note": 3
+    },
+    {
+      "id": "50",
+      "capacite_id": 50,
+      "nom": "Amaru",
+      "image": "amaru.png",
+      "camps": "Assaillant",
+      "bio": "Le crochet Garra est un dispositif absolument exceptionnel. Grâce à lui, Amaru parvient à s'accrocher aux rebords et aux fenêtres pour s'y hisser en un temps record. Dorénavant, non seulement ses adversaires doivent faire attention aux attaques venant d'au-dessus, mais aussi à celles venant d'en dessous. Grâce au Garra, Amaru est le seul agent qui puisse monter par une trappe ouverte en plus de pouvoir en descendre. Avec le bon timing, il est possible de réaliser son célèbre Garra Kick en tirant le crochet sur une fenêtre : cela élimine directement un adversaire situé de l'autre côté de la fenêtre.",
+      "annee": 4,
+      "saison": 3,
+      "sante": 2,
+      "vitesse": 2,
+      "difficulte": 2,
+      "arme_principale": [
+        "29"
+      ],
+      "arme_secondaire": [
+        "23"
+      ],
+      "gadget": "12",
+      "note": 3
+    },
+    {
+      "id": "51",
+      "capacite_id": 51,
+      "nom": "Nokk",
+      "image": "nokk.png",
+      "camps": "Assaillant",
+      "bio": "Le HEL est un gant qui réduit les sorties de sons ambiants à l’activation et dissimule l’image de Nøkk sur les outils d’observations de l’ennemi. Ainsi, elle sera complètement indétectable par les drones, caméras blindées, Evil Eyes et autres, et elle pourra patrouiller sans être vue. De plus, ses pas ne produiront aucun bruit, lui permettant de traquer silencieusement les agents adverses. Désormais, les patrouilles des défenseurs seront plus risquées que jamais, car Nøkk se cachera peut-être derrière le moindre recoin… ou pire, juste derrière eux. Mais attention, le HEL ne peut être utilisé que pendant un intervalle limité, à la suite de quoi il devra prendre le temps de se recharger.",
+      "annee": 4,
+      "saison": 2,
+      "sante": 2,
+      "vitesse": 2,
+      "difficulte": 2,
+      "arme_principale": [
+        "65"
+      ],
+      "arme_secondaire": [
+        "15"
+      ],
+      "gadget": "12",
+      "note": 3
+    },
+    {
+      "id": "52",
+      "capacite_id": 52,
+      "nom": "Gridlock",
+      "image": "gridlock.png",
+      "camps": "Assaillant",
+      "bio": "Les herses Trax sont une version portative qui, une fois lancée, déploie une rangée de pointes selon une trajectoire hexagonale, couvrant mieux les terrains accidentés qu'une herse traditionnelle déployée selon une trajectoire rectiligne. Une fois lancées, elles peuvent se déployer davantage et couvrir une plus grande surface. Grâce à cette capacité unique pour un assaillant, Gridlock peut se servir du Trax à la manière d'un obstacle pour redessiner la carte et contrôler une zone. Tout ennemi marchant dessus est ralenti et subit des dégâts. Les herses Trax peuvent être détruites par des tirs, des impacts ou des dégâts thermiques.",
+      "annee": 4,
+      "saison": 1,
+      "sante": 2,
+      "vitesse": 2,
+      "difficulte": 2,
+      "arme_principale": [
+        0
+      ],
+      "arme_secondaire": [
+        0
+      ],
+      "gadget": 0,
+      "note": 2
+    },
+    {
+      "id": "53",
+      "capacite_id": 53,
+      "nom": "Nomad",
+      "image": "nomad.png",
+      "camps": "Assaillant",
+      "bio": "L'accessoire personnalisé de l'arme de Nomad lui permet de lancer des grenades répulsives de proximité. Nomad démarre la partie avec trois grenades de proximité. Ces dispositifs de répulsion sont non létaux, mais désorientent les adversaires.",
+      "annee": 3,
+      "saison": 4,
+      "sante": 2,
+      "vitesse": 2,
+      "difficulte": 2,
+      "arme_principale": [
+        0
+      ],
+      "arme_secondaire": [
+        0
+      ],
+      "gadget": 0,
+      "note": 2
+    },
+    {
+      "id": "54",
+      "capacite_id": 54,
+      "nom": "Maverick",
+      "image": "maverick.png",
+      "camps": "Assaillant",
+      "bio": "Le chalumeau 'fait maison' de Maverick peut percer n'importe quelle surface, y compris les murs renforcés et les trappes. Il nécessite une poigne ferme et une certaine connaissance de l'environnement pour créer de petits trous et des lignes de vue. Maverick doit se tenir près de la surface choisie pour utiliser son gadget. Celui-ci ne fait presque pas de bruit, mais s'épuise rapidement. Néanmoins, la haute précision de ce gadget en fait un outil très créatif à utiliser, sans pour autant se reposer sur les technologies numériques.",
+      "annee": 3,
+      "saison": 3,
+      "sante": 2,
+      "vitesse": 2,
+      "difficulte": 2,
+      "arme_principale": [
+        "82"
+      ],
+      "arme_secondaire": [
+        "33"
+      ],
+      "gadget": "9",
+      "note": 3
+    },
+    {
+      "id": "55",
+      "capacite_id": 55,
+      "nom": "Lion",
+      "image": "lion.png",
+      "camps": "Assaillant",
+      "bio": "Twitch lui a fourni un drone de surveillance lorsqu'il faisait partie du GIGN. Le EE-ONE-D aide Lion à maintenir les zones de quarantaine en détectant les mouvements dans une zone, lui offrant une vue d'ensemble sur les zones dangereuses ou sur le champ de bataille. Son drone peut rester indéfiniment dans les airs, mais il doit choisir le bon moment pour scanner la zone.",
+      "annee": 1,
+      "saison": 3,
+      "sante": 2,
+      "vitesse": 2,
+      "difficulte": 2,
+      "arme_principale": [
+        0
+      ],
+      "arme_secondaire": [
+        0
+      ],
+      "gadget": 0,
+      "note": 2
+    },
+    {
+      "id": "56",
+      "capacite_id": 56,
+      "nom": "Finka",
+      "image": "finka.png",
+      "camps": "Assaillant",
+      "bio": "La poussée d'adrénaline de Finka active des nanobots faits de zinc et déjà injectés dans le corps des agents. Ces nanobots relâchent un cocktail pharmaceutique dans leur sang, et le zinc est absorbé en tant que nutriment. Ces nanites augmentent temporairement la santé de son équipe, aident les alliés blessés et réduisent le recul. Elle est la seule personne capable de créer des nanites adaptés aux besoins spécifiques de chaque agent.",
+      "annee": 1,
+      "saison": 3,
+      "sante": 2,
+      "vitesse": 2,
+      "difficulte": 2,
+      "arme_principale": [
+        "67"
+      ],
+      "arme_secondaire": [
+        "33"
+      ],
+      "gadget": "13",
+      "note": 3
+    },
+    {
+      "id": "57",
+      "capacite_id": 57,
+      "nom": "Dokkaebi",
+      "image": "dokkaebi.png",
+      "camps": "Assaillant",
+      "bio": "Grace utilise un ordinateur balistique blindé, nom de code Bombe logique, afin de pirater les équipements tactiques ennemis. Le programme transmet un virus de son invention qui peut contourner les pare-feu, allumer les appareils proches et émettre un son bruyant pour compromettre la position d'un ennemi.",
+      "annee": 2,
+      "saison": 4,
+      "sante": 2,
+      "vitesse": 2,
+      "difficulte": 2,
+      "arme_principale": [
+        "40"
+      ],
+      "arme_secondaire": [
+        "15"
+      ],
+      "gadget": "10",
+      "note": 3
+    },
+    {
+      "id": "58",
+      "capacite_id": 58,
+      "nom": "Zofia",
+      "image": "zofia.png",
+      "camps": "Assaillant",
+      "bio": "Le KS79 LIFELINE utilise une technologie de projectile déclenchée de façon électronique capable de tirer à la fois des munitions à impact et des munitions assourdissantes. Puisque plusieurs grenades sont superposées dans le canon, il n’est plus nécessaire de recharger l’arme, ce qui la rend extrêmement efficace. Les munitions assourdissantes émettent une onde de choc de 170 décibels qui perturbe l’ouïe et étourdit la cible. Les munitions à impact détruisent les murs en un instant. Préparez-vous à une attaque explosive.",
+      "annee": 2,
+      "saison": 4,
+      "sante": 2,
+      "vitesse": 2,
+      "difficulte": 2,
+      "arme_principale": [
+        0
+      ],
+      "arme_secondaire": [
+        0
+      ],
+      "gadget": 0,
+      "note": 2
+    },
+    {
+      "id": "59",
+      "capacite_id": 59,
+      "nom": "Ying",
+      "image": "ying.png",
+      "camps": "Assaillant",
+      "bio": "Inspiré du nouveau genre de grenades neutralisantes présenté par le Special Air Service, cet explosif fait de mercure et de magnésium crée une multitude de clignotements aveuglants.L’appareil Candela libère une série de clignotements qui peuvent soit être ancrés aux surfaces ou lancés comme grenades.",
+      "annee": 2,
+      "saison": 3,
+      "sante": 2,
+      "vitesse": 2,
+      "difficulte": 2,
+      "arme_principale": [
+        "101"
+      ],
+      "arme_secondaire": [
+        "24"
+      ],
+      "gadget": "7",
+      "note": 3
+    },
+    {
+      "id": "60",
+      "capacite_id": 60,
+      "nom": "Jackal",
+      "image": "jackal.png",
+      "camps": "Assaillant",
+      "bio": "Le modèle Eyenox III a été conçu pour offrir un dispositif de suivi mobile capable de suivre les empreintes d’une personne et de l’identifier en temps réel. Doté d’une vision artificielle avancée, le Eyenox détecte les détails invisibles relatifs à la foulée et à la répartition du poids afin que vous puissiez identifier et traquer votre cible.",
+      "annee": 2,
+      "saison": 1,
+      "sante": 2,
+      "vitesse": 2,
+      "difficulte": 2,
+      "arme_principale": [
+        "13"
+      ],
+      "arme_secondaire": [
+        "24"
+      ],
+      "gadget": "10",
+      "note": 3
+    },
+    {
+      "id": "61",
+      "capacite_id": 61,
+      "nom": "Hibana",
+      "image": "hibana.png",
+      "camps": "Assaillant",
+      "bio": "Le 'X-KAIROS' est un lance-grenades de calibre 40 mm projetant des plombs explosifs qu'il est ensuite possible de déclencher simultanément à distance. Infiltrez-vous de façon innovante en créant des lignes de vue ou de nouveaux passages !",
+      "annee": 1,
+      "saison": 4,
+      "sante": 2,
+      "vitesse": 2,
+      "difficulte": 2,
+      "arme_principale": [
+        "29"
+      ],
+      "arme_secondaire": [
+        "15"
+      ],
+      "gadget": "9",
+      "note": 3
+    },
+    {
+      "id": "62",
+      "capacite_id": 62,
+      "nom": "Capitão",
+      "image": "capitao.png",
+      "camps": "Assaillant",
+      "bio": "Les carreaux en verre favorisent des assauts rapides et silencieux qui ne révèlent pas votre position. Leur cartouche se brise à l'impact et libère un gaz qui enflamme l'oxygène environnant.",
+      "annee": 1,
+      "saison": 3,
+      "sante": 2,
+      "vitesse": 2,
+      "difficulte": 2,
+      "arme_principale": [
+        0
+      ],
+      "arme_secondaire": [
+        0
+      ],
+      "gadget": 0,
+      "note": 2
+    },
+    {
+      "id": "63",
+      "capacite_id": 63,
+      "nom": "Blackbeard",
+      "image": "blackbeard.png",
+      "camps": "Assaillant",
+      "bio": "Blackbeard fait son entrée, doté du bouclier adaptable H.U.L.L.. Ce bouclier adaptable peut changer de forme pour offrir une couverture optimale, à la fois à pied et en rappel. Il inclut également un système de brèche pneumatique qui permet à Blackbeard de créer ses propres rotations en détruisant les murs fins. Les compétences d'armes de Blackbeard lui permettent de s'équiper simultanément du bouclier adaptable H.U.L.L. ainsi que de ses armes principales.",
+      "annee": 1,
+      "saison": 2,
+      "sante": 2,
+      "vitesse": 2,
+      "difficulte": 2,
+      "arme_principale": [
+        0
+      ],
+      "arme_secondaire": [
+        0
+      ],
+      "gadget": 0,
+      "note": 2
+    },
+    {
+      "id": "64",
+      "capacite_id": 64,
+      "nom": "Buck",
+      "image": "buck.png",
+      "camps": "Assaillant",
+      "bio": "Un fusil à pompe de calibre 12 monté sous son arme, utilisé en association avec un fusil d'assaut.Le Passe-Partout permet à l'Agent d'alterner rapidement entre fusil d'assaut classique et fusil à pompe perceur.",
+      "annee": 1,
+      "saison": 1,
+      "sante": 2,
+      "vitesse": 2,
+      "difficulte": 2,
+      "arme_principale": [
+        0
+      ],
+      "arme_secondaire": [
+        0
+      ],
+      "gadget": 0,
+      "note": 2
+    },
+    {
+      "id": "65",
+      "capacite_id": 65,
+      "nom": "Sledge",
+      "image": "sledge.png",
+      "camps": "Assaillant",
+      "bio": "Sledge crée de petites ouvertures et contourne les ennemis. Il excelle dans la création de nouvelles lignes de tir et de points d'entrée, mettant ainsi les défenseurs sous pression. Il peut créer une brèche dans les surfaces non renforcées grâce à son marteau de démolition tactique : Le Tronc.",
+      "annee": 0,
+      "saison": 0,
+      "sante": 2,
+      "vitesse": 2,
+      "difficulte": 2,
+      "arme_principale": [
+        0
+      ],
+      "arme_secondaire": [
+        0
+      ],
+      "gadget": 0,
+      "note": 2
+    },
+    {
+      "id": "66",
+      "capacite_id": 66,
+      "nom": "Thatcher",
+      "image": "thatcher.png",
+      "camps": "Assaillant",
+      "bio": "En tournant son dessus de 45 degrés, le dispositif IEM de Thatcher active une bobine en cuivre qui génère une impulsion électromagnétique. La jauge DEL intégrée indique l’état de charge avant l’émission de l’onde, neutralisant instantanément les appareils électroniques dans son rayon d’effet. Conçu pour désactiver les gadgets ennemis sans les détruire, il offre un avantage tactique en perturbant les défenses adverses.",
+      "annee": 0,
+      "saison": 0,
+      "sante": 2,
+      "vitesse": 2,
+      "difficulte": 2,
+      "arme_principale": [
+        0
+      ],
+      "arme_secondaire": [
+        0
+      ],
+      "gadget": 0,
+      "note": 2
+    },
+    {
+      "id": "67",
+      "capacite_id": 67,
+      "nom": "Ash",
+      "image": "ash.png",
+      "camps": "Assaillant",
+      "bio": "Ash est un agent rapide de première ligne, capable de s'infiltrer discrètement, de contourner l'ennemi ainsi que de détourner l'attention des défenseurs en quelques secondes. Ash est capable de s'infiltrer discrètement et à distance grâce à son M120 CREM modifié et ses munitions d'infiltration.",
+      "annee": 0,
+      "saison": 0,
+      "sante": 2,
+      "vitesse": 2,
+      "difficulte": 2,
+      "arme_principale": [
+        "95"
+      ],
+      "arme_secondaire": [
+        "11"
+      ],
+      "gadget": "8",
+      "note": 3
+    },
+    {
+      "id": "68",
+      "capacite_id": 68,
+      "nom": "Thermite",
+      "image": "thermite.png",
+      "camps": "Assaillant",
+      "bio": "Thermite est une importante ligne de fond dans le soutien de l'équipe en attaque. Puisqu'il est l'un des seuls agents du jeu à être spécialisé dans l'ouverture de brèches, perdre Thermite au début de la manche entravera énormément votre équipe. Jouer Thermite requiert beaucoup de patience et des qualités de meneur, ainsi qu'une grande communication avec votre équipe.",
+      "annee": 0,
+      "saison": 0,
+      "sante": 2,
+      "vitesse": 2,
+      "difficulte": 2,
+      "arme_principale": [
+        "3"
+      ],
+      "arme_secondaire": [
+        "62"
+      ],
+      "gadget": "11",
+      "note": 3
+    },
+    {
+      "id": "69",
+      "capacite_id": 69,
+      "nom": "Montagne",
+      "image": "montagne.png",
+      "camps": "Assaillant",
+      "bio": "Le bouclier extensible de Montagne, conçu en alliages renforcés et Kevlar, offre une protection optimale contre le feu des armes de petit calibre et les attaques de combat rapproché. Son mécanisme pliable lui permet de se rétracter à moitié, améliorant ainsi la mobilité de son porteur tout en conservant une couverture efficace. Robuste et adaptable, il constitue un rempart fiable pour ouvrir la voie à son équipe en première ligne.",
+      "annee": 0,
+      "saison": 0,
+      "sante": 2,
+      "vitesse": 2,
+      "difficulte": 2,
+      "arme_principale": [
+        "108"
+      ],
+      "arme_secondaire": [
+        "36"
+      ],
+      "gadget": "7",
+      "note": 3
+    },
+    {
+      "id": "70",
+      "capacite_id": 70,
+      "nom": "Twitch",
+      "image": "twitch.png",
+      "camps": "Assaillant",
+      "bio": "Twitch est la personne qu'il vous faut pour désactiver les dispositifs ennemis et récupérer des renseignements sur le terrain. Ses compétences s'avèrent très utiles pour soutenir l'équipe à distance pour mener l'assaut en créant des ouvertures. Twitch peut désactiver les dispositif ennemis à distance grâce à sa capacité spéciale : le DRONE DE CHOC DCR MODÈLE 1",
+      "annee": 0,
+      "saison": 0,
+      "sante": 2,
+      "vitesse": 2,
+      "difficulte": 2,
+      "arme_principale": [
+        "73"
+      ],
+      "arme_secondaire": [
+        "11"
+      ],
+      "gadget": "8",
+      "note": 3
+    },
+    {
+      "id": "71",
+      "capacite_id": 71,
+      "nom": "Blitz",
+      "image": "blitz.png",
+      "camps": "Assaillant",
+      "bio": "Le bouclier balistique de Blitz intègre trois rangées de huit grenades flash, libérant une intense décharge lumineuse à l’activation. Conçu pour aveugler temporairement les adversaires tout en assurant une protection frontale, il permet des assauts rapides et déstabilisants. Sa structure renforcée offre une couverture efficace, tandis que son mécanisme d’activation instantanée en fait une arme redoutable en combat rapproché.",
+      "annee": 0,
+      "saison": 0,
+      "sante": 2,
+      "vitesse": 2,
+      "difficulte": 2,
+      "arme_principale": [
+        "110"
+      ],
+      "arme_secondaire": [
+        "28"
+      ],
+      "gadget": "7",
+      "note": 3
+    },
+    {
+      "id": "72",
+      "capacite_id": 72,
+      "nom": "Iq",
+      "image": "iq.png",
+      "camps": "Assaillant",
+      "bio": "Monté sur le poignet, le capteur d’IQ prend la forme d’un dispositif compact semblable à un téléphone. Capable de détecter les appareils électroniques à travers les murs, il affiche en temps réel leur position sur son écran, offrant une vision stratégique du champ de bataille. Léger et réactif, il permet d’identifier rapidement les gadgets ennemis et d’anticiper les menaces avant même qu’elles ne se manifestent.",
+      "annee": 0,
+      "saison": 0,
+      "sante": 2,
+      "vitesse": 2,
+      "difficulte": 2,
+      "arme_principale": [
+        0
+      ],
+      "arme_secondaire": [
+        0
+      ],
+      "gadget": 0,
+      "note": 2
+    },
+    {
+      "id": "73",
+      "capacite_id": 73,
+      "nom": "Fuze",
+      "image": "fuze.png",
+      "camps": "Assaillant",
+      "bio": "Fuze est plus efficace dans son rôle de déni de zone et s'il est agressif sur les flancs. Ses forces lui permettent de déployer des capacités défensives et de harceler les ennemis ancrés dans des positions défensives. Ses charges à sous-munitions APM-6 déclenchent un groupe de petites grenades explosives à travers les surfaces fragiles.",
+      "annee": 0,
+      "saison": 0,
+      "sante": 2,
+      "vitesse": 2,
+      "difficulte": 2,
+      "arme_principale": [
+        "16"
+      ],
+      "arme_secondaire": [
+        "33"
+      ],
+      "gadget": "11",
+      "note": 3
+    },
+    {
+      "id": "74",
+      "capacite_id": 74,
+      "nom": "Glaz",
+      "image": "glaz.png",
+      "camps": "Assaillant",
+      "bio": "Glaz est un tireur d'élite opérant à distance. Il est capable de créer de petites ouvertures et d'effectuer des tirs de couverture. Il est redoutable depuis des positions éloignées grâce à sa lunette unique : le viseur amovible HDS.",
+      "annee": 0,
+      "saison": 0,
+      "sante": 2,
+      "vitesse": 2,
+      "difficulte": 2,
+      "arme_principale": [
+        "112"
+      ],
+      "arme_secondaire": [
+        "24"
+      ],
+      "gadget": "7",
+      "note": 3
+    }
+  ]
+}

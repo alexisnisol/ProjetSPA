@@ -1,0 +1,248 @@
+/* Styles pour la section .hero-section */
+.hero-section {
+    background-image: url('..//img/ui/banniere_home.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.hero-section h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero-section p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.hero-section .btn {
+    font-size: 1.2rem;
+    padding: 0.75rem 2rem;
+    background-color: #205c55;
+    color: white;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    text-decoration: none;
+    display: inline-block;
+    clip-path: polygon(
+        0 10px,
+        10px 0,
+        100% 0,
+        100% calc(100% - 10px),
+        calc(100% - 10px) 100%,
+        0 100%
+    );
+}
+
+.hero-section .btn:hover {
+    background-color: #2B7AD4;
+}
+
+/*Section perso recents*/
+
+.recent-characters-section {
+    background-image: url('..//img/ui/background.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 4rem 1rem;
+    text-align: center;
+}
+
+.title_3_persos {
+    font-size: 3rem;
+    color: white;
+    margin-top: 0;
+    margin-bottom: 2rem;
+    text-align: center; 
+}
+
+/* Redimensionnement des images */
+.recent-characters-section .card img {
+    width: 250; 
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Conteneur des cartes */
+.recent-characters-section .row {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+/* Styles pour chaque carte */
+.recent-characters-section .card {
+    background-color: rgba(255, 255, 255, 0.3);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 250px;
+    margin-bottom: 1rem;
+}
+
+.recent-characters-section .card:hover {
+    transform: scale(1.08) translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 195, 173, 0.4 );
+    cursor: pointer;
+}
+
+.recent-characters-section .card-body {
+    padding: 1.5rem;
+}
+
+.recent-characters-section .card-text {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.recent-characters-section .btn-outline-secondary {
+    font-size: 0.9rem;
+    padding: 0.4rem 1.1rem;
+    background-color: #205c55;
+    color: white;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    text-decoration: none;
+    display: inline-block;
+    clip-path: polygon(
+        0 10px,
+        10px 0,
+        100% 0,
+        100% calc(100% - 10px),
+        calc(100% - 10px) 100%,
+        0 100%
+    );
+}
+
+.recent-characters-section .btn-outline-secondary:hover {
+    background-color: #2B7AD4;
+}
+
+.recent-characters-section .card-text {
+    color: rgb(0, 0, 0);
+    font: bold;
+    padding-bottom: 0.5rem;
+}
+
+.recent-characters-section .card-body {
+    background-image: url('../img/ui/background_bottom_card.jpg');
+    background-size: cover;
+}
+
+/*logo*/
+
+.recent-characters-section .card {
+    background-color: rgba(255, 255, 255, 0.3);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 250px;
+    margin-bottom: 1rem;
+    position: relative;
+    z-index: 1;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.recent-characters-section .card.shadow-sm {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.operator-logo {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    background-color: transparent;
+}
+
+.logo_perso {
+    width: 7rem;
+    height: auto;
+    max-height: 7rem;
+    display: block;
+    margin: 0 auto;
+}
+
+
+/*video section*/
+
+.video-section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.content-box {
+    background-color: rgba(255, 255, 255, 0.4);
+    padding: 2rem;
+    width: 40%;
+    max-width: 500px;
+    text-align: left;
+    margin-left: -60%;
+}
+
+
+.content-box h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #000000;
+}
+
+.content-box p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    color: #000000;
+}
+
+.content-box .btn {
+    font-size: 1.2rem;
+    padding: 0.75rem 2rem;
+    background-color: #205c55;
+    color: white;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    text-decoration: none;
+    display: inline-block;
+    clip-path: polygon(
+        0 10px,
+        10px 0,
+        100% 0,
+        100% calc(100% - 10px),
+        calc(100% - 10px) 100%,
+        0 100%
+    );
+}
+
+.content-box .btn:hover {
+    background-color: #2B7AD4;
+}
