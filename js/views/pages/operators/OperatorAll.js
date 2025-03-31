@@ -32,11 +32,11 @@ export default class OperatorAll extends Views {
     async render() {
         this.operators = await this.paginationHandler.requestPage();
         if(this.searchHandler.hasSearch()) {
-            this.operators = (await OperatorSortProvider.fetchAllByDate()).filter(operator => operator.image.toLowerCase().includes(this.searchHandler.getSearch().toLowerCase()));
+            this.operators = this.operators.filter(operator => operator.image.toLowerCase().includes(this.searchHandler.getSearch().toLowerCase()));
         }
         let html = this.operators.map(operator => Card.render(operator, true, isFavorite(operator.id))).join('\n ');
         if (this.operators.length === 0) {
-            html = "<p class='btn'>Aucun personnage</p>";
+            html = "<p class='btn no-character'>Aucun personnage</p>";
         }
         const paginationHTML = PaginationView.render(this.paginationHandler.currentPage, this.paginationHandler.totalPages);
         const content = /*html*/`
@@ -46,11 +46,11 @@ export default class OperatorAll extends Views {
                     <h1>TOUS LES AGENTS</h1>
                     <div class="button-container">
                         <button class="btn btn-orange ${this.paginationHandler.hasFilter("camps", "Assaillant") ? "selected" : ""}" id="orange-btn">
-                            <img src="../../static/img/ui/logoAssaillant.png" alt="Icon 1" id="icon1" class="btn-icon">
+                            <img loading="lazy" src="../../static/img/ui/logoAssaillant.png" alt="Icon 1" id="icon1" class="btn-icon">
                             ASSAILLANTS
                         </button>
                         <button class="btn btn-blue ${this.paginationHandler.hasFilter("camps", "Défense") ? "selected" : ""}" id="blue-btn">
-                            <img src="../../static/img/ui/logoDefenseur.png" alt="Icon 2" id="icon2" class="btn-icon">
+                            <img loading="lazy" src="../../static/img/ui/logoDefenseur.png" alt="Icon 2" id="icon2" class="btn-icon">
                             DÉFENSEURS
                         </button>
                     </div>
@@ -60,20 +60,31 @@ export default class OperatorAll extends Views {
 
                     <!-- Barre de recherche et boutons -->
                     <div class="search-container">
-                        <button class="btn-filter">
-                            <img src="../../static/img/ui/fleche_blanche.png" alt="Filtres" class="btn-icon">
-                            Voir les filtres
-                        </button>
+                        <div class="filter-container">
+                            <button class="btn-filter">
+                                <img loading="lazy" src="../../static/img/ui/fleche_blanche.png" alt="Filtres" class="btn-icon fleche-filter">
+                                Voir les filtres
+                            </button>
+
+                            <div class="dropdown" id="dropdownMenu">
+                                <ul>
+                                    <li>Première ligne</li>
+                                    <li>Contrôle des foules</li>
+                                    <li>Piégeur</li>
+                                    <li>Brèche</li>
+                                    <li>Renseignement</li>
+                                    <li>Anti-gadget</li>
+                                    <li>Anti-intrusion</li>
+                                    <li>Contrôle de la carte</li>
+                                </ul>
+                            </div>
+                        </div>
                         <div class="search-bar">
                             <input type="text" id="search-input" placeholder="Rechercher un agent..." value="${this.searchHandler.getSearch()}">
                             <button class="search-btn">
-                                <img src="../../static/img/ui/loupe.png" alt="Rechercher">
+                                <img loading="lazy" src="../../static/img/ui/loupe.png" alt="Rechercher">
                             </button>
                         </div>
-                        <button class="btn-sort">
-                            <img src="../../static/img/ui/fleche_blanche.png" alt="Trier" class="btn-icon">
-                            Trier
-                        </button>
                     </div>
                 </div>
             </div>

@@ -30,13 +30,12 @@
     },
     {
       "id": "7",
-      "name" : "Brèche"
+      "name": "Brèche"
     },
     {
       "id": "8",
       "name": "Première ligne"
     }
-    
   ],
   "specialite_operateur": [
     {
@@ -263,11 +262,6 @@
       "id": "44",
       "operateur_id": 23,
       "specialite_id": 5
-    },
-    {
-      "id": "45",
-      "operateur_id": 23,
-      "specialite_id": 0
     },
     {
       "id": "46",
@@ -745,7 +739,6 @@
       "specialite_id": 1
     }
   ],
-  
   "classe_arme": [
     {
       "id": "0",
@@ -1962,7 +1955,8 @@
       "arme_secondaire": [
         4
       ],
-      "gadget": 2
+      "gadget": 2,
+      "note": 2
     },
     {
       "id": "2",
@@ -1982,7 +1976,8 @@
       "arme_secondaire": [
         8
       ],
-      "gadget": 6
+      "gadget": 6,
+      "note": 2
     },
     {
       "id": "3",
@@ -2002,7 +1997,8 @@
       "arme_secondaire": [
         11
       ],
-      "gadget": 3
+      "gadget": 3,
+      "note": 2
     },
     {
       "id": "4",
@@ -2022,7 +2018,8 @@
       "arme_secondaire": [
         15
       ],
-      "gadget": 3
+      "gadget": 3,
+      "note": 2
     },
     {
       "id": "5",
@@ -2042,7 +2039,8 @@
       "arme_secondaire": [
         "18"
       ],
-      "gadget": 0
+      "gadget": 0,
+      "note": 2
     },
     {
       "id": "6",
@@ -2062,7 +2060,8 @@
       "arme_secondaire": [
         20
       ],
-      "gadget": 4
+      "gadget": 4,
+      "note": 2
     },
     {
       "id": "7",
@@ -2082,7 +2081,8 @@
       "arme_secondaire": [
         23
       ],
-      "gadget": 2
+      "gadget": 2,
+      "note": 2
     },
     {
       "id": "8",
@@ -2102,7 +2102,8 @@
       "arme_secondaire": [
         "28"
       ],
-      "gadget": 3
+      "gadget": 3,
+      "note": 2
     },
     {
       "id": "9",
@@ -2122,7 +2123,8 @@
       "arme_secondaire": [
         25
       ],
-      "gadget": 3
+      "gadget": 3,
+      "note": 2
     },
     {
       "id": "10",
@@ -2142,7 +2144,8 @@
       "arme_secondaire": [
         12
       ],
-      "gadget": 2
+      "gadget": 2,
+      "note": 2
     },
     {
       "id": "11",
@@ -2162,7 +2165,8 @@
       "arme_secondaire": [
         36
       ],
-      "gadget": 1
+      "gadget": 1,
+      "note": 2
     },
     {
       "id": "12",
@@ -2182,7 +2186,8 @@
       "arme_secondaire": [
         1
       ],
-      "gadget": 1
+      "gadget": 1,
+      "note": 2
     },
     {
       "id": "13",
@@ -2202,7 +2207,8 @@
       "arme_secondaire": [
         41
       ],
-      "gadget": 4
+      "gadget": 4,
+      "note": 2
     },
     {
       "id": "14",
@@ -2222,7 +2228,8 @@
       "arme_secondaire": [
         43
       ],
-      "gadget": 2
+      "gadget": 2,
+      "note": 2
     },
     {
       "id": "15",
@@ -2263,7 +2270,8 @@
       "arme_secondaire": [
         "49"
       ],
-      "gadget": 0
+      "gadget": 0,
+      "note": 2
     },
     {
       "id": "17",
@@ -2304,7 +2312,8 @@
       "arme_secondaire": [
         0
       ],
-      "gadget": 0
+      "gadget": 0,
+      "note": 2
     },
     {
       "id": "19",
@@ -2324,7 +2333,8 @@
       "arme_secondaire": [
         "42"
       ],
-      "gadget": 0
+      "gadget": 0,
+      "note": 2
     },
     {
       "id": "20",
@@ -2365,7 +2375,8 @@
       "arme_secondaire": [
         0
       ],
-      "gadget": 0
+      "gadget": 0,
+      "note": 2
     },
     {
       "id": "22",
@@ -2427,7 +2438,8 @@
       "arme_secondaire": [
         "60"
       ],
-      "gadget": 0
+      "gadget": 0,
+      "note": 2
     },
     {
       "id": "25",
@@ -2682,14 +2694,25 @@
       "note": 3
     },
     {
+      "id": "37",
+      "capacite_id": 37,
+      "nom": "Rauora",
+      "image": "rauora.png",
+      "camps": "Assaillant",
+      "bio": "Prenez le contrôle de la carte avec le lanceur de panneaux D.O.M de Rauora. Déployez des panneaux pare-balles à distance et contrôlez stratégiquement le cours de la bataille. Avec un mécanisme d'activation en haut de la porte, ouvrez ou fermez le panneau pour créer des occasions tactiques.",
+      "annee": 10,
+      "saison": 1,
+      "sante": 2,
+      "vitesse": 2,
+      "difficulte": 2,
       "arme_principale": [
-        "6"
+        "35"
       ],
       "arme_secondaire": [
         "49"
       ],
-      "gadget": "10",
-      "note": 3
+      "gadget": 0,
+      "note": 5
     },
     {
       "id": "38",
@@ -2751,7 +2774,8 @@
       "arme_secondaire": [
         0
       ],
-      "gadget": 0
+      "gadget": 0,
+      "note": 2
     },
     {
       "id": "41",
@@ -2792,7 +2816,8 @@
       "arme_secondaire": [
         0
       ],
-      "gadget": 0
+      "gadget": 0,
+      "note": 2
     },
     {
       "id": "43",
@@ -2833,7 +2858,8 @@
       "arme_secondaire": [
         0
       ],
-      "gadget": 0
+      "gadget": 0,
+      "note": 2
     },
     {
       "id": "45",
@@ -2916,7 +2942,8 @@
       "arme_secondaire": [
         0
       ],
-      "gadget": 0
+      "gadget": 0,
+      "note": 2
     },
     {
       "id": "49",
@@ -2999,7 +3026,8 @@
       "arme_secondaire": [
         0
       ],
-      "gadget": 0
+      "gadget": 0,
+      "note": 2
     },
     {
       "id": "53",
@@ -3019,7 +3047,8 @@
       "arme_secondaire": [
         0
       ],
-      "gadget": 0
+      "gadget": 0,
+      "note": 2
     },
     {
       "id": "54",
@@ -3060,7 +3089,8 @@
       "arme_secondaire": [
         0
       ],
-      "gadget": 0
+      "gadget": 0,
+      "note": 2
     },
     {
       "id": "56",
@@ -3122,7 +3152,8 @@
       "arme_secondaire": [
         0
       ],
-      "gadget": 0
+      "gadget": 0,
+      "note": 2
     },
     {
       "id": "59",
@@ -3205,7 +3236,8 @@
       "arme_secondaire": [
         0
       ],
-      "gadget": 0
+      "gadget": 0,
+      "note": 2
     },
     {
       "id": "63",
@@ -3225,7 +3257,8 @@
       "arme_secondaire": [
         0
       ],
-      "gadget": 0
+      "gadget": 0,
+      "note": 2
     },
     {
       "id": "64",
@@ -3245,7 +3278,8 @@
       "arme_secondaire": [
         0
       ],
-      "gadget": 0
+      "gadget": 0,
+      "note": 2
     },
     {
       "id": "65",
@@ -3265,7 +3299,8 @@
       "arme_secondaire": [
         0
       ],
-      "gadget": 0
+      "gadget": 0,
+      "note": 2
     },
     {
       "id": "66",
@@ -3285,7 +3320,8 @@
       "arme_secondaire": [
         0
       ],
-      "gadget": 0
+      "gadget": 0,
+      "note": 2
     },
     {
       "id": "67",
@@ -3410,7 +3446,8 @@
       "arme_secondaire": [
         0
       ],
-      "gadget": 0
+      "gadget": 0,
+      "note": 2
     },
     {
       "id": "73",

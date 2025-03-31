@@ -33,12 +33,12 @@ export default class OperatorDetail extends Views {
                     <div class="background-overlay"></div>
                     <button class="back-button" onclick="window.location.href='#/operators'">&#8592; Retour</button>
 
-                    <img src="/static/img/operators/${operator.image}" alt="${operator.nom}" class="operator-character">
+                    <img loading="lazy" src="/static/img/operators/${operator.image}" alt="${operator.nom}" class="operator-character">
                     
                     <div class="detail-content">
                         <div class="operator-header">
                         <div class="operator-title-logo">
-                            <img class="logo_perso" src="/static/img/logos/logo_${operator.nom.toLowerCase().replace(/\s+/g, '_')}.png" alt="Logo de ${operator.nom}">
+                            <img loading="lazy" class="logo_perso" src="/static/img/logos/logo_${operator.nom.toLowerCase().replace(/\s+/g, '_')}.png" alt="Logo de ${operator.nom}">
                             <h1 class="resultation-title">${operator.nom.toUpperCase()}</h1>
                         </div>
                     </div>
