@@ -30,7 +30,7 @@ export default class Home extends Views {
             </div>
             </div>
             <div class="video-section">
-                <video autoplay muted loop class="background-video">
+                <video loading="lazy" autoplay muted loop class="background-video">
                     <source src="/static/video/video_presentation_deimos.mp4" type="video/mp4">
                 </video>
                 <div class="content-box">

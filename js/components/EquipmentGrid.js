@@ -44,7 +44,7 @@ export default class EquipmentGrid {
             <div class="equipment-item ${isDisabled ? 'disabled-item' : ''}" 
                  data-field="${fieldName}" 
                  onclick="${isDisabled ? '' : `EquipmentGrid.handleEquipmentClick('${fieldName}')`}">
-                <img src="/static/img/${folder}/${item.image}" alt="${item.nom}" class="equipment-image">
+                <img loading="lazy" src="/static/img/${folder}/${item.image}" alt="${item.nom}" class="equipment-image">
                 <div class="equipment-info">
                     <p class="equipment-name">${item.nom}</p>
                     ${item.class ? `<p class="equipment-class">${item.class.nom}</p>` : ''}
