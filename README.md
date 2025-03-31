@@ -55,6 +55,4 @@ Assurez-vous d'avoir **Node.js** et **PHP** installés sur votre machine.
 ## Remise du projet
 - **TP Noté** du **03/03/25 au 06/04/25**.
 
----
 **Encadrant :** C. DALAIGRE
-
