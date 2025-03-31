@@ -36,7 +36,7 @@ export default class OperatorAll extends Views {
         }
         let html = this.operators.map(operator => Card.render(operator, true, isFavorite(operator.id))).join('\n ');
         if (this.operators.length === 0) {
-            html = "<p class='btn'>Aucun personnage</p>";
+            html = "<p class='btn no-character'>Aucun personnage</p>";
         }
         const paginationHTML = PaginationView.render(this.paginationHandler.currentPage, this.paginationHandler.totalPages);
         const content = /*html*/`

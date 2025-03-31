@@ -54,6 +54,10 @@ main {
     transition: background-color 0.2s;
 }
 
+.no-character {
+    padding: 1.7em;
+}
+
 .btn:hover{
     cursor: pointer;
 }
@@ -136,7 +140,6 @@ main {
     padding: 2px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
     width: 35rem;
-    margin-bottom: 2rem;
     margin-right: 8rem;
 }
 
@@ -154,6 +157,11 @@ main {
     cursor: pointer;
 }
 
+.filter-container {
+    position: relative;
+    display: inline-block;
+}
+
 .btn-filter {
     display: flex;
     align-items: center;
@@ -165,7 +173,10 @@ main {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    margin-bottom: 1.5rem;
+}
+
+.btn-filter:hover {
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
 .btn-filter img, .search-btn img{
@@ -176,6 +187,34 @@ main {
 .search-btn img {
     margin-right: 0.5rem;
 }
+
+.dropdown {
+    display: none;
+    position: absolute;
+    background: #1e2a38;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+}
+
+.dropdown ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.dropdown li {
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+    transition: background 0.2s ease-in-out;
+}
+
+.dropdown li:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
 
 /*persos*/
 
