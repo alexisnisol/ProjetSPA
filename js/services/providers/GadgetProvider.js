@@ -33,4 +33,14 @@ export default class GadgetProvider {
     static async getGadgetById(id) {
         return this.fetchRequest(`${ENDPOINT_GADGETS}/${id}`, GET);
     }
+
+    static async getAllGadgets() {
+        try {
+            const gadgets = await this.fetchRequest(ENDPOINT_GADGETS, GET);
+            return gadgets || [];
+        } catch (error) {
+            console.error('Error in getAllGadgets:', error);
+            return [];
+        }
+    }
 }

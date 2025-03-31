@@ -13,6 +13,7 @@ export default class OperatorDetail extends Views {
             <link href="/static/css/slider.css" rel="stylesheet">
             <link href="/static/css/equipment.css" rel="stylesheet">
             <link href="/static/css/star.css" rel="stylesheet">
+            <link href="/static/css/popup.css" rel="stylesheet">
             <script src="../../../services/CursorSlider.js" defer></script>
         `;
     }
@@ -78,5 +79,8 @@ export default class OperatorDetail extends Views {
     async after_render() {
         Slider.initSliders();
         StarRating.initStarRatings();
+        let request = Utils.parseRequestURL();
+        let operator = await OperatorProvider.getOperator(request.id);
+        EquipmentGrid.init(operator);
     }
 }
