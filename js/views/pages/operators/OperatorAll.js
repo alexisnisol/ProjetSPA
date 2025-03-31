@@ -46,11 +46,11 @@ export default class OperatorAll extends Views {
                     <h1>TOUS LES AGENTS</h1>
                     <div class="button-container">
                         <button class="btn btn-orange ${this.paginationHandler.hasFilter("camps", "Assaillant") ? "selected" : ""}" id="orange-btn">
-                            <img src="../../static/img/ui/logoAssaillant.png" alt="Icon 1" id="icon1" class="btn-icon">
+                            <img loading="lazy" src="../../static/img/ui/logoAssaillant.png" alt="Icon 1" id="icon1" class="btn-icon">
                             ASSAILLANTS
                         </button>
                         <button class="btn btn-blue ${this.paginationHandler.hasFilter("camps", "Défense") ? "selected" : ""}" id="blue-btn">
-                            <img src="../../static/img/ui/logoDefenseur.png" alt="Icon 2" id="icon2" class="btn-icon">
+                            <img loading="lazy" src="../../static/img/ui/logoDefenseur.png" alt="Icon 2" id="icon2" class="btn-icon">
                             DÉFENSEURS
                         </button>
                     </div>
@@ -62,7 +62,7 @@ export default class OperatorAll extends Views {
                     <div class="search-container">
                         <div class="filter-container">
                             <button class="btn-filter">
-                                <img src="../../static/img/ui/fleche_blanche.png" alt="Filtres" class="btn-icon fleche-filter">
+                                <img loading="lazy" src="../../static/img/ui/fleche_blanche.png" alt="Filtres" class="btn-icon fleche-filter">
                                 Voir les filtres
                             </button>
 
@@ -82,7 +82,7 @@ export default class OperatorAll extends Views {
                         <div class="search-bar">
                             <input type="text" id="search-input" placeholder="Rechercher un agent..." value="${this.searchHandler.getSearch()}">
                             <button class="search-btn">
-                                <img src="../../static/img/ui/loupe.png" alt="Rechercher">
+                                <img loading="lazy" src="../../static/img/ui/loupe.png" alt="Rechercher">
                             </button>
                         </div>
                     </div>
