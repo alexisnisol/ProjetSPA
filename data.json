@@ -2701,14 +2701,25 @@
       "note": 3
     },
     {
+      "id": "37",
+      "capacite_id": 37,
+      "nom": "Rauora",
+      "image": "rauora.png",
+      "camps": "Assaillant",
+      "bio": "Prenez le contrôle de la carte avec le lanceur de panneaux D.O.M de Rauora. Déployez des panneaux pare-balles à distance et contrôlez stratégiquement le cours de la bataille. Avec un mécanisme d'activation en haut de la porte, ouvrez ou fermez le panneau pour créer des occasions tactiques.",
+      "annee": 10,
+      "saison": 1,
+      "sante": 2,
+      "vitesse": 2,
+      "difficulte": 2,
       "arme_principale": [
-        "6"
+        0
       ],
       "arme_secondaire": [
-        "49"
+        0
       ],
-      "gadget": "10",
-      "note": 3
+      "gadget": 0,
+      "note": 5
     },
     {
       "id": "38",
