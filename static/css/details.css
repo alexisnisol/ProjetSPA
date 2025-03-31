@@ -3,6 +3,30 @@
     width: 100%;
     color: white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+}
+
+.operator-detail::before {
+    content: ""; 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    width: 650px;
+    height: 650px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.2;
+    z-index: 1;
+}
+
+.Assaillant::before {
+    background-image: url('/static/img/ui/attaque.png');
+}
+
+.Défense::before {
+    background-image: url('/static/img/ui/defense.png');
 }
 
 .main-background {
@@ -51,7 +75,11 @@
 }
 
 .back-button span {
+<<<<<<< HEAD
     margin-right: 8px;
+=======
+    margin-right: 8px; 
+>>>>>>> 4604c8ab811ba1216448f7bad93941b12e7bd23e
 }
 
 

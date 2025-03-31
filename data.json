@@ -23,7 +23,20 @@
     {
       "id": "5",
       "name": "Contrôle des Foules"
+    },
+    {
+      "id": "6",
+      "name": "Contrôle de la carte"
+    },
+    {
+      "id": "7",
+      "name" : "Brèche"
+    },
+    {
+      "id": "8",
+      "name": "Première ligne"
     }
+    
   ],
   "specialite_operateur": [
     {
@@ -163,25 +176,576 @@
     },
     {
       "id": "27",
-      "operateur_id": 0,
-      "specialite_id": 1
+      "operateur_id": 15,
+      "specialite_id": 2
     },
     {
       "id": "28",
-      "operateur_id": 0,
-      "specialite_id": 1
+      "operateur_id": 15,
+      "specialite_id": 3
     },
     {
       "id": "29",
-      "operateur_id": 0,
-      "specialite_id": 1
+      "operateur_id": 16,
+      "specialite_id": 0
     },
     {
       "id": "30",
-      "operateur_id": 0,
+      "operateur_id": 16,
+      "specialite_id": 5
+    },
+    {
+      "id": "31",
+      "operateur_id": 17,
+      "specialite_id": 0
+    },
+    {
+      "id": "32",
+      "operateur_id": 17,
+      "specialite_id": 3
+    },
+    {
+      "id": "33",
+      "operateur_id": 18,
+      "specialite_id": 0
+    },
+    {
+      "id": "34",
+      "operateur_id": 18,
+      "specialite_id": 4
+    },
+    {
+      "id": "35",
+      "operateur_id": 19,
+      "specialite_id": 3
+    },
+    {
+      "id": "36",
+      "operateur_id": 19,
+      "specialite_id": 5
+    },
+    {
+      "id": "37",
+      "operateur_id": 20,
+      "specialite_id": 5
+    },
+    {
+      "id": "38",
+      "operateur_id": 20,
+      "specialite_id": 4
+    },
+    {
+      "id": "39",
+      "operateur_id": 21,
+      "specialite_id": 2
+    },
+    {
+      "id": "40",
+      "operateur_id": 21,
+      "specialite_id": 4
+    },
+    {
+      "id": "41",
+      "operateur_id": 22,
+      "specialite_id": 0
+    },
+    {
+      "id": "42",
+      "operateur_id": 22,
+      "specialite_id": 1
+    },
+    {
+      "id": "43",
+      "operateur_id": 23,
+      "specialite_id": 0
+    },
+    {
+      "id": "44",
+      "operateur_id": 23,
+      "specialite_id": 5
+    },
+    {
+      "id": "45",
+      "operateur_id": 23,
+      "specialite_id": 0
+    },
+    {
+      "id": "46",
+      "operateur_id": 24,
+      "specialite_id": 5
+    },
+    {
+      "id": "47",
+      "operateur_id": 25,
+      "specialite_id": 0
+    },
+    {
+      "id": "48",
+      "operateur_id": 26,
+      "specialite_id": 2
+    },
+    {
+      "id": "49",
+      "operateur_id": 26,
+      "specialite_id": 4
+    },
+    {
+      "id": "50",
+      "operateur_id": 27,
+      "specialite_id": 3
+    },
+    {
+      "id": "51",
+      "operateur_id": 27,
+      "specialite_id": 5
+    },
+    {
+      "id": "52",
+      "operateur_id": 28,
+      "specialite_id": 2
+    },
+    {
+      "id": "53",
+      "operateur_id": 28,
+      "specialite_id": 4
+    },
+    {
+      "id": "54",
+      "operateur_id": 29,
+      "specialite_id": 2
+    },
+    {
+      "id": "55",
+      "operateur_id": 29,
+      "specialite_id": 1
+    },
+    {
+      "id": "56",
+      "operateur_id": 30,
+      "specialite_id": 0
+    },
+    {
+      "id": "57",
+      "operateur_id": 30,
+      "specialite_id": 1
+    },
+    {
+      "id": "58",
+      "operateur_id": 31,
+      "specialite_id": 1
+    },
+    {
+      "id": "59",
+      "operateur_id": 32,
+      "specialite_id": 1
+    },
+    {
+      "id": "60",
+      "operateur_id": 33,
+      "specialite_id": 3
+    },
+    {
+      "id": "61",
+      "operateur_id": 33,
+      "specialite_id": 1
+    },
+    {
+      "id": "62",
+      "operateur_id": 34,
+      "specialite_id": 2
+    },
+    {
+      "id": "63",
+      "operateur_id": 34,
+      "specialite_id": 3
+    },
+    {
+      "id": "64",
+      "operateur_id": 35,
+      "specialite_id": 3
+    },
+    {
+      "id": "65",
+      "operateur_id": 35,
+      "specialite_id": 5
+    },
+    {
+      "id": "66",
+      "operateur_id": 36,
+      "specialite_id": 2
+    },
+    {
+      "id": "67",
+      "operateur_id": 36,
+      "specialite_id": 4
+    },
+    {
+      "id": "68",
+      "operateur_id": 37,
+      "specialite_id": 1
+    },
+    {
+      "id": "69",
+      "operateur_id": 37,
+      "specialite_id": 6
+    },
+    {
+      "id": "70",
+      "operateur_id": 38,
+      "specialite_id": 1
+    },
+    {
+      "id": "71",
+      "operateur_id": 39,
+      "specialite_id": 0
+    },
+    {
+      "id": "72",
+      "operateur_id": 39,
+      "specialite_id": 6
+    },
+    {
+      "id": "73",
+      "operateur_id": 40,
+      "specialite_id": 3
+    },
+    {
+      "id": "74",
+      "operateur_id": 40,
+      "specialite_id": 7
+    },
+    {
+      "id": "75",
+      "operateur_id": 41,
+      "specialite_id": 0
+    },
+    {
+      "id": "76",
+      "operateur_id": 41,
+      "specialite_id": 3
+    },
+    {
+      "id": "77",
+      "operateur_id": 42,
+      "specialite_id": 6
+    },
+    {
+      "id": "78",
+      "operateur_id": 42,
+      "specialite_id": 8
+    },
+    {
+      "id": "79",
+      "operateur_id": 43,
+      "specialite_id": 1
+    },
+    {
+      "id": "80",
+      "operateur_id": 43,
+      "specialite_id": 6
+    },
+    {
+      "id": "81",
+      "operateur_id": 44,
+      "specialite_id": 1
+    },
+    {
+      "id": "82",
+      "operateur_id": 44,
+      "specialite_id": 0
+    },
+    {
+      "id": "83",
+      "operateur_id": 45,
+      "specialite_id": 0
+    },
+    {
+      "id": "84",
+      "operateur_id": 45,
+      "specialite_id": 3
+    },
+    {
+      "id": "85",
+      "operateur_id": 46,
+      "specialite_id": 3
+    },
+    {
+      "id": "86",
+      "operateur_id": 46,
+      "specialite_id": 0
+    },
+    {
+      "id": "87",
+      "operateur_id": 47,
+      "specialite_id": 7
+    },
+    {
+      "id": "88",
+      "operateur_id": 47,
+      "specialite_id": 3
+    },
+    {
+      "id": "89",
+      "operateur_id": 48,
+      "specialite_id": 8
+    },
+    {
+      "id": "90",
+      "operateur_id": 48,
+      "specialite_id": 0
+    },
+    {
+      "id": "91",
+      "operateur_id": 49,
+      "specialite_id": 3
+    },
+    {
+      "id": "92",
+      "operateur_id": 49,
+      "specialite_id": 0
+    },
+    {
+      "id": "93",
+      "operateur_id": 50,
+      "specialite_id": 8
+    },
+    {
+      "id": "94",
+      "operateur_id": 50,
+      "specialite_id": 6
+    },
+    {
+      "id": "95",
+      "operateur_id": 51,
+      "specialite_id": 8
+    },
+    {
+      "id": "96",
+      "operateur_id": 51,
+      "specialite_id": 6
+    },
+    {
+      "id": "97",
+      "operateur_id": 52,
+      "specialite_id": 1
+    },
+    {
+      "id": "98",
+      "operateur_id": 52,
+      "specialite_id": 6
+    },
+    {
+      "id": "99",
+      "operateur_id": 53,
+      "specialite_id": 8
+    },
+    {
+      "id": "100",
+      "operateur_id": 53,
+      "specialite_id": 6
+    },
+    {
+      "id": "101",
+      "operateur_id": 54,
+      "specialite_id": 7
+    },
+    {
+      "id": "102",
+      "operateur_id": 54,
+      "specialite_id": 8
+    },
+    {
+      "id": "103",
+      "operateur_id": 55,
+      "specialite_id": 0
+    },
+    {
+      "id": "104",
+      "operateur_id": 55,
+      "specialite_id": 6
+    },
+    {
+      "id": "105",
+      "operateur_id": 56,
+      "specialite_id": 8
+    },
+    {
+      "id": "106",
+      "operateur_id": 56,
+      "specialite_id": 1
+    },
+    {
+      "id": "107",
+      "operateur_id": 57,
+      "specialite_id": 0
+    },
+    {
+      "id": "108",
+      "operateur_id": 57,
+      "specialite_id": 6
+    },
+    {
+      "id": "109",
+      "operateur_id": 58,
+      "specialite_id": 7
+    },
+    {
+      "id": "110",
+      "operateur_id": 58,
+      "specialite_id": 3
+    },
+    {
+      "id": "111",
+      "operateur_id": 59,
+      "specialite_id": 8
+    },
+    {
+      "id": "112",
+      "operateur_id": 59,
+      "specialite_id": 6
+    },
+    {
+      "id": "113",
+      "operateur_id": 60,
+      "specialite_id": 0
+    },
+    {
+      "id": "114",
+      "operateur_id": 60,
+      "specialite_id": 6
+    },
+    {
+      "id": "115",
+      "operateur_id": 61,
+      "specialite_id": 7
+    },
+    {
+      "id": "116",
+      "operateur_id": 61,
+      "specialite_id": 8
+    },
+    {
+      "id": "117",
+      "operateur_id": 62,
+      "specialite_id": 8
+    },
+    {
+      "id": "118",
+      "operateur_id": 62,
+      "specialite_id": 6
+    },
+    {
+      "id": "119",
+      "operateur_id": 63,
+      "specialite_id": 1
+    },
+    {
+      "id": "120",
+      "operateur_id": 64,
+      "specialite_id": 7
+    },
+    {
+      "id": "121",
+      "operateur_id": 64,
+      "specialite_id": 1
+    },
+    {
+      "id": "122",
+      "operateur_id": 65,
+      "specialite_id": 7
+    },
+    {
+      "id": "123",
+      "operateur_id": 65,
+      "specialite_id": 3
+    },
+    {
+      "id": "124",
+      "operateur_id": 66,
+      "specialite_id": 3
+    },
+    {
+      "id": "125",
+      "operateur_id": 66,
+      "specialite_id": 1
+    },
+    {
+      "id": "126",
+      "operateur_id": 67,
+      "specialite_id": 7
+    },
+    {
+      "id": "127",
+      "operateur_id": 67,
+      "specialite_id": 8
+    },
+    {
+      "id": "128",
+      "operateur_id": 68,
+      "specialite_id": 7
+    },
+    {
+      "id": "129",
+      "operateur_id": 68,
+      "specialite_id": 1
+    },
+    {
+      "id": "130",
+      "operateur_id": 69,
+      "specialite_id": 0
+    },
+    {
+      "id": "131",
+      "operateur_id": 69,
+      "specialite_id": 1
+    },
+    {
+      "id": "132",
+      "operateur_id": 70,
+      "specialite_id": 3
+    },
+    {
+      "id": "133",
+      "operateur_id": 70,
+      "specialite_id": 0
+    },
+    {
+      "id": "134",
+      "operateur_id": 71,
+      "specialite_id": 8
+    },
+    {
+      "id": "135",
+      "operateur_id": 71,
+      "specialite_id": 6
+    },
+    {
+      "id": "136",
+      "operateur_id": 72,
+      "specialite_id": 0
+    },
+    {
+      "id": "137",
+      "operateur_id": 72,
+      "specialite_id": 1
+    },
+    {
+      "id": "138",
+      "operateur_id": 73,
+      "specialite_id": 3
+    },
+    {
+      "id": "139",
+      "operateur_id": 74,
+      "specialite_id": 0
+    },
+    {
+      "id": "140",
+      "operateur_id": 74,
       "specialite_id": 1
     }
   ],
+  
   "classe_arme": [
     {
       "id": "0",
@@ -246,7 +810,7 @@
       "id": "2",
       "nom": "Commando 9",
       "classe_arme": 0,
-      "image": "commando-9.png"
+      "image": "commando9.png"
     },
     {
       "id": "3",
@@ -282,7 +846,7 @@
       "id": "8",
       "nom": "P226 MK 25",
       "classe_arme": 50,
-      "image": "p226_mk_25.png"
+      "image": "p226-mk-25.png"
     },
     {
       "id": "9",
@@ -1366,8 +1930,8 @@
       "image": "skopos.png",
       "camps": "Défense",
       "bio": "Skopós arrive sur le terrain aux commandes de ses deux Robothéons V10, l'un en tant qu'agent, l'autre en tant qu'outil d'observation équipé d'un bouclier renforcé. Bien qu'elle ne puisse contrôler qu'un seul robot à la fois et que la connexion avec les deux machines sera perdue si l'une d'elles est détruite, sa capacité à passer d'un robot à un autre fait de Skopós une agente aussi efficace pour le renseignement que pour le soutien.",
-      "annee": 9,
-      "saison": 3,
+      "annee": 3,
+      "saison": 9,
       "sante": 2,
       "vitesse": 2,
       "difficulte": 2,
@@ -1391,15 +1955,14 @@
       "saison": 0,
       "sante": 2,
       "vitesse": 2,
-      "difficulte": 2,
+      "difficulte": 1,
       "arme_principale": [
         2
       ],
       "arme_secondaire": [
         4
       ],
-      "gadget": 2,
-      "note": 3
+      "gadget": 2
     },
     {
       "id": "2",
@@ -1419,8 +1982,7 @@
       "arme_secondaire": [
         8
       ],
-      "gadget": 6,
-      "note": 3
+      "gadget": 6
     },
     {
       "id": "3",
@@ -1440,8 +2002,7 @@
       "arme_secondaire": [
         11
       ],
-      "gadget": 3,
-      "note": 3
+      "gadget": 3
     },
     {
       "id": "4",
@@ -1452,7 +2013,7 @@
       "bio": "La vérité éclate au grand jour grâce au capteur électrique SPEC-IO de Solis, un nouveau dispositif de détection de gadgets pour les défenseurs. Avec la possibilité de marquer ou pinger les appareils électroniques de ses adversaires, personne ne pourra se cacher.",
       "annee": 7,
       "saison": 4,
-      "sante": 1,
+      "sante": 2,
       "vitesse": 2,
       "difficulte": 3,
       "arme_principale": [
@@ -1461,8 +2022,7 @@
       "arme_secondaire": [
         15
       ],
-      "gadget": 3,
-      "note": 3
+      "gadget": 3
     },
     {
       "id": "5",
@@ -1482,8 +2042,7 @@
       "arme_secondaire": [
         "18"
       ],
-      "gadget": 0,
-      "note": 1
+      "gadget": 0
     },
     {
       "id": "6",
@@ -1503,8 +2062,7 @@
       "arme_secondaire": [
         20
       ],
-      "gadget": 4,
-      "note": 3
+      "gadget": 4
     },
     {
       "id": "7",
@@ -1524,8 +2082,7 @@
       "arme_secondaire": [
         23
       ],
-      "gadget": 2,
-      "note": 3
+      "gadget": 2
     },
     {
       "id": "8",
@@ -1545,8 +2102,7 @@
       "arme_secondaire": [
         "28"
       ],
-      "gadget": 3,
-      "note": 3
+      "gadget": 3
     },
     {
       "id": "9",
@@ -1566,8 +2122,7 @@
       "arme_secondaire": [
         25
       ],
-      "gadget": 3,
-      "note": 3
+      "gadget": 3
     },
     {
       "id": "10",
@@ -1587,8 +2142,7 @@
       "arme_secondaire": [
         12
       ],
-      "gadget": 2,
-      "note": 3
+      "gadget": 2
     },
     {
       "id": "11",
@@ -1608,8 +2162,7 @@
       "arme_secondaire": [
         36
       ],
-      "gadget": 1,
-      "note": 3
+      "gadget": 1
     },
     {
       "id": "12",
@@ -1629,8 +2182,7 @@
       "arme_secondaire": [
         1
       ],
-      "gadget": 1,
-      "note": 3
+      "gadget": 1
     },
     {
       "id": "13",
@@ -1650,8 +2202,7 @@
       "arme_secondaire": [
         41
       ],
-      "gadget": 4,
-      "note": 3
+      "gadget": 4
     },
     {
       "id": "14",
@@ -1671,8 +2222,7 @@
       "arme_secondaire": [
         43
       ],
-      "gadget": 2,
-      "note": 3
+      "gadget": 2
     },
     {
       "id": "15",
@@ -1713,8 +2263,7 @@
       "arme_secondaire": [
         "49"
       ],
-      "gadget": 0,
-      "note": 3
+      "gadget": 0
     },
     {
       "id": "17",
@@ -1755,8 +2304,7 @@
       "arme_secondaire": [
         0
       ],
-      "gadget": 0,
-      "note": 3
+      "gadget": 0
     },
     {
       "id": "19",
@@ -1776,8 +2324,7 @@
       "arme_secondaire": [
         "42"
       ],
-      "gadget": 0,
-      "note": 3
+      "gadget": 0
     },
     {
       "id": "20",
@@ -1818,8 +2365,7 @@
       "arme_secondaire": [
         0
       ],
-      "gadget": 0,
-      "note": 3
+      "gadget": 0
     },
     {
       "id": "22",
@@ -1881,8 +2427,7 @@
       "arme_secondaire": [
         "60"
       ],
-      "gadget": 0,
-      "note": 3
+      "gadget": 0
     },
     {
       "id": "25",
@@ -2137,17 +2682,6 @@
       "note": 3
     },
     {
-      "id": "37",
-      "capacite_id": 37,
-      "nom": "Rauora",
-      "image": "rauora.png",
-      "camps": "Assaillant",
-      "bio": "Prenez le contrôle de la carte avec le lanceur de panneaux D.O.M de Rauora. Déployez des panneaux pare-balles à distance et contrôlez stratégiquement le cours de la bataille. Avec un mécanisme d'activation en haut de la porte, ouvrez ou fermez le panneau pour créer des occasions tactiques.",
-      "annee": 10,
-      "saison": 1,
-      "sante": 2,
-      "vitesse": 2,
-      "difficulte": 2,
       "arme_principale": [
         "6"
       ],
@@ -2217,8 +2751,7 @@
       "arme_secondaire": [
         0
       ],
-      "gadget": 0,
-      "note": 3
+      "gadget": 0
     },
     {
       "id": "41",
@@ -2259,8 +2792,7 @@
       "arme_secondaire": [
         0
       ],
-      "gadget": 0,
-      "note": 3
+      "gadget": 0
     },
     {
       "id": "43",
@@ -2301,8 +2833,7 @@
       "arme_secondaire": [
         0
       ],
-      "gadget": 0,
-      "note": 3
+      "gadget": 0
     },
     {
       "id": "45",
@@ -2385,8 +2916,7 @@
       "arme_secondaire": [
         0
       ],
-      "gadget": 0,
-      "note": 3
+      "gadget": 0
     },
     {
       "id": "49",
@@ -2469,8 +2999,7 @@
       "arme_secondaire": [
         0
       ],
-      "gadget": 0,
-      "note": 3
+      "gadget": 0
     },
     {
       "id": "53",
@@ -2490,8 +3019,7 @@
       "arme_secondaire": [
         0
       ],
-      "gadget": 0,
-      "note": 3
+      "gadget": 0
     },
     {
       "id": "54",
@@ -2532,8 +3060,7 @@
       "arme_secondaire": [
         0
       ],
-      "gadget": 0,
-      "note": 3
+      "gadget": 0
     },
     {
       "id": "56",
@@ -2595,8 +3122,7 @@
       "arme_secondaire": [
         0
       ],
-      "gadget": 0,
-      "note": 3
+      "gadget": 0
     },
     {
       "id": "59",
@@ -2679,8 +3205,7 @@
       "arme_secondaire": [
         0
       ],
-      "gadget": 0,
-      "note": 3
+      "gadget": 0
     },
     {
       "id": "63",
@@ -2700,8 +3225,7 @@
       "arme_secondaire": [
         0
       ],
-      "gadget": 0,
-      "note": 3
+      "gadget": 0
     },
     {
       "id": "64",
@@ -2721,8 +3245,7 @@
       "arme_secondaire": [
         0
       ],
-      "gadget": 0,
-      "note": 3
+      "gadget": 0
     },
     {
       "id": "65",
@@ -2742,8 +3265,7 @@
       "arme_secondaire": [
         0
       ],
-      "gadget": 0,
-      "note": 3
+      "gadget": 0
     },
     {
       "id": "66",
@@ -2763,8 +3285,7 @@
       "arme_secondaire": [
         0
       ],
-      "gadget": 0,
-      "note": 3
+      "gadget": 0
     },
     {
       "id": "67",
@@ -2889,8 +3410,7 @@
       "arme_secondaire": [
         0
       ],
-      "gadget": 0,
-      "note": 3
+      "gadget": 0
     },
     {
       "id": "73",

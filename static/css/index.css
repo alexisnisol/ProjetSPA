@@ -40,8 +40,10 @@ html, body {
 }
 
 /* Contenu principal */
+/* Contenu principal */
 .content {
     flex-grow: 1;
+    width: 100%;
 }
 
 /* Footer */
@@ -53,6 +55,7 @@ html, body {
     justify-content: space-between;
     flex-wrap: wrap;
     width: 100%;
+    margin-top: auto;
 }
 
 .logo-ubisoft {
