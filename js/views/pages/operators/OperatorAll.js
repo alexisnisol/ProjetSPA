@@ -60,10 +60,25 @@ export default class OperatorAll extends Views {
 
                     <!-- Barre de recherche et boutons -->
                     <div class="search-container">
-                        <button class="btn-filter">
-                            <img src="../../static/img/ui/fleche_blanche.png" alt="Filtres" class="btn-icon">
-                            Voir les filtres
-                        </button>
+                        <div class="filter-container">
+                            <button class="btn-filter">
+                                <img src="../../static/img/ui/fleche_blanche.png" alt="Filtres" class="btn-icon fleche-filter">
+                                Voir les filtres
+                            </button>
+
+                            <div class="dropdown" id="dropdownMenu">
+                                <ul>
+                                    <li>Première ligne</li>
+                                    <li>Contrôle des foules</li>
+                                    <li>Piégeur</li>
+                                    <li>Brèche</li>
+                                    <li>Renseignement</li>
+                                    <li>Anti-gadget</li>
+                                    <li>Anti-intrusion</li>
+                                    <li>Contrôle de la carte</li>
+                                </ul>
+                            </div>
+                        </div>
                         <div class="search-bar">
                             <input type="text" id="search-input" placeholder="Rechercher un agent..." value="${this.searchHandler.getSearch()}">
                             <button class="search-btn">
