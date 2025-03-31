@@ -137,6 +137,7 @@ main {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
     width: 35rem;
     margin-bottom: 2rem;
+    margin-right: 8rem;
 }
 
 .search-bar input {
@@ -153,7 +154,7 @@ main {
     cursor: pointer;
 }
 
-.btn-filter, .btn-sort {
+.btn-filter {
     display: flex;
     align-items: center;
     gap: 5px;
@@ -164,9 +165,10 @@ main {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    margin-bottom: 1.5rem;
 }
 
-.btn-filter img, .search-btn img, .btn-sort img {
+.btn-filter img, .search-btn img{
     width: 30px;
     height: 30px;
 }

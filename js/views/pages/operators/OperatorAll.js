@@ -70,10 +70,6 @@ export default class OperatorAll extends Views {
                                 <img src="../../static/img/ui/loupe.png" alt="Rechercher">
                             </button>
                         </div>
-                        <button class="btn-sort">
-                            <img src="../../static/img/ui/fleche_blanche.png" alt="Trier" class="btn-icon">
-                            Trier
-                        </button>
                     </div>
                 </div>
             </div>
