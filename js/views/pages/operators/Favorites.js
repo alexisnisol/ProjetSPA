@@ -55,7 +55,6 @@ export default class Favorites extends Views {
     }
 
     async after_render() {
-        OperatorsHandler.setupButtonHandlers(this);
         setupLikeButtons();
     }
 }
