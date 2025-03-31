@@ -30,13 +30,12 @@
     },
     {
       "id": "7",
-      "name" : "Brèche"
+      "name": "Brèche"
     },
     {
       "id": "8",
       "name": "Première ligne"
     }
-    
   ],
   "specialite_operateur": [
     {
@@ -745,7 +744,6 @@
       "specialite_id": 1
     }
   ],
-  
   "classe_arme": [
     {
       "id": "0",
@@ -2713,10 +2711,10 @@
       "vitesse": 2,
       "difficulte": 2,
       "arme_principale": [
-        0
+        "35"
       ],
       "arme_secondaire": [
-        0
+        "49"
       ],
       "gadget": 0,
       "note": 5
