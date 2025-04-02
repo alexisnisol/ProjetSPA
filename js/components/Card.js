@@ -6,9 +6,9 @@ export default class Card {
                 <div class="card shadow-sm">
                     <!-- Logo -->
                     <div class="operator-logo">
-                        <img loading="lazy" class="logo_perso" src="/static/img/logos/logo_${operator.nom.toLowerCase().replace(/\s+/g, '_')}.png" alt="Logo de ${operator.nom}">
+                        <img loading="lazy" class="logo_perso" data-src="/static/img/logos/logo_${operator.nom.toLowerCase().replace(/\s+/g, '_')}.png" src="/static/img/placeholder.jpg" alt="Logo de ${operator.nom}">
                     </div>
-                    <img loading="lazy" onclick="window.location.href='#/operators/${operator.id}'" src="/static/img/operators/${operator.image}" alt="${operator.nom}">
+                    <img loading="lazy" onclick="window.location.href='#/operators/${operator.id}'" data-src="/static/img/operators/${operator.image}" src="/static/img/placeholder.jpg" alt="${operator.nom}">
                     <div class="card-body">
                         <p class="card-text">${operator.nom ? operator.nom.slice(0, 100) : ''}</p>
                         <div class="btn-group">

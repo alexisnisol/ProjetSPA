@@ -110,5 +110,6 @@ export default class OperatorAll extends Views {
         OperatorsHandler.setupButtonHandlers(this);
         setupLikeButtons();
         this.searchHandler.setup(this);
+        reloadLazyImages();
     }
 }

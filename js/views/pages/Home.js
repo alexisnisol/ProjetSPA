@@ -1,6 +1,7 @@
 import OperatorSortProvider from "../../services/providers/OperatorSortProvider.js";
 import Card from "../../components/Card.js";
 import Views from "../Views.js";
+import { reloadLazyImages } from "../../app.js";
 
 export default class Home extends Views {
 
@@ -41,4 +42,8 @@ export default class Home extends Views {
             </div>
         `;
     }
+
+    async after_render() {
+        reloadLazyImages();
+    };
 }
