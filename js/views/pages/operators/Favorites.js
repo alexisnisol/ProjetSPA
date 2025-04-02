@@ -3,6 +3,7 @@ import Card from "../../../components/Card.js";
 import {isFavorite, setupLikeButtons} from "../../../services/handlers/LikeHandler.js";
 import OperatorsHandler from "../../../services/handlers/OperatorsHandler.js";
 import OperatorSortProvider from "../../../services/providers/OperatorSortProvider.js";
+import { reloadLazyImages } from "../../../app.js";
 
 export default class Favorites extends Views {
     
@@ -56,5 +57,6 @@ export default class Favorites extends Views {
 
     async after_render() {
         setupLikeButtons();
+        reloadLazyImages();
     }
 }

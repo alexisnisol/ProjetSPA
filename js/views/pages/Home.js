@@ -19,7 +19,7 @@ export default class Home extends Views {
             <div class="hero-section">
                 <div>
                     <h1>TOM CLANCY'S RAINBOW SIX SIEGE</h1>
-                    <p>Personalisez votre arsenal selon votre style.</p>
+                    <p>Personnalisez votre arsenal selon votre style.</p>
                     <a href='#/operators' class="btn btn-primary">En savoir plus</a>
                 </div>
             </div>
