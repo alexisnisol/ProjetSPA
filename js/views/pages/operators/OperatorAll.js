@@ -4,8 +4,9 @@ import { isFavorite, setupLikeButtons } from "../../../services/handlers/LikeHan
 import { PaginationHandler } from "../../../services/handlers/PaginationHandler.js";
 import PaginationView from "../../../components/PaginationView.js";
 import OperatorsHandler from "../../../services/handlers/OperatorsHandler.js";
-import OperatorSortProvider from "../../../services/providers/OperatorSortProvider.js";
 import SearchHandler from "../../../services/handlers/SearchHandler.js";
+import OperatorProvider from "../../../services/providers/OperatorProvider.js";
+import { reloadLazyImages } from "../../../app.js";
 
 export default class OperatorAll extends Views {
     
@@ -32,7 +33,7 @@ export default class OperatorAll extends Views {
     async render() {
         this.operators = await this.paginationHandler.requestPage();
         if(this.searchHandler.hasSearch()) {
-            this.operators = this.operators.filter(operator => operator.image.toLowerCase().includes(this.searchHandler.getSearch().toLowerCase()));
+            this.operators = (await OperatorProvider.fetchOperatorsSearch(this.paginationHandler.filters)).filter(operator => operator.image.toLowerCase().includes(this.searchHandler.getSearch().toLowerCase()));
         }
         let html = this.operators.map(operator => Card.render(operator, true, isFavorite(operator.id))).join('\n ');
         if (this.operators.length === 0) {
@@ -110,5 +111,6 @@ export default class OperatorAll extends Views {
         OperatorsHandler.setupButtonHandlers(this);
         setupLikeButtons();
         this.searchHandler.setup(this);
+        reloadLazyImages();
     }
 }

@@ -116,6 +116,23 @@ export default class OperatorProvider {
     }
 
     /**
+     * Récupère les opérateurs en fonction des filtres.
+     * @param {*} filters Les filtres à appliquer à la requête, sous forme d'objet
+     * @returns  Les opérateurs récupérés
+     */
+    static fetchOperatorsSearch = async (filters = {}) => {
+        let queryBuilder = new QueryBuilder()
+    
+            .setSort("-annee,-saison");
+
+        for (const [key, value] of Object.entries(filters)) {
+            queryBuilder.setFilter(key, value);
+        }
+        let queryString = queryBuilder.build();
+        return await OperatorProvider.fetchQuery(queryString);
+    }
+
+    /**
      * Récupère les spécialités d'un opérateur en fonction de son identifiant.
      *
      * Cette méthode permet de récupérer les spécialités d'un opérateur donné. Elle prend en entrée l'identifiant d'un opérateur
@@ -158,7 +175,6 @@ export default class OperatorProvider {
             }
 
             const result = await response.json();
-            console.log("Réponse du serveur:", result);
             return result;
         } catch (error) {
             console.error("Erreur dans updateOperator:", error);

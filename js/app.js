@@ -35,3 +35,20 @@ const router = async () => {
 
 window.addEventListener('hashchange', router);
 window.addEventListener('load', router);
+
+export function reloadLazyImages() {
+    const lazyImages = document.querySelectorAll("img[data-src]");
+
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const img = entry.target;
+                img.src = img.dataset.src;
+                img.removeAttribute("data-src");
+                observer.unobserve(img);
+            }
+        });
+    }, { rootMargin: "100px", threshold: 0.1 });
+
+    lazyImages.forEach(img => observer.observe(img));
+}
