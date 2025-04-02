@@ -175,7 +175,6 @@ export default class OperatorProvider {
             }
 
             const result = await response.json();
-            console.log("Réponse du serveur:", result);
             return result;
         } catch (error) {
             console.error("Erreur dans updateOperator:", error);

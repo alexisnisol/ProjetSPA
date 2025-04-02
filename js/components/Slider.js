@@ -77,15 +77,10 @@ export default class Slider {
                 const success = await Slider.updateSlider(attribute, value, operatorId);
                 
                 if (!success) {
-                    console.warn(`[Slider Event] Échec de la mise à jour, revert visuel`);
                     this.nextElementSibling.textContent = this.value;
-                } else {
-                    console.log(`[Slider Event] Mise à jour réussie`);
                 }
             });
         });
-        
-        console.log(`[initSliders] ${sliders.length} sliders initialisés`);
     }
     
     static updateSliderStyle(slider) {
